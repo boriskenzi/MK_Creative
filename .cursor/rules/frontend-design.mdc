@@ -1,0 +1,24 @@
+---
+description: Auto-load frontend-design skill for every frontend developer task in this project
+alwaysApply: true
+---
+
+# Frontend developer — load frontend-design
+
+This project uses the frontend-design skill on every frontend task. First action: read and follow it. Do not wait to be asked.
+
+Skill (prefer project copy, else user copy):
+
+- `C:\Users\ouedr\Downloads\boris\.cursor\skills\frontend-design\SKILL.md`
+- `C:\Users\ouedr\.cursor\skills\frontend-design\SKILL.md`
+
+## When it applies
+
+Any UI / React / HTML / CSS / layout / component / visual / motion / landing-page work.
+
+## How to work
+
+1. Read the skill before writing frontend code.
+2. Plan: subject, audience, page job, then color / type / layout / one signature.
+3. Critique generic AI looks, then implement from the plan.
+4. Repo design system wins if one exists; still apply the skill where it does not conflict.

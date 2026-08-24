@@ -1,0 +1,134 @@
+{
+  "images": [
+    {
+      "src": "https://framerusercontent.com/images/4OnZQ25OpJFbRabmwXvzCiIpX1A.jpeg?width=1280&height=1280",
+      "alt": "Portfolio Creator Avatar",
+      "w": 40,
+      "h": 40
+    },
+    {
+      "src": "https://framerusercontent.com/images/YSEVpyJS1qiLsvZqNHKdZZ8Ug.png",
+      "alt": "Featured Project Cover Image",
+      "w": 1120,
+      "h": 1148
+    },
+    {
+      "src": "https://framerusercontent.com/images/qbjsnnvP9w7UaA2syp36oUe8OSo.jpg",
+      "alt": "Featured Project Cover Image",
+      "w": 1120,
+      "h": 746
+    },
+    {
+      "src": "https://framerusercontent.com/images/nTU7b0ZAdWdlqCI4mQ4tGTPpDs.jpeg",
+      "alt": "Featured Project Cover Image",
+      "w": 1120,
+      "h": 628
+    },
+    {
+      "src": "https://framerusercontent.com/images/2nWXrWvPxxMHSpsOkNYf8KjzP7Q.jpeg",
+      "alt": "Featured Project Cover Image",
+      "w": 1120,
+      "h": 746
+    },
+    {
+      "src": "https://framerusercontent.com/images/RFcUbpIGFydbU9WBSTc9HJRQI.jpeg",
+      "alt": "Project Cover Image",
+      "w": 0,
+      "h": 0
+    },
+    {
+      "src": "https://framerusercontent.com/images/346Dg9EFyDG62n4PMiwIhATISNU.jpeg",
+      "alt": "",
+      "w": 0,
+      "h": 0
+    },
+    {
+      "src": "https://framerusercontent.com/images/RzBOpbFyAywEXNkFbMTKVhq44.jpg",
+      "alt": "",
+      "w": 0,
+      "h": 0
+    },
+    {
+      "src": "https://framerusercontent.com/images/NbFTTP3LTcQw2s8139xTJnscc.jpeg",
+      "alt": "",
+      "w": 0,
+      "h": 0
+    },
+    {
+      "src": "https://framerusercontent.com/images/ZdGiQIvKJf4dbNyeWSaZP6Vyw.png",
+      "alt": "Creator Logo",
+      "w": 500,
+      "h": 500
+    }
+  ],
+  "texts": [
+    "Home\n\nHome",
+    "Home",
+    "Home",
+    "About\n\nAbout",
+    "About",
+    "About",
+    "Projects\n\nProjects",
+    "Projects",
+    "Projects",
+    "Blogs\n\nBlogs",
+    "Blogs",
+    "Blogs",
+    "Contact",
+    "Contact",
+    "FEATURED PROJECTS",
+    "These selected projects reflect my passion for blending strategy with creativity \u2014 solving real problems through thoughtful design and impactful storytelling.",
+    "Graphic Design\n\nSUMMER VIBES FESTIVAL CAMPAIGN\n\nCreated promotional materials for the \"Summer Vibes Festival,\" including posters, flyers, and social media graphics.",
+    "Graphic Design",
+    "SUMMER VIBES FESTIVAL CAMPAIGN",
+    "Created promotional materials for the \"Summer Vibes Festival,\" including posters, flyers, and social media graphics.",
+    "Branding\n\nCORAL SPIRAL ABSTRACT\n\nDescription: A visually striking 3D abstract artwork featuring a coral-colored spiral form with smooth, flowing curves and a soft pink gradient background, emphasizing modern digital aesthetics and organic geometry.",
+    "Branding",
+    "CORAL SPIRAL ABSTRACT",
+    "Description: A visually striking 3D abstract artwork featuring a coral-colored spiral form with smooth, flowing curves and a soft pink gradient background, emphasizing modern digital aesthetics and organic geometry.",
+    "UI / UX Design\n\nSHOPEASE REDESIGN SPRINT\n\nRedesigned the \"ShopEase\" e-commerce app to enhance user experience. Focused on simplifying navigation, optimizing the checkout process, and incorporating a sleek.",
+    "UI / UX Design",
+    "SHOPEASE REDESIGN SPRINT",
+    "Redesigned the \"ShopEase\" e-commerce app to enhance user experience. Focused on simplifying navigation, optimizing the checkout process, and incorporating a sleek.",
+    "Branding\n\nBLACK GEOMETRIC PRISMS\n\nA collection of sharp, angular black prisms floating against a gradient dark background, showcasing a modern and sophisticated approach to digital 3D geometric composition.",
+    "Branding",
+    "BLACK GEOMETRIC PRISMS",
+    "A collection of sharp, angular black prisms floating against a gradient dark background, showcasing a modern and sophisticated approach to digital 3D geometric composition.",
+    "MORE PROJECTS",
+    "Graphic Design\n\nPANTONE VERY PERI POSTER DESIGN\n\nA minimalist poster design inspired by Pantone\u2019s Color of the Year 2022, Very Peri, combining clean typography, a soft periwinkle background, and a delicate blue branch illustration for a fresh, contemporary look.",
+    "Graphic Design",
+    "PANTONE VERY PERI POSTER DESIGN",
+    "A minimalist poster design inspired by Pantone\u2019s Color of the Year 2022, Very Peri, combining clean typography, a soft periwinkle background, and a delicate blue branch illustration for a fresh, contemporary look.",
+    "Graphic Design\n\nINTENZA BRAND BOUTIQUE E-GIFT CARD DESIGN\n\nCreated a modern and elegant e-gift card for Intenza Brand Boutique. Emphasized minimalism and premium aesthetics with a sleek black holder and a dynamic, fitness-inspired card image to reflect the brand\u2019s active lifestyle identity.",
+    "Graphic Design",
+    "INTENZA BRAND BOUTIQUE E-GIFT CARD DESIGN",
+    "Created a modern and elegant e-gift card for Intenza Brand Boutique. Emphasized minimalism and premium aesthetics with a sleek black holder and a dynamic, fitness-inspired card image to reflect the brand\u2019s active lifestyle identity.",
+    "Web Design\n\nVISTAHAVEN\n\nVistaHaven is a sleek and modern real estate template designed to showcase luxury properties with elegance and sophistication.",
+    "Web Design",
+    "VISTAHAVEN",
+    "VistaHaven is a sleek and modern real estate template designed to showcase luxury properties with elegance and sophistication.",
+    "Branding\n\nINNOVATETECH IDENTITY ROLLOUT\n\nDeveloped a brand identity for \"InnovateTech,\" including logo design, color palette, and visual style guide. Focused on conveying innovation and reliability across all branding elements.",
+    "Branding",
+    "INNOVATETECH IDENTITY ROLLOUT",
+    "Developed a brand identity for \"InnovateTech,\" including logo design, color palette, and visual style guide. Focused on conveying innovation and reliability across all branding elements.",
+    "Email :",
+    "designer@example.com",
+    "designer@example.com",
+    "Call Today :",
+    "+1 (555) 123-4567",
+    "+1 (555) 123-4567",
+    "Social :",
+    "\u00a9 Copyright 2025. All Rights Reserved by oldshen",
+    "oldshen",
+    "Created by",
+    "Duncan Shen",
+    "Duncan Shen",
+    "Get Template",
+    "Get Template",
+    "New release",
+    "Preview",
+    "Preview",
+    "Create a free website with Framer, the website builder loved by startups, designers and agencies.",
+    "Create a free website with Framer, the website builder loved by startups, designers and agencies."
+  ]
+}

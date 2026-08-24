@@ -1,0 +1,176 @@
+{
+  "images": [
+    {
+      "src": "https://framerusercontent.com/images/4OnZQ25OpJFbRabmwXvzCiIpX1A.jpeg?width=1280&height=1280",
+      "alt": "Portfolio Creator Avatar",
+      "w": 40,
+      "h": 40
+    },
+    {
+      "src": "https://framerusercontent.com/images/Nf63tXddU52SRtJJgRHqk7zzD2g.png",
+      "alt": "",
+      "w": 480,
+      "h": 480
+    },
+    {
+      "src": "https://framerusercontent.com/images/RaZetiUCiiVee9pYfau5kIm0k.jpg?width=200&height=200",
+      "alt": "Tech Logo",
+      "w": 200,
+      "h": 200
+    },
+    {
+      "src": "https://framerusercontent.com/images/KhZnIlAtOozB2Axd5yg9ALd7A.jpg?width=200&height=200",
+      "alt": "Tech Logo",
+      "w": 200,
+      "h": 200
+    },
+    {
+      "src": "https://framerusercontent.com/images/FigaBMy3WrTNL79MFKifsXxXE.jpg?width=200&height=200",
+      "alt": "Tech Logo",
+      "w": 200,
+      "h": 200
+    },
+    {
+      "src": "https://framerusercontent.com/images/1jsryiRhbB5SoLHzyceqqF9tpo.jpg?width=200&height=200",
+      "alt": "Tech Logo",
+      "w": 200,
+      "h": 200
+    },
+    {
+      "src": "https://framerusercontent.com/images/0LcVxRcBxPqguAXdCAZaPTE0ec.jpg?width=3024&height=4032",
+      "alt": "",
+      "w": 340,
+      "h": 453
+    },
+    {
+      "src": "https://framerusercontent.com/images/wI4XsDVwKLkam6o9ajRIaHuf4g.jpg?width=1119&height=1280",
+      "alt": "",
+      "w": 340,
+      "h": 389
+    },
+    {
+      "src": "https://framerusercontent.com/images/OEno9eY3zAdGTIgbHkr5Mz4CXs.jpg?width=853&height=1280",
+      "alt": "",
+      "w": 340,
+      "h": 510
+    },
+    {
+      "src": "https://framerusercontent.com/images/skOWvb5VexbQhAKe8noWJSMbk.jpg?width=526&height=526",
+      "alt": "About Me Image - 4",
+      "w": 349,
+      "h": 349
+    },
+    {
+      "src": "https://framerusercontent.com/images/fw9i7cnyP36KPrIT0FHN2bcu0xU.jpeg?width=1200&height=673",
+      "alt": "Research & Strategy",
+      "w": 0,
+      "h": 0
+    },
+    {
+      "src": "https://framerusercontent.com/images/VjFhPmRUqOEECNBJzS5qTNQ2M.jpeg?width=904&height=1200",
+      "alt": "Feedback & Refinement",
+      "w": 0,
+      "h": 0
+    },
+    {
+      "src": "https://framerusercontent.com/images/xmKml0E7v2iBI4zbbj0yVccaQwg.jpeg?width=1200&height=673",
+      "alt": "Testing & Optimization",
+      "w": 0,
+      "h": 0
+    },
+    {
+      "src": "https://framerusercontent.com/images/wI4XsDVwKLkam6o9ajRIaHuf4g.jpg?width=1119&height=1280",
+      "alt": "Portrait of portfolio creator",
+      "w": 340,
+      "h": 389
+    },
+    {
+      "src": "https://framerusercontent.com/images/ZdGiQIvKJf4dbNyeWSaZP6Vyw.png",
+      "alt": "Creator Logo",
+      "w": 0,
+      "h": 0
+    }
+  ],
+  "texts": [
+    "Home\n\nHome",
+    "Home",
+    "Home",
+    "About\n\nAbout",
+    "About",
+    "About",
+    "Projects\n\nProjects",
+    "Projects",
+    "Projects",
+    "Blogs\n\nBlogs",
+    "Blogs",
+    "Blogs",
+    "Contact",
+    "Contact",
+    "QUI SUIS-JE ?",
+    "DUNCAN ROBERT",
+    "I\u2019m a digital designer and Framer developer passionate about crafting meaningful, user-centered experiences.",
+    "With a strong foundation in visual design and a deep understanding of interactive systems, I bring ideas to life through thoughtful design, smooth animations, and responsive layouts.",
+    "QUE POUVONS NOUS FAIRE POUR VOUS ?",
+    "As a digital designer, I am a visual storyteller, crafting experiences that connect deeply and spark creativity.",
+    "1. PHOTOGRAPHIE PROFESSIONNELLE",
+    "Wireframing and prototyping",
+    "User Interface design for web and mobile apps",
+    "Usability testing and user feedback analysis",
+    "Interaction design and micro-animations",
+    "2. GRAPHIC DESIGN",
+    "Logo and brand identity design",
+    "Social media graphics and ad creatives",
+    "Infographics and data visualization",
+    "Custom illustrations and icons",
+    "3. WEB DESIGN",
+    "Responsive website design",
+    "Landing page design and optimization",
+    "Webflow development and customization",
+    "Website maintenance and updates",
+    "4. BRANDING",
+    "Brand strategy and identity development",
+    "Visual style guide creation",
+    "Typography and color scheme selection",
+    "Brand storytelling and messaging",
+    "DISCOVER MY JOURNEY IN DESIGN",
+    "De cr\u00e9ateur curieux \u00e0 designer \u00e0 temps plein, mon chemin a \u00e9t\u00e9 fa\u00e7onn\u00e9 par une passion pour la cr\u00e9ation d'exp\u00e9riences num\u00e9riques utiles et centr\u00e9es sur l'utilisateur",
+    "CREATIVE ART DIRECTOR",
+    "NovaWorks Agency",
+    "2023 - Present",
+    "SENIOR UI/UX DESIGNER",
+    "BrightLabs Digital",
+    "2020 - 2023",
+    "UI DESIGNER",
+    "PixelForge Interactive",
+    "2018 - 2020",
+    "GRAPHIC DESIGNER",
+    "Creative Studio 101",
+    "2016 - 2018",
+    "MY TECH STACK",
+    "I build with intention. Framer for fast, interactive web design. Figma for clean interfaces. Notion and X for content. Each tool supports how I think, design.",
+    "Framer",
+    "My creative playground for building interactive and responsive websites\u2014fast, flexible, and no code.",
+    "Figma",
+    "Where I connect, share insights, and grow within the design and Framer community.",
+    "X",
+    "My go-to for UI/UX design\u2014perfect for wireframing, prototyping, and collaborating in real time.",
+    "Spline",
+    "My tool for bringing 3D visuals into the web\u2014perfect for adding playful, interactive depth to projects.",
+    "Lemon Squeezy",
+    "My trusted solution for managing payments and licensing digital products effortlessly.",
+    "CONCEVOIR AVEC STRAT\u00c9GIE ET CR\u00c9ATIVIT\u00c9",
+    "Mon processus allie strat\u00e9gie et cr\u00e9ativit\u00e9 pour relever des d\u00e9fis, \u00e9laborer des solutions et livrer des designs qui communiquent efficacement votre message.",
+    "01.",
+    "RESEARCH & STRATEGY",
+    "In this phase, I dive deep into understanding your business, target audience, and project goals. Through research and strategic planning, I create a clear roadmap to guide the entire design process.",
+    "02.",
+    "CONCEPT & IDEATION",
+    "Here, I brainstorm and develop creative concepts that align with your vision. Initial sketches and ideas are refined into tangible wireframes, setting the direction for design and functionality.",
+    "03.",
+    "FEEDBACK & REFINEMENT",
+    "Collaboration is key. I review the design with you, gather feedback, and refine the work to align with your expectations and goals. This ensures the design reflects your vision.",
+    "04.",
+    "TESTING & OPTIMIZATION",
+    "I conduct thorough testing to identify and resolve any performance or usability issues. This phase ensures the design works seamlessly across devices and meets user experience standards."
+  ]
+}

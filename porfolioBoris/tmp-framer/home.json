@@ -1,0 +1,1290 @@
+{
+  "title": "Portavia",
+  "bodyBg": "rgb(255, 255, 255)",
+  "bodyColor": "rgb(0, 0, 0)",
+  "htmlBg": "rgba(0, 0, 0, 0)",
+  "fonts": [
+    "Times New Roman",
+    "sans-serif",
+    "Inter",
+    "Antonio"
+  ],
+  "colors": [
+    "rgb(0, 0, 0)",
+    "rgb(255, 255, 255)",
+    "rgba(255, 255, 255, 0.9)",
+    "rgb(0, 0, 238)",
+    "rgb(48, 48, 48)",
+    "rgb(94, 103, 230)",
+    "rgb(143, 143, 143)",
+    "rgb(116, 0, 217)",
+    "rgb(245, 245, 245)",
+    "rgba(0, 0, 0, 0.4)",
+    "rgba(34, 34, 34, 0.8)"
+  ],
+  "images": [
+    {
+      "src": "https://framerusercontent.com/images/4OnZQ25OpJFbRabmwXvzCiIpX1A.jpeg?width=1280&height=1280",
+      "alt": "Portfolio Creator Avatar",
+      "w": 40,
+      "h": 40
+    },
+    {
+      "src": "https://framerusercontent.com/images/skOWvb5VexbQhAKe8noWJSMbk.jpg?width=526&height=526",
+      "alt": "Portrait of portfolio creator \u2013 back view",
+      "w": 349,
+      "h": 349
+    },
+    {
+      "src": "https://framerusercontent.com/images/wI4XsDVwKLkam6o9ajRIaHuf4g.jpg?width=1119&height=1280",
+      "alt": "Portrait of portfolio creator \u2013 front view",
+      "w": 340,
+      "h": 389
+    },
+    {
+      "src": "https://framerusercontent.com/images/YSEVpyJS1qiLsvZqNHKdZZ8Ug.png",
+      "alt": "Featured Project Cover Image",
+      "w": 1120,
+      "h": 1148
+    },
+    {
+      "src": "https://framerusercontent.com/images/qbjsnnvP9w7UaA2syp36oUe8OSo.jpg",
+      "alt": "Featured Project Cover Image",
+      "w": 0,
+      "h": 0
+    },
+    {
+      "src": "https://framerusercontent.com/images/nTU7b0ZAdWdlqCI4mQ4tGTPpDs.jpeg",
+      "alt": "Featured Project Cover Image",
+      "w": 0,
+      "h": 0
+    },
+    {
+      "src": "https://framerusercontent.com/images/2nWXrWvPxxMHSpsOkNYf8KjzP7Q.jpeg",
+      "alt": "Featured Project Cover Image",
+      "w": 0,
+      "h": 0
+    },
+    {
+      "src": "https://framerusercontent.com/images/xPotMb4VrNT5rTGtXQvpYqXunU.jpg?width=400&height=400",
+      "alt": "Reviewer Avatar",
+      "w": 0,
+      "h": 0
+    },
+    {
+      "src": "https://framerusercontent.com/images/hleE21gbHw2Y29KULoer3tF8.jpg?width=400&height=400",
+      "alt": "Reviewer Avatar",
+      "w": 0,
+      "h": 0
+    },
+    {
+      "src": "https://framerusercontent.com/images/RTNUbNmEH3Lg1VzA3NOYHdp3bHQ.jpg?width=400&height=400",
+      "alt": "Reviewer Avatar",
+      "w": 0,
+      "h": 0
+    },
+    {
+      "src": "https://framerusercontent.com/images/ZbUvwGb7xhhwmovo3t9YO4bAIGs.jpg?width=400&height=400",
+      "alt": "Reviewer Avatar",
+      "w": 0,
+      "h": 0
+    },
+    {
+      "src": "https://framerusercontent.com/images/1wFj19qQG6zNr7gj3iTlH0Gdlu8.jpeg",
+      "alt": "Blog Cover Image",
+      "w": 0,
+      "h": 0
+    },
+    {
+      "src": "https://framerusercontent.com/images/xmKml0E7v2iBI4zbbj0yVccaQwg.jpeg",
+      "alt": "Blog Cover Image",
+      "w": 0,
+      "h": 0
+    },
+    {
+      "src": "https://framerusercontent.com/images/qrxY8NagVO40NBrdhFEGgFR3PYY.jpg?width=620&height=630",
+      "alt": "Portrait of portfolio creator",
+      "w": 0,
+      "h": 0
+    },
+    {
+      "src": "https://framerusercontent.com/images/ZdGiQIvKJf4dbNyeWSaZP6Vyw.png",
+      "alt": "Creator Logo",
+      "w": 0,
+      "h": 0
+    }
+  ],
+  "bgImgs": [
+    "url(\"https://framerusercontent.com/images/AVsssNQRylEZc5orEWvz8Q1wQT4.gif\")",
+    "linear-gradient(rgba(12, 12, 13, 0.45) 0%, rgba(12, 12, 13, 0.8) 100%)",
+    "linear-gradient(rgba(12, 12, 13, 0.45) 0%, rgba(12, 12, 13, 0.8) 100%)",
+    "linear-gradient(rgba(12, 12, 13, 0.45) 0%, rgba(12, 12, 13, 0.8) 100%)",
+    "linear-gradient(rgba(12, 12, 13, 0.45) 0%, rgba(12, 12, 13, 0.8) 100%)"
+  ],
+  "headings": [
+    {
+      "tag": "A",
+      "text": "Home\n\nHome",
+      "font": "sans-serif",
+      "size": "12px",
+      "weight": "400",
+      "color": "rgb(0, 0, 238)",
+      "letterSpacing": "normal",
+      "lineHeight": "normal"
+    },
+    {
+      "tag": "P",
+      "text": "Home",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "16px",
+      "weight": "300",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "24px"
+    },
+    {
+      "tag": "P",
+      "text": "Home",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "16px",
+      "weight": "300",
+      "color": "rgb(94, 103, 230)",
+      "letterSpacing": "normal",
+      "lineHeight": "24px"
+    },
+    {
+      "tag": "A",
+      "text": "About\n\nAbout",
+      "font": "sans-serif",
+      "size": "12px",
+      "weight": "400",
+      "color": "rgb(0, 0, 238)",
+      "letterSpacing": "normal",
+      "lineHeight": "normal"
+    },
+    {
+      "tag": "P",
+      "text": "About",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "16px",
+      "weight": "300",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "24px"
+    },
+    {
+      "tag": "P",
+      "text": "About",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "16px",
+      "weight": "300",
+      "color": "rgb(94, 103, 230)",
+      "letterSpacing": "normal",
+      "lineHeight": "24px"
+    },
+    {
+      "tag": "A",
+      "text": "Projects\n\nProjects",
+      "font": "sans-serif",
+      "size": "12px",
+      "weight": "400",
+      "color": "rgb(0, 0, 238)",
+      "letterSpacing": "normal",
+      "lineHeight": "normal"
+    },
+    {
+      "tag": "P",
+      "text": "Projects",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "16px",
+      "weight": "300",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "24px"
+    },
+    {
+      "tag": "P",
+      "text": "Projects",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "16px",
+      "weight": "300",
+      "color": "rgb(94, 103, 230)",
+      "letterSpacing": "normal",
+      "lineHeight": "24px"
+    },
+    {
+      "tag": "A",
+      "text": "Blogs\n\nBlogs",
+      "font": "sans-serif",
+      "size": "12px",
+      "weight": "400",
+      "color": "rgb(0, 0, 238)",
+      "letterSpacing": "normal",
+      "lineHeight": "normal"
+    },
+    {
+      "tag": "P",
+      "text": "Blogs",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "16px",
+      "weight": "300",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "24px"
+    },
+    {
+      "tag": "P",
+      "text": "Blogs",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "16px",
+      "weight": "300",
+      "color": "rgb(94, 103, 230)",
+      "letterSpacing": "normal",
+      "lineHeight": "24px"
+    },
+    {
+      "tag": "A",
+      "text": "Contact",
+      "font": "sans-serif",
+      "size": "12px",
+      "weight": "400",
+      "color": "rgb(0, 0, 238)",
+      "letterSpacing": "normal",
+      "lineHeight": "normal"
+    },
+    {
+      "tag": "P",
+      "text": "Contact",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "16px",
+      "weight": "300",
+      "color": "rgb(255, 255, 255)",
+      "letterSpacing": "normal",
+      "lineHeight": "24px"
+    },
+    {
+      "tag": "P",
+      "text": "Hi",
+      "font": "Inter, sans-serif",
+      "size": "40px",
+      "weight": "400",
+      "color": "rgb(255, 255, 255)",
+      "letterSpacing": "normal",
+      "lineHeight": "40px"
+    },
+    {
+      "tag": "P",
+      "text": "MK CREATIVE ",
+      "font": "Antonio, \"Antonio Placeholder\", sans-serif",
+      "size": "32px",
+      "weight": "400",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "41.6px"
+    },
+    {
+      "tag": "H1",
+      "text": "STUDIO",
+      "font": "Antonio, \"Antonio Placeholder\", sans-serif",
+      "size": "120px",
+      "weight": "700",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "-3.6px",
+      "lineHeight": "132px"
+    },
+    {
+      "tag": "H1",
+      "text": "DESIGNER",
+      "font": "Antonio, \"Antonio Placeholder\", sans-serif",
+      "size": "120px",
+      "weight": "700",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "-3.6px",
+      "lineHeight": "132px"
+    },
+    {
+      "tag": "P",
+      "text": "Je suis \u201cMr Kenzi\u201d, designer graphique senior avec +7 ans d\u2019exp\u00e9rience",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "18px",
+      "weight": "300",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "27px"
+    },
+    {
+      "tag": "H2",
+      "text": "QUI SUIS-JE ?",
+      "font": "Antonio, \"Antonio Placeholder\", sans-serif",
+      "size": "60px",
+      "weight": "700",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "78px"
+    },
+    {
+      "tag": "P",
+      "text": "Je suis Mr Kenzi, designer graphique senior avec plus de 7 ans d\u2019exp\u00e9rience.\nPho",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "18px",
+      "weight": "300",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "27px"
+    },
+    {
+      "tag": "H3",
+      "text": "1. PHOTOGRAPHIE PROFESSIONNELLE",
+      "font": "Antonio, \"Antonio Placeholder\", sans-serif",
+      "size": "32px",
+      "weight": "400",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "41.6px"
+    },
+    {
+      "tag": "P",
+      "text": "Wireframing and prototyping",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "18px",
+      "weight": "300",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "27px"
+    },
+    {
+      "tag": "P",
+      "text": "User Interface design for web and mobile apps",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "18px",
+      "weight": "300",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "27px"
+    },
+    {
+      "tag": "P",
+      "text": "Usability testing and user feedback analysis",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "18px",
+      "weight": "300",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "27px"
+    },
+    {
+      "tag": "P",
+      "text": "Interaction design and micro-animations",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "18px",
+      "weight": "300",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "27px"
+    },
+    {
+      "tag": "H3",
+      "text": "2. GRAPHIC DESIGN",
+      "font": "Antonio, \"Antonio Placeholder\", sans-serif",
+      "size": "32px",
+      "weight": "400",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "41.6px"
+    },
+    {
+      "tag": "P",
+      "text": "Logo and brand identity design",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "18px",
+      "weight": "300",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "27px"
+    },
+    {
+      "tag": "P",
+      "text": "Social media graphics and ad creatives",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "18px",
+      "weight": "300",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "27px"
+    },
+    {
+      "tag": "P",
+      "text": "Infographics and data visualization",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "18px",
+      "weight": "300",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "27px"
+    },
+    {
+      "tag": "P",
+      "text": "Custom illustrations and icons",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "18px",
+      "weight": "300",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "27px"
+    },
+    {
+      "tag": "H3",
+      "text": "3. WEB DESIGN",
+      "font": "Antonio, \"Antonio Placeholder\", sans-serif",
+      "size": "32px",
+      "weight": "400",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "41.6px"
+    },
+    {
+      "tag": "P",
+      "text": "Responsive website design",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "18px",
+      "weight": "300",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "27px"
+    },
+    {
+      "tag": "P",
+      "text": "Landing page design and optimization",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "18px",
+      "weight": "300",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "27px"
+    },
+    {
+      "tag": "P",
+      "text": "Webflow development and customization",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "18px",
+      "weight": "300",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "27px"
+    },
+    {
+      "tag": "P",
+      "text": "Website maintenance and updates",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "18px",
+      "weight": "300",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "27px"
+    },
+    {
+      "tag": "H3",
+      "text": "4. BRANDING",
+      "font": "Antonio, \"Antonio Placeholder\", sans-serif",
+      "size": "32px",
+      "weight": "400",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "41.6px"
+    },
+    {
+      "tag": "P",
+      "text": "Brand strategy and identity development",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "18px",
+      "weight": "300",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "27px"
+    },
+    {
+      "tag": "P",
+      "text": "Visual style guide creation",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "18px",
+      "weight": "300",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "27px"
+    },
+    {
+      "tag": "P",
+      "text": "Typography and color scheme selection",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "18px",
+      "weight": "300",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "27px"
+    },
+    {
+      "tag": "P",
+      "text": "Brand storytelling and messaging",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "18px",
+      "weight": "300",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "27px"
+    },
+    {
+      "tag": "H2",
+      "text": "ABOUT ME",
+      "font": "Antonio, \"Antonio Placeholder\", sans-serif",
+      "size": "60px",
+      "weight": "700",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "78px"
+    },
+    {
+      "tag": "P",
+      "text": "Hi, I'm Duncan \u2014 a digital designer and Framer developer passionate about crafti",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "18px",
+      "weight": "300",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "27px"
+    },
+    {
+      "tag": "H3",
+      "text": "0",
+      "font": "Antonio, \"Antonio Placeholder\", sans-serif",
+      "size": "60px",
+      "weight": "700",
+      "color": "rgb(0, 0, 0)",
+      "letterSpacing": "normal",
+      "lineHeight": "60px"
+    },
+    {
+      "tag": "H3",
+      "text": "0",
+      "font": "Antonio, \"Antonio Placeholder\", sans-serif",
+      "size": "60px",
+      "weight": "700",
+      "color": "rgb(94, 103, 230)",
+      "letterSpacing": "normal",
+      "lineHeight": "60px"
+    },
+    {
+      "tag": "P",
+      "text": "Ann\u00e9es d'Experience",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "18px",
+      "weight": "600",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "23.4px"
+    },
+    {
+      "tag": "H3",
+      "text": "0+",
+      "font": "Antonio, \"Antonio Placeholder\", sans-serif",
+      "size": "60px",
+      "weight": "700",
+      "color": "rgb(0, 0, 0)",
+      "letterSpacing": "normal",
+      "lineHeight": "60px"
+    },
+    {
+      "tag": "H3",
+      "text": "0+",
+      "font": "Antonio, \"Antonio Placeholder\", sans-serif",
+      "size": "60px",
+      "weight": "700",
+      "color": "rgb(94, 103, 230)",
+      "letterSpacing": "normal",
+      "lineHeight": "60px"
+    },
+    {
+      "tag": "P",
+      "text": " Projects Realis\u00e9s",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "18px",
+      "weight": "600",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "23.4px"
+    },
+    {
+      "tag": "H3",
+      "text": "0+",
+      "font": "Antonio, \"Antonio Placeholder\", sans-serif",
+      "size": "60px",
+      "weight": "700",
+      "color": "rgb(0, 0, 0)",
+      "letterSpacing": "normal",
+      "lineHeight": "60px"
+    },
+    {
+      "tag": "H3",
+      "text": "0+",
+      "font": "Antonio, \"Antonio Placeholder\", sans-serif",
+      "size": "60px",
+      "weight": "700",
+      "color": "rgb(94, 103, 230)",
+      "letterSpacing": "normal",
+      "lineHeight": "60px"
+    },
+    {
+      "tag": "P",
+      "text": "Clients dans le monde",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "18px",
+      "weight": "600",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "23.4px"
+    },
+    {
+      "tag": "P",
+      "text": "Appeller - Moi :",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "18px",
+      "weight": "600",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "23.4px"
+    },
+    {
+      "tag": "P",
+      "text": "+226 61 15 52 23",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "18px",
+      "weight": "300",
+      "color": "rgb(94, 103, 230)",
+      "letterSpacing": "normal",
+      "lineHeight": "27px"
+    },
+    {
+      "tag": "A",
+      "text": "+226 ",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "18px",
+      "weight": "300",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "27px"
+    },
+    {
+      "tag": "P",
+      "text": "Email :",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "18px",
+      "weight": "600",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "23.4px"
+    },
+    {
+      "tag": "P",
+      "text": "mkcreativegroup226@gmail.com",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "18px",
+      "weight": "300",
+      "color": "rgb(143, 143, 143)",
+      "letterSpacing": "normal",
+      "lineHeight": "27px"
+    },
+    {
+      "tag": "A",
+      "text": "mkcreativegroup226@gmail.com",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "18px",
+      "weight": "300",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "27px"
+    },
+    {
+      "tag": "A",
+      "text": "MY STORY",
+      "font": "sans-serif",
+      "size": "12px",
+      "weight": "400",
+      "color": "rgb(0, 0, 238)",
+      "letterSpacing": "normal",
+      "lineHeight": "normal"
+    },
+    {
+      "tag": "H2",
+      "text": "PORTFOLIO",
+      "font": "Antonio, \"Antonio Placeholder\", sans-serif",
+      "size": "60px",
+      "weight": "700",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "78px"
+    },
+    {
+      "tag": "P",
+      "text": "Ces projets choisis illustrent ma passion pour l\u2019alliance entre strat\u00e9gie et cr\u00e9",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "18px",
+      "weight": "300",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "27px"
+    },
+    {
+      "tag": "A",
+      "text": "Graphic Design\n\nSUMMER VIBES FESTIVAL CAMPAIGN\n\nCreated promotional materials fo",
+      "font": "sans-serif",
+      "size": "12px",
+      "weight": "400",
+      "color": "rgb(0, 0, 238)",
+      "letterSpacing": "normal",
+      "lineHeight": "normal"
+    },
+    {
+      "tag": "P",
+      "text": "Graphic Design",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "14px",
+      "weight": "300",
+      "color": "rgb(255, 255, 255)",
+      "letterSpacing": "normal",
+      "lineHeight": "21px"
+    },
+    {
+      "tag": "H2",
+      "text": "SUMMER VIBES FESTIVAL CAMPAIGN",
+      "font": "Antonio, \"Antonio Placeholder\", sans-serif",
+      "size": "60px",
+      "weight": "700",
+      "color": "rgb(255, 255, 255)",
+      "letterSpacing": "normal",
+      "lineHeight": "78px"
+    },
+    {
+      "tag": "P",
+      "text": "Created promotional materials for the \"Summer Vibes Festival,\" including posters",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "14px",
+      "weight": "300",
+      "color": "rgb(255, 255, 255)",
+      "letterSpacing": "normal",
+      "lineHeight": "21px"
+    },
+    {
+      "tag": "A",
+      "text": "Branding\n\nCORAL SPIRAL ABSTRACT\n\nDescription: A visually striking 3D abstract ar",
+      "font": "sans-serif",
+      "size": "12px",
+      "weight": "400",
+      "color": "rgb(0, 0, 238)",
+      "letterSpacing": "normal",
+      "lineHeight": "normal"
+    },
+    {
+      "tag": "P",
+      "text": "Branding",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "14px",
+      "weight": "300",
+      "color": "rgb(255, 255, 255)",
+      "letterSpacing": "normal",
+      "lineHeight": "21px"
+    },
+    {
+      "tag": "H2",
+      "text": "CORAL SPIRAL ABSTRACT",
+      "font": "Antonio, \"Antonio Placeholder\", sans-serif",
+      "size": "60px",
+      "weight": "700",
+      "color": "rgb(255, 255, 255)",
+      "letterSpacing": "normal",
+      "lineHeight": "78px"
+    },
+    {
+      "tag": "P",
+      "text": "Description: A visually striking 3D abstract artwork featuring a coral-colored s",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "14px",
+      "weight": "300",
+      "color": "rgb(255, 255, 255)",
+      "letterSpacing": "normal",
+      "lineHeight": "21px"
+    },
+    {
+      "tag": "A",
+      "text": "UI / UX Design\n\nSHOPEASE REDESIGN SPRINT\n\nRedesigned the \"ShopEase\" e-commerce a",
+      "font": "sans-serif",
+      "size": "12px",
+      "weight": "400",
+      "color": "rgb(0, 0, 238)",
+      "letterSpacing": "normal",
+      "lineHeight": "normal"
+    },
+    {
+      "tag": "P",
+      "text": "UI / UX Design",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "14px",
+      "weight": "300",
+      "color": "rgb(255, 255, 255)",
+      "letterSpacing": "normal",
+      "lineHeight": "21px"
+    },
+    {
+      "tag": "H2",
+      "text": "SHOPEASE REDESIGN SPRINT",
+      "font": "Antonio, \"Antonio Placeholder\", sans-serif",
+      "size": "60px",
+      "weight": "700",
+      "color": "rgb(255, 255, 255)",
+      "letterSpacing": "normal",
+      "lineHeight": "78px"
+    },
+    {
+      "tag": "P",
+      "text": "Redesigned the \"ShopEase\" e-commerce app to enhance user experience. Focused on ",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "14px",
+      "weight": "300",
+      "color": "rgb(255, 255, 255)",
+      "letterSpacing": "normal",
+      "lineHeight": "21px"
+    },
+    {
+      "tag": "A",
+      "text": "Branding\n\nBLACK GEOMETRIC PRISMS\n\nA collection of sharp, angular black prisms fl",
+      "font": "sans-serif",
+      "size": "12px",
+      "weight": "400",
+      "color": "rgb(0, 0, 238)",
+      "letterSpacing": "normal",
+      "lineHeight": "normal"
+    },
+    {
+      "tag": "P",
+      "text": "Branding",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "14px",
+      "weight": "300",
+      "color": "rgb(255, 255, 255)",
+      "letterSpacing": "normal",
+      "lineHeight": "21px"
+    },
+    {
+      "tag": "H2",
+      "text": "BLACK GEOMETRIC PRISMS",
+      "font": "Antonio, \"Antonio Placeholder\", sans-serif",
+      "size": "60px",
+      "weight": "700",
+      "color": "rgb(255, 255, 255)",
+      "letterSpacing": "normal",
+      "lineHeight": "78px"
+    },
+    {
+      "tag": "P",
+      "text": "A collection of sharp, angular black prisms floating against a gradient dark bac",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "14px",
+      "weight": "300",
+      "color": "rgb(255, 255, 255)",
+      "letterSpacing": "normal",
+      "lineHeight": "21px"
+    },
+    {
+      "tag": "A",
+      "text": "BROWSE ALL PROJECTS",
+      "font": "sans-serif",
+      "size": "12px",
+      "weight": "400",
+      "color": "rgb(0, 0, 238)",
+      "letterSpacing": "normal",
+      "lineHeight": "normal"
+    },
+    {
+      "tag": "H2",
+      "text": "WHAT MY CLIENTS SAY",
+      "font": "Antonio, \"Antonio Placeholder\", sans-serif",
+      "size": "60px",
+      "weight": "700",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "78px"
+    },
+    {
+      "tag": "P",
+      "text": "Here\u2019s what my clients have shared about their experiences working with me. Thei",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "18px",
+      "weight": "300",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "27px"
+    },
+    {
+      "tag": "P",
+      "text": "Duncan truly understood my vision and turned it into impactful designs. The resu",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "14px",
+      "weight": "300",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "21px"
+    },
+    {
+      "tag": "P",
+      "text": "John Harris",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "14px",
+      "weight": "600",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "14px"
+    },
+    {
+      "tag": "P",
+      "text": "Marketing Director",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "14px",
+      "weight": "300",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "21px"
+    },
+    {
+      "tag": "P",
+      "text": "He took the time to understand our goals and delivered a design that resonated p",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "14px",
+      "weight": "300",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "21px"
+    },
+    {
+      "tag": "P",
+      "text": "Michael Lee",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "14px",
+      "weight": "600",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "14px"
+    },
+    {
+      "tag": "P",
+      "text": "Product Manager",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "14px",
+      "weight": "300",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "21px"
+    },
+    {
+      "tag": "P",
+      "text": "I\u2019ve worked with 50+ happy clients",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "14px",
+      "weight": "300",
+      "color": "rgb(255, 255, 255)",
+      "letterSpacing": "normal",
+      "lineHeight": "21px"
+    },
+    {
+      "tag": "H3",
+      "text": "0%",
+      "font": "Antonio, \"Antonio Placeholder\", sans-serif",
+      "size": "60px",
+      "weight": "700",
+      "color": "rgb(0, 0, 0)",
+      "letterSpacing": "normal",
+      "lineHeight": "60px"
+    },
+    {
+      "tag": "H3",
+      "text": "0%",
+      "font": "Antonio, \"Antonio Placeholder\", sans-serif",
+      "size": "60px",
+      "weight": "700",
+      "color": "rgb(255, 255, 255)",
+      "letterSpacing": "normal",
+      "lineHeight": "60px"
+    },
+    {
+      "tag": "P",
+      "text": "Satisfaction Rate",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "14px",
+      "weight": "300",
+      "color": "rgb(255, 255, 255)",
+      "letterSpacing": "normal",
+      "lineHeight": "21px"
+    },
+    {
+      "tag": "P",
+      "text": "My work helped clients grow their revenue by 200%",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "14px",
+      "weight": "300",
+      "color": "rgb(255, 255, 255)",
+      "letterSpacing": "normal",
+      "lineHeight": "21px"
+    },
+    {
+      "tag": "H3",
+      "text": "0%",
+      "font": "Antonio, \"Antonio Placeholder\", sans-serif",
+      "size": "60px",
+      "weight": "700",
+      "color": "rgb(0, 0, 0)",
+      "letterSpacing": "normal",
+      "lineHeight": "60px"
+    },
+    {
+      "tag": "H3",
+      "text": "0%",
+      "font": "Antonio, \"Antonio Placeholder\", sans-serif",
+      "size": "60px",
+      "weight": "700",
+      "color": "rgb(255, 255, 255)",
+      "letterSpacing": "normal",
+      "lineHeight": "60px"
+    },
+    {
+      "tag": "P",
+      "text": "Growth",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "14px",
+      "weight": "300",
+      "color": "rgb(255, 255, 255)",
+      "letterSpacing": "normal",
+      "lineHeight": "21px"
+    },
+    {
+      "tag": "P",
+      "text": "His design skills are unmatched. He transformed my ideas into a high-performing,",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "14px",
+      "weight": "300",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "21px"
+    },
+    {
+      "tag": "P",
+      "text": "Sarah Johnson",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "14px",
+      "weight": "600",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "14px"
+    },
+    {
+      "tag": "P",
+      "text": "CEO",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "14px",
+      "weight": "300",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "21px"
+    },
+    {
+      "tag": "P",
+      "text": "As a small business owner, I appreciated how stress-free Duncan made the process",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "14px",
+      "weight": "300",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "21px"
+    },
+    {
+      "tag": "P",
+      "text": "Laura Bennett",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "14px",
+      "weight": "600",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "14px"
+    },
+    {
+      "tag": "P",
+      "text": "Small Business Owner",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "14px",
+      "weight": "300",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "21px"
+    },
+    {
+      "tag": "H2",
+      "text": "FREQUENTLY ASKED QUESTIONS",
+      "font": "Antonio, \"Antonio Placeholder\", sans-serif",
+      "size": "60px",
+      "weight": "700",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "78px"
+    },
+    {
+      "tag": "P",
+      "text": "Here are answers to some of the most common questions I receive as a freelance d",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "18px",
+      "weight": "300",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "27px"
+    },
+    {
+      "tag": "H2",
+      "text": "DESIGN INSIGHTS & IDEAS",
+      "font": "Antonio, \"Antonio Placeholder\", sans-serif",
+      "size": "60px",
+      "weight": "700",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "78px"
+    },
+    {
+      "tag": "P",
+      "text": "From design trends to creative processes, these articles offer insights to help ",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "18px",
+      "weight": "300",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "27px"
+    },
+    {
+      "tag": "A",
+      "text": "Insights\n\nApr 30, 2025\n\n5 DESIGN TRENDS THAT WILL DEFINE 2024\n\nExplore the top d",
+      "font": "sans-serif",
+      "size": "12px",
+      "weight": "400",
+      "color": "rgb(0, 0, 238)",
+      "letterSpacing": "normal",
+      "lineHeight": "normal"
+    },
+    {
+      "tag": "P",
+      "text": "Insights",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "14px",
+      "weight": "300",
+      "color": "rgb(94, 103, 230)",
+      "letterSpacing": "normal",
+      "lineHeight": "21px"
+    },
+    {
+      "tag": "P",
+      "text": "Apr 30, 2025",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "14px",
+      "weight": "300",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "21px"
+    },
+    {
+      "tag": "H3",
+      "text": "5 DESIGN TRENDS THAT WILL DEFINE 2024",
+      "font": "Antonio, \"Antonio Placeholder\", sans-serif",
+      "size": "32px",
+      "weight": "400",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "41.6px"
+    },
+    {
+      "tag": "P",
+      "text": "Explore the top design trends for 2024 that will influence web, UI/UX, and brand",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "14px",
+      "weight": "300",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "21px"
+    },
+    {
+      "tag": "A",
+      "text": "Tutorials\n\nApr 27, 2025\n\nHOW TO STREAMLINE YOUR DESIGN WORKFLOW\n\nDiscover practi",
+      "font": "sans-serif",
+      "size": "12px",
+      "weight": "400",
+      "color": "rgb(0, 0, 238)",
+      "letterSpacing": "normal",
+      "lineHeight": "normal"
+    },
+    {
+      "tag": "P",
+      "text": "Tutorials",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "14px",
+      "weight": "300",
+      "color": "rgb(94, 103, 230)",
+      "letterSpacing": "normal",
+      "lineHeight": "21px"
+    },
+    {
+      "tag": "P",
+      "text": "Apr 27, 2025",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "14px",
+      "weight": "300",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "21px"
+    },
+    {
+      "tag": "H3",
+      "text": "HOW TO STREAMLINE YOUR DESIGN WORKFLOW",
+      "font": "Antonio, \"Antonio Placeholder\", sans-serif",
+      "size": "32px",
+      "weight": "400",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "41.6px"
+    },
+    {
+      "tag": "P",
+      "text": "Discover practical strategies to improve your design process, save time, and del",
+      "font": "Inter, \"Inter Placeholder\", sans-serif",
+      "size": "14px",
+      "weight": "300",
+      "color": "rgb(48, 48, 48)",
+      "letterSpacing": "normal",
+      "lineHeight": "21px"
+    },
+    {
+      "tag": "A",
+      "text": "BROWSE ALL INSIGHTS",
+      "font": "sans-serif",
+      "size": "12px",
+      "weight": "400",
+      "color": "rgb(0, 0, 238)",
+      "letterSpacing": "normal",
+      "lineHeight": "normal"
+    },
+    {
+      "tag": "P",
+      "text": "Hi",
+      "font": "Inter, sans-serif",
+      "size": "40px",
+      "weight": "400",
+      "color": "rgb(255, 255, 255)",
+      "letterSpacing": "normal",
+      "lineHeight": "40px"
+    }
+  ],
+  "viewport": {
+    "w": 1440,
+    "h": 900
+  }
+}
