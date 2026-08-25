@@ -1,3 +1,5 @@
+import { asset } from "../lib/asset"
+
 export const projects = [
   {
     slug: "summer-vibes-festival-campaign",
@@ -5,7 +7,7 @@ export const projects = [
     category: "Graphic Design",
     description:
       "Created promotional materials for the \"Summer Vibes Festival,\" including posters, flyers, and social media graphics.",
-    image: "/images/project-summer-vibes.png",
+    image: asset("images/project-summer-vibes.png"),
     year: "2024",
     industry: "Event / Festival",
     client: "FestivalWorks",
@@ -25,7 +27,7 @@ export const projects = [
     category: "Branding",
     description:
       "A visually striking 3D abstract artwork featuring a coral-colored spiral form with smooth, flowing curves and a soft pink gradient background, emphasizing modern digital aesthetics and organic geometry.",
-    image: "/images/project-coral-spiral.jpg",
+    image: asset("images/project-coral-spiral.jpg"),
     year: "2025",
     industry: "Beauty",
     client: "VisualForms Studio",
@@ -45,7 +47,7 @@ export const projects = [
     category: "UI / UX Design",
     description:
       "Redesigned the \"ShopEase\" e-commerce app to enhance user experience. Focused on simplifying navigation, optimizing the checkout process, and incorporating a sleek.",
-    image: "/images/project-shopease.jpeg",
+    image: asset("images/project-shopease.jpeg"),
     year: "2025",
     industry: "E-commerce",
     client: "ShopEase",
@@ -65,7 +67,7 @@ export const projects = [
     category: "Branding",
     description:
       "A collection of sharp, angular black prisms floating against a gradient dark background, showcasing a modern and sophisticated approach to digital 3D geometric composition.",
-    image: "/images/project-black-prisms.jpeg",
+    image: asset("images/project-black-prisms.jpeg"),
     year: "2025",
     industry: "Digital Art",
     client: "PrismLab",
@@ -85,7 +87,7 @@ export const projects = [
     category: "Graphic Design",
     description:
       "A minimalist poster design inspired by Pantone’s Color of the Year 2022, Very Peri, combining clean typography, a soft periwinkle background, and a delicate blue branch illustration for a fresh, contemporary look.",
-    image: "/images/project-pantone.jpeg",
+    image: asset("images/project-pantone.jpeg"),
     year: "2022",
     industry: "Print / Editorial",
     client: "Studio Print",
@@ -105,7 +107,7 @@ export const projects = [
     category: "Graphic Design",
     description:
       "Created a modern and elegant e-gift card for Intenza Brand Boutique. Emphasized minimalism and premium aesthetics with a sleek black holder and a dynamic, fitness-inspired card image to reflect the brand’s active lifestyle identity.",
-    image: "/images/project-intenza.jpeg",
+    image: asset("images/project-intenza.jpeg"),
     year: "2024",
     industry: "Retail / Fitness",
     client: "Intenza Brand Boutique",
@@ -125,7 +127,7 @@ export const projects = [
     category: "Web Design",
     description:
       "VistaHaven is a sleek and modern real estate template designed to showcase luxury properties with elegance and sophistication.",
-    image: "/images/project-vistahaven.jpg",
+    image: asset("images/project-vistahaven.jpg"),
     year: "2025",
     industry: "Real Estate",
     client: "VistaHaven",
@@ -145,7 +147,7 @@ export const projects = [
     category: "Branding",
     description:
       "Developed a brand identity for \"InnovateTech,\" including logo design, color palette, and visual style guide. Focused on conveying innovation and reliability across all branding elements.",
-    image: "/images/project-innovate.jpeg",
+    image: asset("images/project-innovate.jpeg"),
     year: "2024",
     industry: "Technology",
     client: "InnovateTech",

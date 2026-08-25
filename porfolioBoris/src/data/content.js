@@ -1,10 +1,12 @@
+import { asset } from "../lib/asset"
+
 const IMG = {
-  avatar: "/images/avatar.jpeg",
-  heroFront: "/images/hero-front.jpeg",
-  heroBack: "/images/hero-back.jpeg",
-  about: "/images/about.jpeg",
-  wave: "/images/wave.gif",
-  logo: "/images/logo.png",
+  avatar: asset("images/avatar.jpeg"),
+  heroFront: asset("images/hero-front.jpeg"),
+  heroBack: asset("images/hero-back.jpeg"),
+  about: asset("images/about.jpeg"),
+  wave: asset("images/wave.gif"),
+  logo: asset("images/logo.png"),
 }
 
 export const content = {
@@ -131,28 +133,28 @@ export const content = {
           "Mr Kenzi a vraiment compris ma vision et l’a transformée en visuels percutants. Le résultat a dépassé mes attentes.",
         name: "John Harris",
         role: "Directeur marketing",
-        avatar: "/images/testimonial-1.jpg",
+        avatar: asset("images/testimonial-1.jpg"),
       },
       {
         quote:
           "Il a pris le temps de comprendre nos objectifs et a livré un design qui parle vraiment à notre public.",
         name: "Michael Lee",
         role: "Product Manager",
-        avatar: "/images/testimonial-2.jpg",
+        avatar: asset("images/testimonial-2.jpg"),
       },
       {
         quote:
           "Une direction artistique nette, de la photo au montage. Notre image de marque a gagné en clarté et en force.",
         name: "Sarah Johnson",
         role: "CEO",
-        avatar: "/images/testimonial-3.jpg",
+        avatar: asset("images/testimonial-3.jpg"),
       },
       {
         quote:
           "En tant que petit entrepreneur, j’ai apprécié un process simple, humain, sans stress.",
         name: "Laura Bennett",
         role: "Cheffe d’entreprise",
-        avatar: "/images/testimonial-4.jpg",
+        avatar: asset("images/testimonial-4.jpg"),
       },
     ],
     highlights: [

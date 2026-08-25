@@ -1,6 +1,7 @@
 import { Link, NavLink, useLocation, useNavigate } from "react-router-dom"
 import { useEffect, useState } from "react"
 import { content } from "../data/content"
+import { asset } from "../lib/asset"
 
 function NavItem({ to, label, onClick }) {
   return (
@@ -64,7 +65,7 @@ export default function Header() {
           ))}
         </nav>
         {scrolled ? (
-          <a href="/#contact" onClick={goContact} className="flex items-center gap-2 pr-3 pl-1">
+          <a href={asset("#contact")} onClick={goContact} className="flex items-center gap-2 pr-3 pl-1">
             <span className="text-[15px] font-light" style={{ color: "var(--fg)" }}>
               Disponible
             </span>
@@ -72,7 +73,7 @@ export default function Header() {
           </a>
         ) : (
           <a
-            href="/#contact"
+            href={asset("#contact")}
             onClick={goContact}
             className="hidden rounded-full px-5 py-2 text-[15px] font-light md:inline-flex"
             style={{ background: "var(--inverse)", color: "var(--inverse-fg)" }}
@@ -105,7 +106,7 @@ export default function Header() {
               <NavItem key={item.to} to={item.to} label={item.label} onClick={() => setOpen(false)} />
             ))}
             <a
-              href="/#contact"
+              href={asset("#contact")}
               onClick={goContact}
               className="mt-2 inline-flex justify-center rounded-full px-5 py-2"
               style={{ background: "var(--inverse)", color: "var(--inverse-fg)" }}

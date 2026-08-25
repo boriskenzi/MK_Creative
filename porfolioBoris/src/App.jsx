@@ -1,5 +1,6 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom"
 import { ThemeProvider } from "./hooks/useTheme"
+import { routerBasename } from "./lib/asset"
 import Layout from "./components/Layout"
 import Home from "./pages/Home"
 import About from "./pages/About"
@@ -11,7 +12,7 @@ import BlogDetail from "./pages/BlogDetail"
 export default function App() {
   return (
     <ThemeProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={routerBasename}>
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />

@@ -1,3 +1,5 @@
+import { asset } from "../lib/asset"
+
 export const blogs = [
   {
     slug: "5-design-trends-that-will-define-2024",
@@ -6,7 +8,7 @@ export const blogs = [
     date: "Apr 30, 2025",
     excerpt:
       "Explore the top design trends for 2024 that will influence web, UI/UX, and branding projects, helping you stay ahead of the curve.",
-    image: "/images/blog-trends.jpeg",
+    image: asset("images/blog-trends.jpeg"),
     featured: true,
     sections: [
       {
@@ -38,7 +40,7 @@ export const blogs = [
     date: "Apr 27, 2025",
     excerpt:
       "Discover practical strategies to improve your design process, save time, and deliver quality work more efficiently.",
-    image: "/images/blog-typography.jpeg",
+    image: asset("images/blog-typography.jpeg"),
     featured: true,
     sections: [
       {
@@ -70,7 +72,7 @@ export const blogs = [
     date: "May 2, 2025",
     excerpt:
       "Learn how typography can make or break your website and discover tips for choosing the right fonts to create impact and readability.",
-    image: "/images/blog-color.jpeg",
+    image: asset("images/blog-color.jpeg"),
     featured: false,
     sections: [
       {
@@ -98,7 +100,7 @@ export const blogs = [
     date: "Apr 22, 2025",
     excerpt:
       "Understand how colors evoke emotions and influence brand perception to create designs that connect with your audience.",
-    image: "/images/blog-uiux.jpeg",
+    image: asset("images/blog-uiux.jpeg"),
     featured: false,
     sections: [
       {
@@ -122,7 +124,7 @@ export const blogs = [
     date: "Mar 30, 2025",
     excerpt:
       "Explore the foundational principles of UI/UX design that create seamless and enjoyable experiences for users.",
-    image: "/images/blog-minimalism.jpeg",
+    image: asset("images/blog-minimalism.jpeg"),
     featured: false,
     sections: [
       {
@@ -146,7 +148,7 @@ export const blogs = [
     date: "Apr 5, 2025",
     excerpt:
       "Learn how to create visually stunning designs that remain functional, ensuring user needs are met without compromising aesthetics.",
-    image: "/images/blog-branding.jpeg",
+    image: asset("images/blog-branding.jpeg"),
     featured: false,
     sections: [
       {
