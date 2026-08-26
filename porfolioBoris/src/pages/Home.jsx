@@ -14,11 +14,14 @@ import ContactSection from "../components/ContactSection"
 import SocialIcons from "../components/SocialIcons"
 import { useScrollReveal } from "../hooks/useScrollReveal"
 import { useGsapRefresh } from "../hooks/useGsapRefresh"
+import { usePrintCardScroll } from "../hooks/usePrintCardScroll"
+import HeroMedia from "../scene/HeroMedia"
 
 const HOME_FEATURED = projects.slice(0, 4)
 
 export default function Home() {
   const heroRef = useRef(null)
+  const printsRef = useRef(null)
   const whoRef = useScrollReveal()
   const aboutRef = useScrollReveal()
   const portRef = useScrollReveal()
@@ -27,6 +30,7 @@ export default function Home() {
   const blogsRef = useScrollReveal()
 
   useGsapRefresh([])
+  usePrintCardScroll(printsRef)
 
   useLayoutEffect(() => {
     const root = heroRef.current
@@ -39,9 +43,10 @@ export default function Home() {
         console.info("[hero] [data-hero]:", lines.length, "| [data-parallax]:", root.querySelectorAll("[data-parallax]").length)
       }
 
+      const light = window.matchMedia("(max-width: 767px)").matches
       gsap.fromTo(
         lines,
-        { y: 64, autoAlpha: 0, scale: 0.92 },
+        { y: light ? 28 : 64, autoAlpha: 0, scale: light ? 1 : 0.92 },
         {
           y: 0,
           autoAlpha: 1,
@@ -78,32 +83,26 @@ export default function Home() {
 
   return (
     <>
-      <section ref={heroRef} className="relative overflow-hidden pb-16 pt-32 md:pb-24 md:pt-40">
+      <div ref={printsRef}>
+      <section ref={heroRef} data-print-hero className="relative overflow-x-clip pb-16 pt-32 md:pb-24 md:pt-40">
         <div className="site-wrap grid items-center gap-8 lg:grid-cols-[1fr_auto_1fr]">
           <div className="text-center lg:text-left" data-parallax="-36">
             <p data-hero className="font-display text-[22px] uppercase tracking-wide md:text-[32px]" style={{ color: "var(--fg-soft)" }}>
               {content.hero.name}
             </p>
-            <h1 data-hero className="mt-2 font-display text-[72px] font-bold uppercase leading-[0.95] tracking-[-0.03em] md:text-[120px] md:leading-[0.95]">
+            <h1 data-hero className="mt-2 font-display text-[clamp(56px,16vw,72px)] font-bold uppercase leading-[0.95] tracking-[-0.03em] md:text-[120px] md:leading-[0.95]">
               {content.hero.wordLeft}
             </h1>
           </div>
 
-          <div data-hero className="relative mx-auto w-[min(340px,70vw)]">
-            <div data-parallax="28" className="relative">
-              <img
-                src={content.images.heroFront}
-                alt="Portrait of portfolio creator"
-                className="aspect-[4/5] w-full rounded-[32px] object-cover"
-              />
-              <div className="wave-orb absolute -left-4 bottom-8 grid h-[72px] w-[72px] place-items-center overflow-hidden rounded-full bg-[var(--color-accent)] shadow-lg md:-left-6 md:h-20 md:w-20">
-                <img src={content.images.wave} alt="" className="h-10 w-10 object-contain" />
-              </div>
+          <div data-hero className="print-card relative mx-auto w-full max-w-[380px] lg:w-[min(340px,70vw)]">
+            <div data-print="leave" className="print-card-face relative">
+              <HeroMedia src={content.images.heroFront} alt="Portrait of portfolio creator" />
             </div>
           </div>
 
           <div className="text-center lg:text-left" data-parallax="-24">
-            <h2 data-hero className="font-display text-[72px] font-bold uppercase leading-[0.95] tracking-[-0.03em] md:text-[120px] md:leading-[0.95]">
+            <h2 data-hero className="font-display text-[clamp(56px,16vw,72px)] font-bold uppercase leading-[0.95] tracking-[-0.03em] md:text-[120px] md:leading-[0.95]">
               {content.hero.wordRight}
             </h2>
             <p data-hero className="mt-4 max-w-[340px] text-[18px] font-light leading-[1.5] lg:ml-auto">
@@ -124,13 +123,14 @@ export default function Home() {
               <ServicesAccordion services={content.services} />
             </div>
           </div>
-          <div data-reveal className="mx-auto w-full max-w-[460px]">
-            <img
-              src={content.images.heroBack}
-              alt="Portrait — back view"
-              className="aspect-[4/5] w-full rounded-[36px] object-cover"
-              style={{ transform: "rotate(6deg)" }}
-            />
+          <div className="print-card mx-auto w-full max-w-[460px]">
+            <div data-print="verso" className="print-card-face">
+              <img
+                src={content.images.heroBack}
+                alt="Portrait — back view"
+                className="aspect-[4/5] w-full rounded-[36px] object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -142,7 +142,7 @@ export default function Home() {
               {content.about.title}
             </h2>
             <p className="mt-5 max-w-[520px] text-[18px] font-light leading-[1.5]">{content.about.body}</p>
-            <div className="mt-10 grid grid-cols-3 gap-4">
+            <div className="mt-10 grid grid-cols-3 gap-2 md:gap-4">
               {content.stats.map((s) => (
                 <StatsCounter key={s.label} {...s} accent />
               ))}
@@ -170,16 +170,18 @@ export default function Home() {
               {content.about.cta}
             </Link>
           </div>
-          <div data-reveal className="mx-auto w-full max-w-[460px]">
-            <img
-              src={content.images.about}
-              alt="Portrait"
-              className="aspect-[4/5] w-full rounded-[36px] object-cover"
-              style={{ transform: "rotate(-4deg)" }}
-            />
+          <div className="print-card mx-auto w-full max-w-[460px]">
+            <div data-print="oblique" className="print-card-face">
+              <img
+                src={content.images.about}
+                alt="Portrait"
+                className="aspect-[4/5] w-full rounded-[36px] object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>
+      </div>
 
       <section ref={portRef} className="py-20 md:py-28">
         <div className="site-wrap">

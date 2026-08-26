@@ -25,8 +25,12 @@ export default function TestimonialsSlider() {
   return (
     <div>
       <div className="grid gap-5 lg:grid-cols-3">
-        {pair.map((t) => (
-          <article key={t.name} className="rounded-[28px] p-6" style={{ background: "var(--card)" }}>
+        {pair.map((t, i) => (
+          <article
+            key={t.name}
+            className={`rounded-[28px] p-6 ${i === 1 ? "hidden lg:block" : ""}`}
+            style={{ background: "var(--card)" }}
+          >
             <Stars />
             <p className="text-[14px] font-light leading-[1.5]">{t.quote}</p>
             <div className="mt-6 flex items-center gap-3">

@@ -15,7 +15,7 @@ export default function About() {
       <section ref={heroRef} className="pb-16 pt-36 md:pt-44">
         <div className="site-wrap grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
           <div data-reveal>
-            <h1 className="font-display text-[52px] font-bold uppercase leading-[1.1] md:text-[72px]">
+            <h1 className="font-display text-[clamp(36px,11vw,52px)] font-bold uppercase leading-[1.1] md:text-[72px]">
               {content.aboutPage.title}
             </h1>
             <p className="mt-4 font-display text-[28px] uppercase">{content.aboutPage.name}</p>

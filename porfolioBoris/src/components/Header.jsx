@@ -2,6 +2,8 @@ import { Link, NavLink, useLocation, useNavigate } from "react-router-dom"
 import { useEffect, useState } from "react"
 import { content } from "../data/content"
 import { asset } from "../lib/asset"
+import { scrollToTarget } from "../lib/scroll"
+import ThemeToggle from "./ThemeToggle"
 
 function NavItem({ to, label, onClick }) {
   return (
@@ -39,7 +41,8 @@ export default function Header() {
       navigate("/#contact")
       return
     }
-    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
+    const el = document.getElementById("contact")
+    if (el) scrollToTarget(el)
   }
 
   return (
@@ -65,7 +68,7 @@ export default function Header() {
           ))}
         </nav>
         {scrolled ? (
-          <a href={asset("#contact")} onClick={goContact} className="flex items-center gap-2 pr-3 pl-1">
+          <a href={asset("#contact")} onClick={goContact} className="hidden items-center gap-2 pr-3 pl-1 md:flex">
             <span className="text-[15px] font-light" style={{ color: "var(--fg)" }}>
               Disponible
             </span>
@@ -81,17 +84,18 @@ export default function Header() {
             Contact
           </a>
         )}
+        <ThemeToggle placement="header" />
         <button
           type="button"
-          className="mr-1 grid h-9 w-9 place-items-center rounded-full md:hidden"
+          className="mr-1 grid h-11 w-11 place-items-center rounded-full md:hidden"
           style={{ color: "var(--fg)" }}
           aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
           onClick={() => setOpen((v) => !v)}
         >
           <span className="sr-only">Menu</span>
-          <span className="flex flex-col gap-1.5">
-            <span className="block h-px w-4" style={{ background: "var(--fg)" }} />
-            <span className="block h-px w-4" style={{ background: "var(--fg)" }} />
+          <span className="flex flex-col gap-[5px]">
+            <span className="block h-[1.5px] w-5" style={{ background: "var(--fg)" }} />
+            <span className="block h-[1.5px] w-5" style={{ background: "var(--fg)" }} />
           </span>
         </button>
       </div>

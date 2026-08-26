@@ -44,12 +44,12 @@ export default function StatsCounter({ value, suffix = "", label, accent = false
     <div ref={wrapRef}>
       <p
         ref={numRef}
-        className="font-display text-[48px] font-bold leading-none md:text-[60px]"
+        className="font-display text-[36px] font-bold leading-none md:text-[60px]"
         style={{ color: inverse ? "#fff" : accent ? "var(--stat)" : "var(--fg)" }}
       >
         0{suffix}
       </p>
-      <p className="mt-2 text-[16px] font-semibold leading-[1.3]" style={{ color: inverse ? "#fff" : undefined }}>
+      <p className="mt-2 text-[12px] font-semibold leading-[1.3] text-balance md:text-[16px]" style={{ color: inverse ? "#fff" : undefined }}>
         {label}
       </p>
     </div>

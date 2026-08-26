@@ -5,7 +5,6 @@ const IMG = {
   heroFront: asset("images/hero-front.jpeg"),
   heroBack: asset("images/hero-back.jpeg"),
   about: asset("images/about.jpeg"),
-  wave: asset("images/wave.gif"),
   logo: asset("images/logo.png"),
 }
 

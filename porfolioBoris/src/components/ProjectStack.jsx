@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import { gsap, prefersReducedMotion, SCROLL_DEBUG, scheduleScrollRefresh } from "../lib/gsap"
 import ProjectCard from "./ProjectCard"
 import { content } from "../data/content"
+import { stackFront, stackInPile, stackPeel, STACK_TWEEN } from "../scene/stackMotion"
 
 /** Carousel simple (mobile + page Projects) */
 function ProjectCarousel({ projects, showCta }) {
@@ -14,24 +15,29 @@ function ProjectCarousel({ projects, showCta }) {
     <div className="relative">
       <div className="relative mx-auto max-w-[980px]">
         <div
-          className="absolute inset-x-6 -top-3 h-[72%] rounded-[32px] opacity-50"
+          className="absolute inset-x-3 -top-3 h-[72%] rounded-[28px] opacity-50 md:inset-x-6 md:rounded-[32px]"
           style={{ background: "var(--card)" }}
         />
         <ProjectCard project={current} variant="stack" />
       </div>
-      <div className="mt-6 flex items-center justify-center gap-2">
+      <div className="mt-6 flex items-center justify-center gap-1">
         {projects.map((p, i) => (
           <button
             key={p.slug}
             type="button"
             aria-label={`Projet ${i + 1}`}
             onClick={() => setIndex(i)}
-            className="h-2 rounded-full transition-all duration-300"
-            style={{
-              width: i === index ? 22 : 8,
-              background: i === index ? "var(--fg)" : "var(--line)",
-            }}
-          />
+            className="grid h-11 w-11 place-items-center"
+          >
+            <span
+              className="h-2 rounded-full transition-all duration-300"
+              style={{
+                width: i === index ? 22 : 8,
+                display: "block",
+                background: i === index ? "var(--fg)" : "var(--line)",
+              }}
+            />
+          </button>
         ))}
       </div>
       {showCta && (
@@ -80,21 +86,22 @@ function ProjectScrollStack({ projects, showCta }) {
       cards.forEach((card, i) => {
         gsap.set(card, {
           zIndex: projects.length - i,
-          scale: i === 0 ? 1 : 0.9 - i * 0.02,
-          opacity: i === 0 ? 1 : Math.max(0.45, 0.68 - i * 0.1),
-          y: i * 16,
-          transformOrigin: "center top",
+          force3D: true,
+          transformOrigin: STACK_TWEEN.transformOrigin,
+          ...(i === 0 ? stackFront() : stackInPile(i)),
         })
       })
 
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: section,
-          start: "top top",
+          start: "center center",
           end: `+=${Math.max(1, projects.length - 1) * 80}%`,
           pin: true,
+          pinSpacing: true,
           scrub: 0.55,
           anticipatePin: 1,
+          invalidateOnRefresh: true,
           markers: SCROLL_DEBUG,
           onUpdate: (self) => {
             const idx = Math.min(
@@ -107,27 +114,15 @@ function ProjectScrollStack({ projects, showCta }) {
       })
 
       for (let i = 0; i < cards.length - 1; i++) {
-        tl.to(
-          cards[i],
-          {
-            scale: 0.84,
-            opacity: 0,
-            y: -64,
-            duration: 1,
-            ease: "framerEase",
-          },
-          i,
-        ).to(
+        tl.to(cards[i], { ...stackPeel(i), ...STACK_TWEEN }, i).to(
           cards[i + 1],
-          {
-            scale: 1,
-            opacity: 1,
-            y: 0,
-            duration: 1,
-            ease: "framerEase",
-          },
+          { ...stackFront(), ...STACK_TWEEN },
           i,
         )
+
+        for (let k = i + 2; k < cards.length; k++) {
+          tl.to(cards[k], { ...stackInPile(k - i - 1), ...STACK_TWEEN }, i)
+        }
       }
     }, section)
 
@@ -146,7 +141,7 @@ function ProjectScrollStack({ projects, showCta }) {
     <div ref={sectionRef} className="relative">
       <div
         ref={stageRef}
-        className="relative mx-auto h-[min(620px,78vh)] w-full max-w-[980px]"
+        className="stack-stage relative mx-auto h-[min(620px,78vh)] w-full max-w-[980px]"
       >
         {projects.map((project) => (
           <div

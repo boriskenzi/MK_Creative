@@ -9,7 +9,7 @@ export default function Blogs() {
   return (
     <section className="pb-24 pt-36 md:pt-44">
       <div className="site-wrap">
-        <h1 className="font-display text-[52px] font-bold uppercase leading-[1.1] md:text-[72px]">
+        <h1 className="font-display text-[clamp(36px,11vw,52px)] font-bold uppercase leading-[1.1] md:text-[72px]">
           {content.blogsPreview.title}
         </h1>
         <p className="mt-4 max-w-[640px] text-[18px] font-light leading-[1.5]">{content.blogsPreview.intro}</p>

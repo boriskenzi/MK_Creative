@@ -28,7 +28,7 @@ export default function BlogDetail() {
           <span style={{ color: "var(--color-accent)" }}>{blog.category}</span>
           <span>{blog.date}</span>
         </p>
-        <h1 className="mt-3 font-display text-[42px] font-bold uppercase leading-[1.1] md:text-[64px]">
+        <h1 className="mt-3 font-display text-[clamp(32px,10vw,42px)] font-bold uppercase leading-[1.1] md:text-[64px]">
           {blog.title}
         </h1>
         <p className="mt-4 text-[18px] font-light leading-[1.55]">{blog.excerpt}</p>

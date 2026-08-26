@@ -22,7 +22,7 @@ export default function ProjectDetail() {
         <p className="text-[14px] font-light" style={{ color: "var(--color-accent)" }}>
           {project.category}
         </p>
-        <h1 className="mt-3 font-display text-[42px] font-bold uppercase leading-[1.1] md:text-[72px]">
+        <h1 className="mt-3 font-display text-[clamp(32px,10vw,42px)] font-bold uppercase leading-[1.1] md:text-[72px]">
           {project.title}
         </h1>
         <p className="mt-4 max-w-[680px] text-[18px] font-light leading-[1.55]">{project.description}</p>

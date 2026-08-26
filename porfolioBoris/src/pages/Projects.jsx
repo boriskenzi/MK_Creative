@@ -16,7 +16,7 @@ export default function Projects() {
     <section className="pb-24 pt-36 md:pt-44">
       <div className="site-wrap">
         <div ref={heroRef}>
-          <h1 data-reveal className="font-display text-[52px] font-bold uppercase leading-[1.1] md:text-[72px]">
+          <h1 data-reveal className="font-display text-[clamp(36px,11vw,52px)] font-bold uppercase leading-[1.1] md:text-[72px]">
             {content.projectsPage.title}
           </h1>
           <p data-reveal className="mt-4 max-w-[640px] text-[18px] font-light leading-[1.5]">

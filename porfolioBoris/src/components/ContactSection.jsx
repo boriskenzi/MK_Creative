@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { content } from "../data/content"
+import GreetingOrb from "./GreetingOrb"
 
 const empty = { name: "", email: "", service: "", message: "" }
 
@@ -43,13 +44,11 @@ export default function ContactSection() {
             alt="Portrait"
             className="aspect-[4/5] w-full rounded-[36px] object-cover"
           />
-          <div className="absolute -left-3 bottom-10 grid h-20 w-20 place-items-center rounded-full bg-[var(--color-accent)] font-sans text-[32px] text-white shadow-lg md:h-24 md:w-24 md:text-[40px]">
-            Hi
-          </div>
+          <GreetingOrb size="lg" className="absolute left-3 bottom-8 md:-left-3 md:bottom-10" />
         </div>
 
         <div>
-          <h2 className="font-display text-[42px] font-bold uppercase leading-[1.15] md:text-[60px]">
+          <h2 className="font-display text-[36px] font-bold uppercase leading-[1.15] md:text-[60px]">
             {content.contact.title}
           </h2>
           <p className="mt-4 max-w-[520px] text-[18px] font-light leading-[1.5]">{content.contact.intro}</p>
