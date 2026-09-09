@@ -5,7 +5,7 @@ import { scheduleScrollRefresh } from "../lib/gsap"
 
 const CARD = { w: 1.72, h: 2.15, d: 0.05, radius: 0.1 }
 const PRINT = [1.7, 2.125]
-const ACCENT = "#5e67e6"
+const ACCENT = "#9008b1"
 
 function lerp(a, b, t) {
   return a + (b - a) * t
@@ -16,7 +16,7 @@ function HeroCard({ src, pointer, theme }) {
   const print = useRef(null)
   const shade = useRef(null)
 
-  const paper = theme === "dark" ? "#141416" : "#ffffff"
+  const paper = theme === "dark" ? "#1e1d1b" : "#ffffff"
   const idle = useRef({ x: 0, y: 0 })
 
   useFrame((state) => {
@@ -25,12 +25,12 @@ function HeroCard({ src, pointer, theme }) {
 
     const p = pointer.current
     const t = state.clock.elapsedTime
-    idle.current.y = Math.sin(t * 0.32) * 0.038
-    idle.current.x = Math.sin(t * 0.24) * 0.02
+    idle.current.y = Math.sin(t * 0.28) * 0.022
+    idle.current.x = Math.sin(t * 0.2) * 0.012
 
-    const targetY = p.active ? p.x * 0.34 : idle.current.y
-    const targetX = p.active ? p.y * -0.24 : idle.current.x
-    const targetZ = p.active ? 0.1 : Math.sin(t * 0.4) * 0.03
+    const targetY = p.active ? p.x * 0.18 : idle.current.y
+    const targetX = p.active ? p.y * -0.12 : idle.current.x
+    const targetZ = p.active ? 0.06 : Math.sin(t * 0.35) * 0.018
 
     g.rotation.y = lerp(g.rotation.y, targetY, 0.1)
     g.rotation.x = lerp(g.rotation.x, targetX, 0.1)
@@ -58,7 +58,7 @@ function HeroCard({ src, pointer, theme }) {
     <group>
       <mesh ref={shade} position={[0.08, -0.1, -0.12]} scale={[1.02, 1.02, 1]}>
         <planeGeometry args={[CARD.w, CARD.h]} />
-        <meshBasicMaterial color="#000000" transparent opacity={0.16} depthWrite={false} />
+        <meshBasicMaterial color="#1e1d1b" transparent opacity={0.16} depthWrite={false} />
       </mesh>
 
       <group ref={group}>
@@ -107,7 +107,7 @@ export default function HeroPortrait({ src, playing, theme = "light", pointer })
         powerPreference: "high-performance",
         stencil: false,
       }}
-      camera={{ position: [0, 0, 4.05], fov: 32, near: 0.1, far: 20 }}
+      camera={{ position: [0, 0, 4.85], fov: 28, near: 0.1, far: 20 }}
       onCreated={({ gl }) => {
         gl.setClearColor(0x000000, 0)
         scheduleScrollRefresh()

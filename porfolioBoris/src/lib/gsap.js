@@ -57,7 +57,7 @@ export function logMotionStatus() {
   console.info(
     `%c[MK Portfolio] GSAP ${reduced ? "OFF (?reduced)" : "ON"}%c · triggers=${count} · [data-reveal]=${reveals}` +
       (osReduced ? " · OS prefers-reduced-motion (CSS loops paused, GSAP plays)" : ""),
-    reduced ? "color:#c45;font-weight:bold" : "color:#5e67e6;font-weight:bold",
+    reduced ? "color:#c45;font-weight:bold" : "color:#9008b1;font-weight:bold",
     "color:inherit",
   )
 

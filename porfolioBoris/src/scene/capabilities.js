@@ -1,6 +1,6 @@
 import { prefersReducedMotion } from "../lib/gsap"
 
-/** Aligné sur le carousel de ProjectStack. */
+/** 3D WebGL et tilt : desktop seulement. */
 export const DESKTOP_3D_MIN = 768
 
 let webglMemo = null

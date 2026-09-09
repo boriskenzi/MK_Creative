@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="bg-[var(--color-accent)] text-white">
       <div className="site-wrap py-10">
         <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-          <p className="text-[15px] font-light">
+          <p className="break-all text-[15px] font-light">
             Email:{" "}
             <a href={`mailto:${content.email}`} className="font-semibold">
               {content.email}
@@ -19,7 +19,7 @@ export default function Footer() {
               {content.phone}
             </a>
           </p>
-          <div className="[&_a]:border-white/30 [&_a]:text-white">
+          <div className="text-white">
             <SocialIcons items={content.socials} className="" />
           </div>
         </div>

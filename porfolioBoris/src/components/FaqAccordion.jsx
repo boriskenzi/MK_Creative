@@ -9,19 +9,19 @@ export default function FaqAccordion({ items }) {
       {items.map((item, i) => {
         const active = open === i
         return (
-          <li key={item.question} className="border-b" style={{ borderColor: "var(--line)" }}>
+          <li key={item.question}>
             <button
               type="button"
               onClick={() => setOpen(active ? -1 : i)}
-              className="flex w-full items-start justify-between gap-6 py-6 text-left"
+              className="flex w-full items-start justify-between gap-4 py-4 text-left md:gap-6 md:py-6"
             >
-              <span className="flex gap-4">
-                <span className="font-display text-[28px] md:text-[32px]">{String(i + 1).padStart(1, "0")}.</span>
-                <span className="font-display text-[22px] uppercase leading-[1.3] md:text-[32px]">
+              <span className="flex min-w-0 gap-3 md:gap-4">
+                <span className="font-display text-[20px] md:text-[32px]">{String(i + 1).padStart(1, "0")}.</span>
+                <span className="font-display text-[18px] uppercase leading-[1.3] md:text-[32px]">
                   {item.question}
                 </span>
               </span>
-              {active ? <Minus className="mt-2 h-5 w-5 shrink-0" /> : <Plus className="mt-2 h-5 w-5 shrink-0" />}
+              {active ? <Minus className="mt-1 h-5 w-5 shrink-0 md:mt-2" /> : <Plus className="mt-1 h-5 w-5 shrink-0 md:mt-2" />}
             </button>
             <div
               className="grid transition-[grid-template-rows] duration-300 ease-out"

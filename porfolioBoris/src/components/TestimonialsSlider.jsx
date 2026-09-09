@@ -33,16 +33,13 @@ export default function TestimonialsSlider() {
           >
             <Stars />
             <p className="text-[14px] font-light leading-[1.5]">{t.quote}</p>
-            <div className="mt-6 flex items-center gap-3">
-              <img src={t.avatar} alt={t.name} className="h-10 w-10 rounded-full object-cover" />
-              <div>
-                <p className="text-[14px] font-semibold leading-none">{t.name}</p>
-                <p className="mt-1 text-[14px] font-light">{t.role}</p>
-              </div>
+            <div className="mt-6">
+              <p className="text-[14px] font-semibold leading-none">{t.name}</p>
+              <p className="mt-1 text-[14px] font-light">{t.role}</p>
             </div>
           </article>
         ))}
-        <article className="rounded-[28px] p-6 text-white" style={{ background: "#111111" }}>
+        <article className="rounded-[28px] p-6 text-white" style={{ background: "var(--color-ink)" }}>
           <p className="text-[14px] font-light leading-[1.5]">{highlight.kicker}</p>
           <div className="mt-6">
             <StatsCounter value={highlight.value} suffix={highlight.suffix} label={highlight.label} inverse />
@@ -54,7 +51,7 @@ export default function TestimonialsSlider() {
           type="button"
           aria-label="Précédent"
           onClick={() => setIndex((i) => (i - 1 + items.length) % items.length)}
-          className="grid h-10 w-10 place-items-center rounded-full border"
+          className="grid h-11 w-11 place-items-center rounded-full border"
           style={{ borderColor: "var(--line)" }}
         >
           <ChevronLeft className="h-4 w-4" />
@@ -63,7 +60,7 @@ export default function TestimonialsSlider() {
           type="button"
           aria-label="Suivant"
           onClick={() => setIndex((i) => (i + 1) % items.length)}
-          className="grid h-10 w-10 place-items-center rounded-full border"
+          className="grid h-11 w-11 place-items-center rounded-full border"
           style={{ borderColor: "var(--line)" }}
         >
           <ChevronRight className="h-4 w-4" />

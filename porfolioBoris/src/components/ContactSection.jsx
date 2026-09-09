@@ -1,6 +1,5 @@
 import { useState } from "react"
 import { content } from "../data/content"
-import GreetingOrb from "./GreetingOrb"
 
 const empty = { name: "", email: "", service: "", message: "" }
 
@@ -21,7 +20,7 @@ export default function ContactSection() {
       "",
       `Nom: ${form.name}`,
       `Email: ${form.email}`,
-      `Service: ${form.service || "—"}`,
+      `Service: ${form.service || "Non précisé"}`,
       `Message: ${form.message}`,
     ].join("\n")
     const url = `https://wa.me/${content.whatsappNumber}?text=${encodeURIComponent(text)}`
@@ -32,26 +31,25 @@ export default function ContactSection() {
   }
 
   const field =
-    "w-full rounded-2xl border-0 px-4 py-3.5 text-[15px] font-light outline-none"
+    "w-full rounded-2xl border-0 px-4 py-3.5 text-[16px] font-light outline-none"
   const label = "mb-1.5 block text-[13px] font-light"
 
   return (
-    <section id="contact" className="py-24 md:py-32" style={{ background: "var(--card)" }}>
-      <div className="site-wrap grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
-        <div className="relative mx-auto w-full max-w-[420px]">
+    <section id="contact" className="py-16 md:py-32" style={{ background: "var(--card)" }}>
+      <div className="site-wrap grid items-center gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-12">
+        <div className="relative mx-auto order-2 w-[min(64vw,220px)] lg:order-1 lg:w-full lg:max-w-[420px]">
           <img
             src={content.images.about}
             alt="Portrait"
-            className="aspect-[4/5] w-full rounded-[36px] object-cover"
+            className="aspect-[4/5] w-full rounded-[28px] object-cover md:rounded-[36px]"
           />
-          <GreetingOrb size="lg" className="absolute left-3 bottom-8 md:-left-3 md:bottom-10" />
         </div>
 
-        <div>
-          <h2 className="font-display text-[36px] font-bold uppercase leading-[1.15] md:text-[60px]">
+        <div className="order-1 lg:order-2">
+          <h2 className="font-display text-[32px] font-bold uppercase leading-[1.15] md:text-[60px]">
             {content.contact.title}
           </h2>
-          <p className="mt-4 max-w-[520px] text-[18px] font-light leading-[1.5]">{content.contact.intro}</p>
+          <p className="mt-4 max-w-[520px] text-[16px] font-light leading-[1.55] md:text-[18px]">{content.contact.intro}</p>
 
           <form onSubmit={onSubmit} className="mt-8 grid gap-4">
             <div className="grid gap-4 sm:grid-cols-2">
@@ -64,6 +62,7 @@ export default function ContactSection() {
                   value={form.name}
                   onChange={onChange}
                   placeholder="Votre nom"
+                  autoComplete="name"
                   className={field}
                   style={{ background: "var(--bg)", color: "var(--fg)" }}
                 />
@@ -78,6 +77,7 @@ export default function ContactSection() {
                   value={form.email}
                   onChange={onChange}
                   placeholder="vous@email.com"
+                  autoComplete="email"
                   className={field}
                   style={{ background: "var(--bg)", color: "var(--fg)" }}
                 />
@@ -122,8 +122,8 @@ export default function ContactSection() {
             <button
               type="submit"
               disabled={!valid}
-              className="mt-2 w-full rounded-full border px-6 py-3.5 font-display text-[16px] uppercase tracking-wide disabled:opacity-40"
-              style={{ borderColor: "var(--color-accent)", color: "var(--color-accent)", background: "var(--bg)" }}
+              className="mt-2 min-h-12 w-full rounded-full px-6 py-3.5 font-display text-[16px] uppercase tracking-wide disabled:opacity-40"
+              style={{ background: "var(--inverse)", color: "var(--inverse-fg)" }}
             >
               {content.contact.submit}
             </button>
@@ -139,10 +139,12 @@ export default function ContactSection() {
               <a href={content.phoneHref} style={{ color: "var(--color-accent)" }}>
                 {content.phone}
               </a>
-              {" / "}
-              <a href={content.phoneAltHref}>{content.phoneAlt}</a>
+              <span className="block sm:inline">
+                {" / "}
+                <a href={content.phoneAltHref}>{content.phoneAlt}</a>
+              </span>
             </p>
-            <p>
+            <p className="break-all">
               <span className="font-semibold">{content.about.emailLabel}</span>{" "}
               <a href={`mailto:${content.email}`}>{content.email}</a>
             </p>

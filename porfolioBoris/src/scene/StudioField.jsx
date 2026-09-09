@@ -2,7 +2,7 @@ import { useMemo, useRef } from "react"
 import { Canvas, useFrame } from "@react-three/fiber"
 import { scrollSignal } from "../lib/scroll"
 
-const ACCENT = "#5e67e6"
+const ACCENT = "#9008b1"
 
 function lerp(a, b, t) {
   return a + (b - a) * t

@@ -78,8 +78,8 @@ export default function SocialIcons({ items, className = "mt-6" }) {
             target="_blank"
             rel="noreferrer"
             aria-label={s.name}
-            className="grid h-10 w-10 place-items-center rounded-full border transition-transform duration-300 hover:-translate-y-0.5"
-            style={{ borderColor: "var(--line)", color: "var(--fg)" }}
+            className="grid h-11 w-11 place-items-center rounded-full border text-current transition-transform duration-300 hover:-translate-y-0.5"
+            style={{ borderColor: "color-mix(in srgb, currentColor 28%, transparent)" }}
           >
             {Icon ? <Icon /> : s.name[0]}
           </a>

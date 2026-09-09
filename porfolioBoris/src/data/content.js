@@ -1,7 +1,7 @@
 import { asset } from "../lib/asset"
 
 const IMG = {
-  avatar: asset("images/avatar.jpeg"),
+  avatar: asset("images/avatar-menu.jpg"),
   heroFront: asset("images/hero-front.jpeg"),
   heroBack: asset("images/hero-back.jpeg"),
   about: asset("images/about.jpeg"),
@@ -20,10 +20,9 @@ export const content = {
   city: "Ouagadougou, Burkina Faso",
   images: IMG,
   nav: [
-    { label: "Home", to: "/" },
-    { label: "About", to: "/about" },
-    { label: "Projects", to: "/projects" },
-    { label: "Blogs", to: "/blogs" },
+    { label: "Accueil", to: "/" },
+    { label: "À propos", to: "/about" },
+    { label: "Tarifs", to: "/tarifs" },
   ],
   socials: [
     { name: "Instagram", href: "https://www.instagram.com/i.am.mr.kenzi/" },
@@ -37,51 +36,51 @@ export const content = {
     greeting: "Hi",
     name: "MK CREATIVE",
     wordLeft: "STUDIO",
-    wordRight: "DESIGNER",
+    wordRight: "Brand Design",
+    wordRightSub: "Photographie et Vidéographie",
     tagline:
       "Je suis Mr Kenzi, brand designer senior avec +7 ans d’expérience, également photographe et vidéaste.",
     bio: "Je suis Mr Kenzi, brand designer senior avec plus de 7 ans d’expérience, également photographe et vidéaste.",
   },
   who: {
     title: "Qui suis-je ?",
-    body: "Je suis Mr Kenzi, brand designer senior avec plus de 7 ans d’expérience, également photographe et vidéaste. Basé à Ouagadougou, j’accompagne les entreprises, marques et particuliers dans la création d’identités visuelles fortes, de supports de communication percutants et de contenus visuels modernes.",
+    body: "Je suis Mr Kenzi, brand designer senior, photographe et vidéaste. J'accompagne les entreprises, marques et particuliers dans la création d'identités visuelles fortes, de supports de communication percutants et de contenus visuels modernes.",
   },
   about: {
-    title: "À propos de moi",
-    body: "Basé à Ouagadougou (Burkina Faso), j’accompagne les entreprises, marques et particuliers dans la création d’identités visuelles fortes, de supports de communication percutants et de contenus visuels modernes. Mon objectif : valoriser l’image de mes clients et accroître leur impact grâce à la créativité, la stratégie et la qualité.",
-    cta: "Mon histoire",
+    title: "Prêt pour un projet ?",
+    body: "N'hésitez surtout pas à nous contacter ! Notre objectif est de valoriser l'image de la clientèle et d'accroître son impact grâce à la créativité, la stratégie et la qualité. Nous accompagnons les entreprises, les marques et les particuliers dans la création d'identités visuelles fortes, de supports de communication percutants et de contenus visuels.",
+    cta: "À propos",
     phoneLabel: "Appeler-moi :",
     emailLabel: "Email :",
   },
   aboutPage: {
     title: "Qui suis-je ?",
     name: "Mr Kenzi",
-    lead: "Brand designer senior avec plus de 7 ans d’expérience, également photographe et vidéaste.",
-    body: "Basé à Ouagadougou, j’accompagne les entreprises, marques et particuliers dans la création d’identités visuelles fortes, de supports de communication percutants et de contenus visuels modernes. Mon objectif est de valoriser l’image de mes clients et d’accroître leur impact grâce à la créativité, la stratégie et la qualité.",
+    lead: "Brand designer senior, photographe et vidéaste professionnel, je suis responsable de la structure MK Creative Group. J'accompagne les marques, les entreprises et les particuliers, partout dans le monde, dans la création d'identités visuelles fortes et de supports de communication percutants. Mon objectif est de valoriser l'image de mes clients et d'accroître leur impact grâce à la créativité, la stratégie et la qualité.",
   },
   servicesIntro: {
     title: "Que pouvons-nous faire pour vous ?",
-    body: "Graphisme, photographie, vidéo : je construis des images qui racontent votre marque et restent en tête.",
+    body: "Graphisme, photographie, vidéo, 3D... nous construisons des images qui racontent votre marque.",
   },
   services: [
     {
       n: "1",
-      title: "Graphisme",
+      title: "Création Graphique | Brand Design",
       items: [
-        "Identité visuelle & branding",
-        "Affiches, flyers, supports publicitaires",
-        "Logos & chartes graphiques",
-        "Impression tout support",
-        "UI & UX",
+        "Branding, logos et chartes graphiques",
+        "Affiches, flyers et supports publicitaires",
+        "Impression sur tous supports",
+        "Design d'interfaces (UI & UX)",
       ],
     },
     {
       n: "2",
       title: "Photographie",
       items: [
-        "Portrait & shooting artistique",
-        "Événementiel",
-        "Produits & mode",
+        "Portrait et shooting artistique",
+        "Événementiel / institutionnel",
+        "Produits",
+        "Etc.",
       ],
     },
     {
@@ -90,38 +89,35 @@ export const content = {
       items: [
         "Clips promotionnels",
         "Vidéos institutionnelles",
-        "Montage & storytelling visuel",
+        "Montage et storytelling visuel",
+        "Motion design",
         "Scénario",
       ],
     },
     {
       n: "4",
-      title: "Branding",
+      title: "Développement Full Stack",
       items: [
-        "Stratégie d’identité de marque",
-        "Direction artistique",
-        "Supports de communication",
-        "Contenus visuels modernes",
+        "Création de sites web modernes et sur mesure",
+        "Création d'applications",
+      ],
+    },
+    {
+      n: "5",
+      title: "AI Artist",
+      items: [
+        "Génération d'images et de vidéos IA, clips",
+        "Formation",
+        "Prompt IA",
+        "Et bien d'autres",
       ],
     },
   ],
   stats: [
     { value: 7, suffix: "+", label: "Années d'expérience" },
-    { value: 268, suffix: "+", label: "Projets réalisés" },
+    { value: 200, suffix: "+", label: "Projets réalisés" },
     { value: 50, suffix: "+", label: "Clients dans le monde" },
   ],
-  portfolio: {
-    title: "Portfolio",
-    intro:
-      "Ces projets illustrent l’alliance entre stratégie et créativité : des identités, des images et des films pensés pour valoriser une marque et augmenter son impact.",
-    cta: "Tous les projets",
-  },
-  projectsPage: {
-    title: "Projets en vedette",
-    intro:
-      "Une sélection de travaux où le design, la photo et la vidéo servent un vrai objectif de communication.",
-    more: "Plus de projets",
-  },
   testimonials: {
     title: "Ce que disent mes clients",
     intro:
@@ -129,31 +125,26 @@ export const content = {
     items: [
       {
         quote:
-          "Mr Kenzi a vraiment compris ma vision et l’a transformée en visuels percutants. Le résultat a dépassé mes attentes.",
-        name: "John Harris",
-        role: "Directeur marketing",
-        avatar: asset("images/testimonial-1.jpg"),
+          "J'aime vraiment votre équipe et l'accompagnement que vous apportez. Que Dieu vous bénisse.",
+        name: "Kabré Alidou",
+        role: "Client",
+      },
+      {
+        quote: "Équipe dynamique et professionnelle, bravo à vous.",
+        name: "Gombré Abdoul Kader",
+        role: "Client",
       },
       {
         quote:
-          "Il a pris le temps de comprendre nos objectifs et a livré un design qui parle vraiment à notre public.",
-        name: "Michael Lee",
-        role: "Product Manager",
-        avatar: asset("images/testimonial-2.jpg"),
+          "Je vous recommande, mon mariage a été couvert par votre équipe et j'ai vraiment aimé.",
+        name: "Nougtara Adèle",
+        role: "Cliente",
       },
       {
         quote:
-          "Une direction artistique nette, de la photo au montage. Notre image de marque a gagné en clarté et en force.",
-        name: "Sarah Johnson",
-        role: "CEO",
-        avatar: asset("images/testimonial-3.jpg"),
-      },
-      {
-        quote:
-          "En tant que petit entrepreneur, j’ai apprécié un process simple, humain, sans stress.",
-        name: "Laura Bennett",
-        role: "Cheffe d’entreprise",
-        avatar: asset("images/testimonial-4.jpg"),
+          "Pendant trois mois, nous avons travaillé ensemble pour booster ma boutique. J'ai vu l'impact réel sur les réseaux sociaux. Encore merci, Kenzi.",
+        name: "Traoré Aïcha",
+        role: "Cliente",
       },
     ],
     highlights: [
@@ -174,7 +165,7 @@ export const content = {
   faq: {
     title: "Questions fréquentes",
     intro:
-      "Les questions que l’on me pose le plus souvent. Si la vôtre n’est pas là, écrivez-moi — je réponds volontiers.",
+      "Les questions que l’on me pose le plus souvent. Si la vôtre n’est pas là, écrivez-moi. Je réponds volontiers.",
     items: [
       {
         question: "Quels services proposes-tu ?",
@@ -184,7 +175,7 @@ export const content = {
       {
         question: "Comment se passe un projet ?",
         answer:
-          "On commence par comprendre votre marque, vos objectifs et votre public. Ensuite : concept, production (design, shooting ou montage), allers-retours, puis livraison des fichiers prêts à l’emploi.",
+          "On commence par comprendre votre marque, vos objectifs et votre public cible (idéalement à partir d'un fichier Word détaillé transmis par le client). Nous passons ensuite à la conception ou à la production, puis nous revenons vers vous avec une proposition pour validation, avant la livraison des fichiers prêts à l'emploi. Avant tout démarrage de projet, un acompte est demandé, dont le montant varie selon chaque projet.",
       },
       {
         question: "Combien de temps dure un projet ?",
@@ -208,43 +199,35 @@ export const content = {
       },
     ],
   },
-  blogsPreview: {
-    title: "Notes & idées",
-    intro:
-      "Tendances, process créatif et regards sur le design, la photo et la vidéo — pour nourrir vos projets.",
-    cta: "Tous les articles",
-  },
   contact: {
     title: "Travaillons ensemble",
     intro:
-      "Créons quelque chose d’extraordinaire ensemble — votre marque, vos images, votre prochaine campagne.",
+      "Créons quelque chose d’extraordinaire ensemble : votre marque, vos images, votre prochaine campagne.",
     submit: "Envoyer sur WhatsApp",
-    services: ["Branding", "Graphisme", "Photographie", "Vidéo", "UI/UX"],
+    services: [
+      "Création graphique",
+      "Photographie",
+      "Vidéo",
+      "Développement Full Stack",
+      "AI Artist",
+    ],
   },
   journey: {
     title: "Mon parcours",
     intro:
-      "De photographe à fondateur de studio : un chemin mené par la direction artistique, l’image et l’envie de faire grandir les marques.",
+      "De graphiste à photographe, puis fondateur de studio : un parcours mené par la direction artistique, l'image, et l'envie de faire grandir les marques.",
     items: [
-      { role: "Fondateur", company: "MK Creative", dates: "2024 — Présent" },
-      { role: "Directeur artistique", company: "Spirit Design", dates: "2025" },
-      {
-        role: "Directeur artistique",
-        company: "Fashion Label Group",
-        dates: "2020 — 2022",
-      },
-      { role: "Directeur", company: "Lynx Photographie", dates: "2018 — 2020" },
-      {
-        role: "Freelance",
-        company: "Direction artistique & image",
-        dates: "En continu",
-      },
+      { role: "Co-fondateur, Directeur", company: "Lynx Photographie", dates: "2018 à 2020" },
+      { role: "Directeur artistique", company: "Fashion Label Group", dates: "2020 à 2022" },
+      { role: "Fondateur", company: "MK Creative", dates: "2024 - Présent" },
+      { role: "Graphiste / DA", company: "Spirit Design / Créa Studio", dates: "2025" },
+      { role: "Freelance", company: "Direction artistique & image", dates: "En continu" },
     ],
   },
   stack: {
     title: "Mes outils",
     intro:
-      "Je compose avec les outils du design, de la photo et du film. Photoshop et Illustrator pour le graphisme, Premiere et After Effects pour le mouvement, Blender pour la 3D.",
+      "Comme un couteau suisse, je m'adapte en fonction de chaque projet. Avec le temps et l'expérience, voici les outils que j'utilise le plus fréquemment :",
     items: [
       {
         name: "Photoshop",
@@ -256,36 +239,29 @@ export const content = {
       },
       {
         name: "Premiere Pro",
-        body: "Montage des clips, films institutionnels et récits visuels.",
+        body: "Montage des clips et films institutionnels.",
       },
       {
         name: "After Effects",
-        body: "Motion design, FX et habillage d’image.",
-      },
-      {
-        name: "Blender",
-        body: "3D et images de synthèse pour des univers plus profonds.",
+        body: "Motion design, FX...",
       },
       {
         name: "Lightroom",
-        body: "Développement photo, couleur et cohérence d’un shooting.",
+        body: "Traitement professionnel.",
+      },
+      {
+        name: "Blender",
+        body: "3D et animation.",
       },
     ],
   },
   education: {
     title: "Formation",
     items: [
-      {
-        title: "Master I Génie Civil (BTP)",
-        place: "Université des Technologies du Management (UTM)",
-      },
-      {
-        title: "Licence en Génie Civil (BTP)",
-        place: "Université des Technologies du Management (UTM)",
-      },
-      { title: "Bac F4 (Génie Civil)", place: "CPFP" },
-      { title: "BEPC", place: "Lycée Technique de Ouagadougou (LTO), 2015" },
-      { title: "CEP", place: "Lycée Privé La Salle Badenya" },
+      { title: "Stage à Spirit Design" },
+      { title: "Formation en informatique", place: "Ouagadougou" },
+      { title: "Formation en intelligence artificielle" },
+      { title: "Formation en audiovisuel", place: "2018 à aujourd'hui" },
     ],
   },
   process: {
@@ -319,10 +295,5 @@ export const content = {
         body: "Fichiers prêts à l’emploi, déclinaisons et conseils d’usage pour que la marque vive après le projet.",
       },
     ],
-  },
-  newsletter: {
-    title: "Recevoir des idées, chaque mois",
-    body: "Un mot court : process, images, projets en cours. Pas de spam.",
-    cta: "S’inscrire",
   },
 }

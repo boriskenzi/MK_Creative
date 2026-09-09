@@ -15,7 +15,7 @@ export default function GreetingOrb({ className = "", size = "md", toContact = f
   const location = useLocation()
   const navigate = useNavigate()
   const sizes = SIZES[size] || SIZES.md
-  const classes = `wave-orb z-[2] grid place-items-center rounded-full bg-[var(--color-accent)] font-sans font-medium text-white shadow-lg outline-none focus-visible:ring-2 focus-visible:ring-white ${sizes} ${className}`
+  const classes = `wave-orb z-[2] grid place-items-center rounded-full bg-[var(--color-accent)] font-sans font-medium shadow-lg outline-none focus-visible:ring-2 focus-visible:ring-white ${sizes} ${className}`
 
   const goContact = (event) => {
     event.preventDefault()
@@ -48,7 +48,7 @@ export default function GreetingOrb({ className = "", size = "md", toContact = f
       onClick={goContact}
       onPointerDown={(event) => event.stopPropagation()}
       className={classes}
-      aria-label="Dire bonjour — aller au contact"
+      aria-label="Dire bonjour, aller au contact"
     >
       {label}
     </a>

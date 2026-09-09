@@ -4,10 +4,7 @@ import { routerBasename } from "./lib/asset"
 import Layout from "./components/Layout"
 import Home from "./pages/Home"
 import About from "./pages/About"
-import Projects from "./pages/Projects"
-import ProjectDetail from "./pages/ProjectDetail"
-import Blogs from "./pages/Blogs"
-import BlogDetail from "./pages/BlogDetail"
+import Tarifs from "./pages/Tarifs"
 
 export default function App() {
   return (
@@ -17,10 +14,7 @@ export default function App() {
           <Route element={<Layout />}>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/projects/:slug" element={<ProjectDetail />} />
-            <Route path="/blogs" element={<Blogs />} />
-            <Route path="/blogs/:slug" element={<BlogDetail />} />
+            <Route path="/tarifs" element={<Tarifs />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Route>
         </Routes>

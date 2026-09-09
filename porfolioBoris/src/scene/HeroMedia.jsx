@@ -6,7 +6,7 @@ import GreetingOrb from "../components/GreetingOrb"
 const HeroPortrait = lazy(() => import("./HeroPortrait"))
 
 function StaticPortrait({ src, alt }) {
-  return <img src={src} alt={alt} className="aspect-[4/5] w-full rounded-[32px] object-cover" />
+  return <img src={src} alt={alt} className="aspect-[4/5] w-full rounded-[28px] object-cover md:rounded-[32px]" />
 }
 
 export default function HeroMedia({ src, alt }) {
@@ -43,7 +43,7 @@ export default function HeroMedia({ src, alt }) {
   return (
     <div
       ref={wrapRef}
-      className="hero-portrait relative aspect-[4/5] w-full"
+      className="hero-portrait relative mx-auto aspect-[4/5] w-full"
       onPointerMove={allow ? onPointerMove : undefined}
       onPointerLeave={allow ? onPointerLeave : undefined}
     >
@@ -54,7 +54,7 @@ export default function HeroMedia({ src, alt }) {
       ) : (
         <StaticPortrait src={src} alt={alt} />
       )}
-      <GreetingOrb toContact className="absolute -left-2 bottom-6 md:-left-6 md:bottom-8" />
+      <GreetingOrb toContact className="absolute bottom-3 left-0 md:-left-6 md:bottom-8" />
     </div>
   )
 }

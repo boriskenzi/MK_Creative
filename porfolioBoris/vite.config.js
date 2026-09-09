@@ -5,4 +5,9 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   base: "/MK_Creative/",
   plugins: [react(), tailwindcss()],
+  server: {
+    watch: {
+      ignored: ['**/tmp-*/**', '**/tmp-docx/**'],
+    },
+  },
 })

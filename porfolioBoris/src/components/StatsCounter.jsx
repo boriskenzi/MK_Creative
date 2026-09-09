@@ -44,7 +44,7 @@ export default function StatsCounter({ value, suffix = "", label, accent = false
     <div ref={wrapRef}>
       <p
         ref={numRef}
-        className="font-display text-[36px] font-bold leading-none md:text-[60px]"
+        className="font-display text-[28px] font-bold leading-none md:text-[60px]"
         style={{ color: inverse ? "#fff" : accent ? "var(--stat)" : "var(--fg)" }}
       >
         0{suffix}
