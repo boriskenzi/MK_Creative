@@ -45,6 +45,8 @@ html {
   /* ScrollTrigger gère le scroll — smooth casse le scrub/pin */
   scroll-behavior: auto;
   overflow-x: clip;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 html.lenis,
@@ -96,8 +98,14 @@ img {
 }
 
 .site-wrap {
-  width: min(1180px, calc(100% - 40px));
+  width: min(1180px, calc(100% - 32px));
   margin-inline: auto;
+}
+
+@media (min-width: 768px) {
+  .site-wrap {
+    width: min(1180px, calc(100% - 40px));
+  }
 }
 
 .portrait-print {
@@ -247,7 +255,7 @@ img {
 
 .journey-year {
   font-family: var(--font-display);
-  font-size: 13px;
+  font-size: 15px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--stat);
@@ -270,7 +278,7 @@ img {
 
 .journey-role {
   font-family: var(--font-display);
-  font-size: clamp(20px, 3vw, 26px);
+  font-size: clamp(22px, 5.4vw, 26px);
   line-height: 1.15;
   text-transform: uppercase;
   transition: color 0.35s cubic-bezier(0.22, 1, 0.36, 1);
@@ -278,8 +286,8 @@ img {
 
 .journey-place {
   margin-top: 0.45rem;
-  font-size: 15px;
-  font-weight: 300;
+  font-size: 16px;
+  font-weight: 400;
   color: var(--fg-soft);
 }
 
@@ -474,6 +482,23 @@ img {
 }
 
 @media (max-width: 767px) {
+  :root {
+    --fg-soft: #5c5b59;
+  }
+
+  html.dark {
+    --fg-soft: #c6c4c0;
+  }
+
+  body {
+    font-weight: 400;
+    line-height: 1.6;
+  }
+
+  .font-light {
+    font-weight: 400;
+  }
+
   .wave-orb {
     transform-style: flat;
     animation: wave-float-bob 2.8s ease-in-out infinite;

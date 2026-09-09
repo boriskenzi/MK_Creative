@@ -32,7 +32,7 @@ export default function WhatsAppFab() {
       href={`https://wa.me/${content.whatsappNumber}`}
       target="_blank"
       rel="noreferrer"
-      className="whatsapp-fab fixed right-4 z-40 inline-flex items-center gap-2 rounded-full px-4 py-3 text-[14px] font-medium text-white shadow-lg md:hidden"
+      className="whatsapp-fab fixed right-4 z-40 inline-flex items-center gap-2 rounded-full px-4 py-3 text-[15px] font-medium text-white shadow-lg md:hidden"
       style={{
         background: "var(--color-accent)",
         bottom: "max(1.25rem, env(safe-area-inset-bottom))",

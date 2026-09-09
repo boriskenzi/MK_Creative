@@ -31,8 +31,8 @@ export default function ContactSection() {
   }
 
   const field =
-    "w-full rounded-2xl border-0 px-4 py-3.5 text-[16px] font-light outline-none"
-  const label = "mb-1.5 block text-[13px] font-light"
+    "w-full rounded-2xl border-0 px-4 py-3.5 text-[16px] outline-none"
+  const label = "mb-1.5 block text-[15px] font-medium"
 
   return (
     <section id="contact" className="py-16 md:py-32" style={{ background: "var(--card)" }}>
@@ -49,7 +49,7 @@ export default function ContactSection() {
           <h2 className="font-display text-[32px] font-bold uppercase leading-[1.15] md:text-[60px]">
             {content.contact.title}
           </h2>
-          <p className="mt-4 max-w-[520px] text-[16px] font-light leading-[1.55] md:text-[18px]">{content.contact.intro}</p>
+          <p className="mt-4 max-w-[520px] text-[17px] font-light leading-[1.6] md:text-[18px]">{content.contact.intro}</p>
 
           <form onSubmit={onSubmit} className="mt-8 grid gap-4">
             <div className="grid gap-4 sm:grid-cols-2">
@@ -128,12 +128,12 @@ export default function ContactSection() {
               {content.contact.submit}
             </button>
             {status && (
-              <p className="text-sm" style={{ color: "var(--color-accent)" }}>
+              <p className="text-[15px]" style={{ color: "var(--color-accent)" }}>
                 {status}
               </p>
             )}
           </form>
-          <div className="mt-8 space-y-2 text-[15px] font-light">
+          <div className="mt-8 space-y-2 text-[16px] font-light">
             <p>
               <span className="font-semibold">{content.about.phoneLabel}</span>{" "}
               <a href={content.phoneHref} style={{ color: "var(--color-accent)" }}>

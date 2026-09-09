@@ -80,7 +80,7 @@ export default function Home() {
         <div className="site-wrap grid items-center gap-6 lg:grid-cols-[minmax(0,0.9fr)_minmax(420px,1.25fr)_minmax(0,0.9fr)] lg:gap-6 xl:gap-10">
           <div className="flex justify-center lg:justify-start" data-parallax="-36">
             <div className="w-fit text-left">
-              <p data-hero className="font-display text-[18px] uppercase leading-none tracking-[-0.03em] md:text-[32px]" style={{ color: "var(--fg-soft)" }}>
+              <p data-hero className="font-display text-[20px] uppercase leading-none tracking-[-0.03em] md:text-[32px]" style={{ color: "var(--fg-soft)" }}>
                 {content.hero.name}
               </p>
               <h1 data-hero className="mt-1 font-display text-[48px] font-bold uppercase leading-[0.92] tracking-[-0.03em] md:mt-2 md:text-[120px] md:leading-[0.95]">
@@ -100,7 +100,7 @@ export default function Home() {
               <h2 data-hero className="font-display text-[32px] font-bold uppercase leading-[0.92] tracking-[-0.03em] md:text-[72px] lg:text-[80px]">
                 {content.hero.wordRight}
               </h2>
-              <p data-hero className="mt-2 font-display text-[13px] uppercase leading-[1.25] tracking-[0.04em] md:mt-3 md:text-[20px]" style={{ color: "var(--fg-soft)" }}>
+              <p data-hero className="mt-2 font-display text-[17px] uppercase leading-[1.3] tracking-[0.04em] md:mt-3 md:text-[20px]" style={{ color: "var(--fg-soft)" }}>
                 {content.hero.wordRightSub}
               </p>
             </div>
@@ -115,7 +115,7 @@ export default function Home() {
               <h2 className="font-display text-[36px] font-bold uppercase leading-[1.15] md:text-[60px]">
                 {content.who.title}
               </h2>
-              <p className="mt-4 max-w-[540px] text-[16px] font-light leading-[1.55] md:mt-5 md:text-[18px]">{content.who.body}</p>
+              <p className="mt-4 max-w-[540px] text-[17px] font-light leading-[1.6] md:mt-5 md:text-[18px]">{content.who.body}</p>
             </div>
             <div data-reveal className="order-3 mt-8">
               <ServicesAccordion services={content.services} />
@@ -140,7 +140,7 @@ export default function Home() {
               <h2 className="font-display text-[36px] font-bold uppercase leading-[1.15] md:text-[60px]">
                 {content.about.title}
               </h2>
-              <p className="mt-4 max-w-[560px] text-[16px] font-light leading-[1.55] md:mt-5 md:text-[18px]">{content.about.body}</p>
+              <p className="mt-4 max-w-[560px] text-[17px] font-light leading-[1.6] md:mt-5 md:text-[18px]">{content.about.body}</p>
             </div>
             <div data-reveal className="order-3 mt-8">
               <div className="grid grid-cols-3 gap-2 md:gap-4">
@@ -148,7 +148,7 @@ export default function Home() {
                   <StatsCounter key={s.label} {...s} accent />
                 ))}
               </div>
-              <div className="mt-8 space-y-2 text-[15px] md:mt-10 md:space-y-3 md:text-[16px]">
+              <div className="mt-8 space-y-2 text-[16px] md:mt-10 md:space-y-3">
                 <p>
                   <span className="font-semibold">{content.about.phoneLabel}</span>{" "}
                   <a href={content.phoneHref} style={{ color: "var(--color-accent)" }}>
@@ -193,7 +193,7 @@ export default function Home() {
             <h2 className="font-display text-[36px] font-bold uppercase leading-[1.15] md:text-[60px]">
               {content.testimonials.title}
             </h2>
-            <p className="mt-4 text-[16px] font-light leading-[1.55] md:text-[18px]">{content.testimonials.intro}</p>
+            <p className="mt-4 text-[17px] font-light leading-[1.6] md:text-[18px]">{content.testimonials.intro}</p>
           </div>
           <div data-reveal>
             <TestimonialsSlider />
@@ -207,7 +207,7 @@ export default function Home() {
             <h2 className="font-display text-[36px] font-bold uppercase leading-[1.15] md:text-[60px]">
               {content.faq.title}
             </h2>
-            <p className="mt-4 max-w-[420px] text-[16px] font-light leading-[1.55] md:text-[18px]">{content.faq.intro}</p>
+            <p className="mt-4 max-w-[420px] text-[17px] font-light leading-[1.6] md:text-[18px]">{content.faq.intro}</p>
           </div>
           <div data-reveal>
             <FaqAccordion items={content.faq.items} />

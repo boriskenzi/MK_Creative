@@ -16,8 +16,8 @@ export default function FaqAccordion({ items }) {
               className="flex w-full items-start justify-between gap-4 py-4 text-left md:gap-6 md:py-6"
             >
               <span className="flex min-w-0 gap-3 md:gap-4">
-                <span className="font-display text-[20px] md:text-[32px]">{String(i + 1).padStart(1, "0")}.</span>
-                <span className="font-display text-[18px] uppercase leading-[1.3] md:text-[32px]">
+                <span className="font-display text-[22px] md:text-[32px]">{String(i + 1).padStart(1, "0")}.</span>
+                <span className="font-display text-[20px] uppercase leading-[1.35] md:text-[32px]">
                   {item.question}
                 </span>
               </span>
@@ -28,7 +28,7 @@ export default function FaqAccordion({ items }) {
               style={{ gridTemplateRows: active ? "1fr" : "0fr" }}
             >
               <div className="overflow-hidden">
-                <p className="max-w-[720px] pb-6 pl-0 text-[16px] font-light leading-[1.6] md:pl-12">
+                <p className="max-w-[720px] pb-6 pl-0 text-[17px] font-light leading-[1.65] md:pl-12">
                   {item.answer}
                 </p>
               </div>

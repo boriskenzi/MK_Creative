@@ -115,7 +115,7 @@ export default function Header() {
             className="flex items-center gap-2 pr-1 pl-1 md:pr-3"
             aria-label="Disponible, aller au contact"
           >
-            <span className="text-[15px] font-light" style={{ color: "var(--fg)" }}>
+            <span className="text-[16px] font-light" style={{ color: "var(--fg)" }}>
               Disponible
             </span>
             <LiveDot />
@@ -152,7 +152,7 @@ export default function Header() {
           className="pointer-events-auto absolute top-16 w-[min(320px,calc(100%-32px))] rounded-3xl border p-5 shadow-xl md:hidden"
           style={{ background: "var(--bg)", borderColor: "var(--line)" }}
         >
-          <nav className="flex flex-col gap-1 text-[16px]">
+          <nav className="flex flex-col gap-1 text-[18px]">
             {content.nav.map((item) => (
               <NavItem key={item.to} to={item.to} label={item.label} onClick={() => setOpen(false)} />
             ))}

@@ -7,13 +7,13 @@ export default function Footer() {
     <footer className="bg-[var(--color-accent)] text-white">
       <div className="site-wrap py-10">
         <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-          <p className="break-all text-[15px] font-light">
+          <p className="break-all text-[16px] font-light">
             Email:{" "}
             <a href={`mailto:${content.email}`} className="font-semibold">
               {content.email}
             </a>
           </p>
-          <p className="text-[15px] font-light">
+          <p className="text-[16px] font-light">
             Appeler-moi :{" "}
             <a href={content.phoneHref} className="font-semibold">
               {content.phone}
@@ -23,7 +23,7 @@ export default function Footer() {
             <SocialIcons items={content.socials} className="" />
           </div>
         </div>
-        <div className="mt-8 flex flex-col gap-2 border-t border-white/25 pt-6 text-sm font-light md:flex-row md:justify-between">
+        <div className="mt-8 flex flex-col gap-2 border-t border-white/25 pt-6 text-[15px] font-light md:flex-row md:justify-between">
           <p>
             © {year} {content.brand}. Tous droits réservés.
           </p>

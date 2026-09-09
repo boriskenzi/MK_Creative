@@ -35,7 +35,7 @@ export default function ServicesAccordion({ services }) {
               onClick={() => toggle(i)}
               className={`service-trigger flex min-h-12 w-full items-center justify-between gap-4 py-4 text-left md:py-5 ${active ? "is-open" : ""}`}
             >
-              <span className="font-display text-[18px] uppercase tracking-wide md:text-[28px] md:leading-[1.25] lg:text-[32px]">
+              <span className="font-display text-[22px] uppercase tracking-wide md:text-[28px] md:leading-[1.25] lg:text-[32px]">
                 {s.n}. {s.title}
               </span>
               <ChevronDown
@@ -57,7 +57,7 @@ export default function ServicesAccordion({ services }) {
                 {s.items.map((item) => (
                   <li
                     key={itemLabel(item)}
-                    className="service-item flex items-start gap-3 text-[16px] font-light leading-[1.5] md:text-[18px]"
+                    className="service-item flex items-start gap-3 text-[17px] font-light leading-[1.55] md:text-[18px]"
                   >
                     <span className="service-bullet" aria-hidden />
                     <span>{itemLabel(item)}</span>

@@ -25,7 +25,7 @@ export default function About() {
               >
                 {content.aboutPage.name}
               </p>
-              <p className="mt-5 max-w-[560px] text-[16px] font-light leading-[1.55] md:mt-6 md:text-[18px]">{content.aboutPage.lead}</p>
+              <p className="mt-5 max-w-[560px] text-[17px] font-light leading-[1.6] md:mt-6 md:text-[18px]">{content.aboutPage.lead}</p>
             </div>
             <div data-reveal className="order-3 mt-6">
               <SocialIcons items={content.socials} />
@@ -46,7 +46,7 @@ export default function About() {
           <h2 className="font-display text-[36px] font-bold uppercase leading-[1.15] md:text-[60px]">
             {content.servicesIntro.title}
           </h2>
-          <p className="mt-4 max-w-[560px] text-[16px] font-light leading-[1.5] md:text-[18px]">{content.servicesIntro.body}</p>
+          <p className="mt-4 max-w-[560px] text-[17px] font-light leading-[1.6] md:text-[18px]">{content.servicesIntro.body}</p>
         </div>
         <ServicesMarquee services={content.services} />
       </section>
@@ -56,7 +56,7 @@ export default function About() {
           <h2 className="font-display text-[36px] font-bold uppercase leading-[1.15] md:text-[60px]">
             {content.journey.title}
           </h2>
-          <p className="mt-4 max-w-[640px] text-[16px] font-light leading-[1.5] md:text-[18px]">{content.journey.intro}</p>
+          <p className="mt-4 max-w-[640px] text-[17px] font-light leading-[1.6] md:text-[18px]">{content.journey.intro}</p>
         </div>
         <div className="site-wrap">
           <TimelineMarquee items={content.journey.items} />
@@ -69,7 +69,7 @@ export default function About() {
             <h2 className="font-display text-[36px] font-bold uppercase leading-[1.15] md:text-[60px]">
               {content.stack.title}
             </h2>
-            <p className="mt-4 max-w-[720px] text-[16px] font-light leading-[1.5] md:text-[18px]">{content.stack.intro}</p>
+            <p className="mt-4 max-w-[720px] text-[17px] font-light leading-[1.6] md:text-[18px]">{content.stack.intro}</p>
           </div>
           <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {content.stack.items.map((item) => (
@@ -80,7 +80,7 @@ export default function About() {
                 style={{ borderColor: "var(--line)", background: "var(--card)" }}
               >
                 <h3 className="font-display text-[28px] uppercase">{item.name}</h3>
-                <p className="mt-3 text-[16px] font-light leading-[1.5]">{item.body}</p>
+                <p className="mt-3 text-[17px] font-light leading-[1.6]">{item.body}</p>
               </article>
             ))}
           </div>
@@ -92,7 +92,7 @@ export default function About() {
           <h2 className="font-display text-[36px] font-bold uppercase leading-[1.15] md:text-[60px]">
             {content.process.title}
           </h2>
-          <p className="mt-4 mb-10 max-w-[640px] text-[16px] font-light leading-[1.5] md:mb-12 md:text-[18px]">{content.process.intro}</p>
+          <p className="mt-4 mb-10 max-w-[640px] text-[17px] font-light leading-[1.6] md:mb-12 md:text-[18px]">{content.process.intro}</p>
           <ProcessSteps steps={content.process.steps} />
         </div>
       </section>
@@ -107,7 +107,7 @@ export default function About() {
               <li key={item.title} className="flex flex-col gap-1 border-b py-5 md:flex-row md:items-baseline md:justify-between" style={{ borderColor: "var(--line)" }}>
                 <p className="font-display text-[20px] uppercase md:text-[26px]">{item.title}</p>
                 {item.place ? (
-                  <p className="text-[15px] font-light md:text-[16px]" style={{ color: "var(--fg-soft)" }}>
+                  <p className="text-[16px] font-light" style={{ color: "var(--fg-soft)" }}>
                     {item.place}
                   </p>
                 ) : null}

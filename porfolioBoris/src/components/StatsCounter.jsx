@@ -49,7 +49,7 @@ export default function StatsCounter({ value, suffix = "", label, accent = false
       >
         0{suffix}
       </p>
-      <p className="mt-2 text-[12px] font-semibold leading-[1.3] text-balance md:text-[16px]" style={{ color: inverse ? "#fff" : undefined }}>
+      <p className="mt-2 text-[15px] font-semibold leading-[1.35] text-balance md:text-[16px]" style={{ color: inverse ? "#fff" : undefined }}>
         {label}
       </p>
     </div>

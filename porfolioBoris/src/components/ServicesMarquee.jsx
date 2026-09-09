@@ -10,7 +10,7 @@ function ServiceCard({ service }) {
       <p className="service-card-title font-display text-[26px] uppercase leading-[1.25] md:text-[32px]">
         {service.n}. {service.title}
       </p>
-      <ul className="mt-5 space-y-2 text-[16px] font-light leading-[1.5]">
+      <ul className="mt-5 space-y-2 text-[17px] font-light leading-[1.55]">
         {service.items.map((item) => (
           <li key={itemLabel(item)} className="service-item flex items-start gap-2.5">
             <span className="service-bullet" aria-hidden />

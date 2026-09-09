@@ -34,14 +34,14 @@ function PackRow({ pack, familyLabel, groupTitle, open, onToggle }) {
             <h3 className="font-display text-[22px] uppercase leading-[1.15] md:text-[28px]">{pack.name}</h3>
             {pack.badge && (
               <span
-                className="rounded-full px-2.5 py-0.5 text-[11px] font-medium uppercase tracking-wide"
+                className="rounded-full px-2.5 py-0.5 text-[12px] font-medium uppercase tracking-wide"
                 style={{ background: "var(--color-accent)", color: "#fff" }}
               >
                 {pack.badge}
               </span>
             )}
           </div>
-          <p className="mt-1.5 text-[14px] font-light leading-[1.45] md:text-[15px]" style={{ color: "var(--fg-soft)" }}>
+          <p className="mt-1.5 text-[16px] font-light leading-[1.5] md:text-[15px]" style={{ color: "var(--fg-soft)" }}>
             {pack.summary}
             {pack.hours ? ` • ${pack.hours}` : ""}
           </p>
@@ -64,7 +64,7 @@ function PackRow({ pack, familyLabel, groupTitle, open, onToggle }) {
       >
         <div className="overflow-hidden">
           <div className="flex flex-col gap-5 pb-6 md:flex-row md:items-end md:justify-between">
-            <ul className="space-y-2 text-[15px] font-light leading-[1.5] md:text-[16px]">
+            <ul className="space-y-2 text-[16px] font-light leading-[1.55]">
               {pack.items.map((item) => (
                 <li key={item} className="flex items-start gap-2.5">
                   <span className="service-bullet" aria-hidden />
@@ -158,7 +158,7 @@ export default function TarifSheet() {
                   key={item.id}
                   type="button"
                   onClick={() => selectGroup(item.id)}
-                  className="shrink-0 border-b-2 px-3 py-2 text-[14px] font-light transition-colors duration-300"
+                  className="shrink-0 border-b-2 px-3 py-2 text-[15px] font-light transition-colors duration-300"
                   style={{
                     borderColor: active ? "var(--color-accent)" : "transparent",
                     color: active ? "var(--fg)" : "var(--fg-soft)",
@@ -176,7 +176,7 @@ export default function TarifSheet() {
         <div className="mb-6 flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
           <h2 className="font-display text-[32px] font-bold uppercase leading-[1.1] md:text-[48px]">{group.title}</h2>
           {group.note && (
-            <p className="max-w-[420px] text-[14px] font-light leading-[1.45] md:text-right" style={{ color: "var(--fg-soft)" }}>
+            <p className="max-w-[420px] text-[16px] font-light leading-[1.5] md:text-right" style={{ color: "var(--fg-soft)" }}>
               {group.note}
             </p>
           )}

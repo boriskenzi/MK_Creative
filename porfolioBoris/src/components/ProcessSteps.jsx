@@ -7,7 +7,7 @@ export default function ProcessSteps({ steps }) {
             {step.n}.
           </p>
           <h3 className="mt-3 font-display text-[26px] uppercase leading-[1.2]">{step.title}</h3>
-          <p className="mt-3 text-[16px] font-light leading-[1.55]">{step.body}</p>
+          <p className="mt-3 text-[17px] font-light leading-[1.6]">{step.body}</p>
         </article>
       ))}
     </div>

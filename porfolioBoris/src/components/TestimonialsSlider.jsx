@@ -7,7 +7,7 @@ function Stars() {
   return (
     <div className="mb-4 flex gap-1" aria-hidden>
       {Array.from({ length: 5 }).map((_, i) => (
-        <span key={i} className="text-[12px] leading-none" style={{ color: "var(--color-accent)" }}>
+        <span key={i} className="text-[16px] leading-none" style={{ color: "var(--color-accent)" }}>
           ★
         </span>
       ))}
@@ -32,15 +32,15 @@ export default function TestimonialsSlider() {
             style={{ background: "var(--card)" }}
           >
             <Stars />
-            <p className="text-[14px] font-light leading-[1.5]">{t.quote}</p>
+            <p className="text-[16px] font-light leading-[1.6]">{t.quote}</p>
             <div className="mt-6">
-              <p className="text-[14px] font-semibold leading-none">{t.name}</p>
-              <p className="mt-1 text-[14px] font-light">{t.role}</p>
+              <p className="text-[16px] font-semibold leading-none">{t.name}</p>
+              <p className="mt-1 text-[15px] font-light">{t.role}</p>
             </div>
           </article>
         ))}
         <article className="rounded-[28px] p-6 text-white" style={{ background: "var(--color-ink)" }}>
-          <p className="text-[14px] font-light leading-[1.5]">{highlight.kicker}</p>
+          <p className="text-[16px] font-light leading-[1.6]">{highlight.kicker}</p>
           <div className="mt-6">
             <StatsCounter value={highlight.value} suffix={highlight.suffix} label={highlight.label} inverse />
           </div>

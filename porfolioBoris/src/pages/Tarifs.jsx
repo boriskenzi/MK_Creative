@@ -46,7 +46,7 @@ export default function Tarifs() {
           >
             {tarifPage.title}
           </h1>
-          <p data-hero className="mt-6 max-w-[540px] text-[17px] font-light leading-[1.55] md:text-[18px]">
+          <p data-hero className="mt-6 max-w-[540px] text-[17px] font-light leading-[1.6] md:text-[18px]">
             {tarifPage.lead}
           </p>
         </div>
@@ -67,7 +67,7 @@ export default function Tarifs() {
             {tarifConditions.map((item) => (
               <article key={item.title} data-reveal className="border-t pt-5" style={{ borderColor: "var(--line)" }}>
                 <h3 className="font-display text-[22px] uppercase">{item.title}</h3>
-                <p className="mt-3 text-[15px] font-light leading-[1.55] md:text-[16px]">{item.body}</p>
+                <p className="mt-3 text-[16px] font-light leading-[1.6]">{item.body}</p>
               </article>
             ))}
           </div>
