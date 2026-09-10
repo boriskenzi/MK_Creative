@@ -21,6 +21,7 @@ export const content = {
   images: IMG,
   nav: [
     { label: "Accueil", to: "/" },
+    { label: "Réalisations", to: "/realisations" },
     { label: "À propos", to: "/about" },
     { label: "Tarifs", to: "/tarifs" },
   ],
@@ -57,6 +58,39 @@ export const content = {
     title: "Qui suis-je ?",
     name: "Mr Kenzi",
     lead: "Brand designer senior, photographe et vidéaste professionnel, je suis responsable de la structure MK Creative Group. J'accompagne les marques, les entreprises et les particuliers, partout dans le monde, dans la création d'identités visuelles fortes et de supports de communication percutants. Mon objectif est de valoriser l'image de mes clients et d'accroître leur impact grâce à la créativité, la stratégie et la qualité.",
+  },
+  realisations: {
+    kicker: "Galeries",
+    title: "Réalisations",
+    lead: "Visuels, shootings et événements — à feuilleter ici, sans quitter le site.",
+    cta: "Voir la galerie",
+    items: [
+      {
+        id: "visuels",
+        title: "Création de visuels",
+        body: "Identités, affiches, invitations et supports de communication.",
+        image: asset("images/realisations/visuels.jpg"),
+        source: "https://www.picdrop.com/mrkenzi/mrkenzi",
+        fit: "contain",
+        featured: true,
+      },
+      {
+        id: "studio",
+        title: "Shooting photo",
+        body: "Portraits et shootings en studio.",
+        image: asset("images/realisations/studio.jpg"),
+        source: "https://www.picdrop.com/mrkenzi/9qW3ohvLzg",
+        fit: "cover",
+      },
+      {
+        id: "event",
+        title: "Photo d'événement",
+        body: "Mariages, cérémonies et reportages d'événements.",
+        image: asset("images/realisations/event.jpg"),
+        source: "https://www.picdrop.com/mrkenzi/MXRbEtDwzD",
+        fit: "cover",
+      },
+    ],
   },
   servicesIntro: {
     title: "Que pouvons-nous faire pour vous ?",

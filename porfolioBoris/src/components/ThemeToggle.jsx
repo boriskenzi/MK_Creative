@@ -13,7 +13,7 @@ export default function ThemeToggle({ placement = "dock" }) {
       className={
         header
           ? "flex h-8 w-11 items-center rounded-full border px-1 md:hidden"
-          : "fixed z-40 hidden h-8 w-[52px] items-center rounded-full border px-1 shadow-sm md:flex md:bottom-6 md:left-1/2 md:-translate-x-1/2"
+          : "theme-dock fixed z-40 hidden h-8 w-[52px] items-center rounded-full border px-1 shadow-sm md:flex md:bottom-6 md:left-1/2 md:-translate-x-1/2"
       }
       style={{ background: "var(--nav)", borderColor: "var(--line)" }}
     >

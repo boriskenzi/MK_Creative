@@ -1,4 +1,4 @@
-import { useLocation, useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import { content } from "../data/content"
 import { scrollToTarget } from "../lib/scroll"
 
@@ -12,7 +12,6 @@ const SIZES = {
  * Sur le Hero, mène au contact. Sur la section contact, salut uniquement.
  */
 export default function GreetingOrb({ className = "", size = "md", toContact = false }) {
-  const location = useLocation()
   const navigate = useNavigate()
   const sizes = SIZES[size] || SIZES.md
   const classes = `wave-orb z-[2] grid place-items-center rounded-full bg-[var(--color-accent)] font-sans font-medium shadow-lg outline-none focus-visible:ring-2 focus-visible:ring-white ${sizes} ${className}`
@@ -20,12 +19,12 @@ export default function GreetingOrb({ className = "", size = "md", toContact = f
   const goContact = (event) => {
     event.preventDefault()
     event.stopPropagation()
-    if (location.pathname !== "/") {
-      navigate("/#contact")
+    const el = document.getElementById("contact")
+    if (el) {
+      scrollToTarget(el)
       return
     }
-    const el = document.getElementById("contact")
-    if (el) scrollToTarget(el)
+    navigate("/#contact")
   }
 
   const label = (

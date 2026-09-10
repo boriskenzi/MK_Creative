@@ -59,12 +59,12 @@ export default function Header() {
   const goContact = (e) => {
     e.preventDefault()
     setOpen(false)
-    if (location.pathname !== "/") {
-      navigate("/#contact")
+    const el = document.getElementById("contact")
+    if (el) {
+      scrollToTarget(el)
       return
     }
-    const el = document.getElementById("contact")
-    if (el) scrollToTarget(el)
+    navigate("/#contact")
   }
 
   return (
@@ -101,7 +101,7 @@ export default function Header() {
           aria-hidden={scrolled}
         >
           <div className="min-w-0">
-            <div className="flex items-center gap-5 px-3 text-[16px] font-light whitespace-nowrap">
+            <div className="flex items-center gap-4 px-3 text-[16px] font-light whitespace-nowrap lg:gap-5">
               {content.nav.map((item) => (
                 <NavItem key={item.to} to={item.to} label={item.label} />
               ))}

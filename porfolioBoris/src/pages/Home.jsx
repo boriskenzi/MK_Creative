@@ -126,7 +126,7 @@ export default function Home() {
               <img
                 src={content.images.about}
                 alt="Portrait de Mr Kenzi"
-                className="aspect-[4/5] w-full rounded-[28px] object-cover md:rounded-[36px]"
+                className="aspect-[4/5] w-full rounded-[28px] object-cover object-[center_12%] md:rounded-[36px]"
               />
             </div>
           </div>
