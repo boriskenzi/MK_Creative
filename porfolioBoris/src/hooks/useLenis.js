@@ -6,12 +6,31 @@ import { DESKTOP_3D_MIN } from "../scene/capabilities"
 
 /**
  * Smooth scroll Lenis, synchronisé avec ScrollTrigger (ne le remplace pas).
- * Désactivé sous 768px : le touch iOS/Android reste natif.
+ * Désactivé sous 768px : le touch iOS/Android reste natif, le signal 3D suit window.
  */
 export function useLenis() {
   useEffect(() => {
     if (prefersReducedMotion()) return
-    if (!window.matchMedia(`(min-width: ${DESKTOP_3D_MIN}px)`).matches) return
+    if (!window.matchMedia(`(min-width: ${DESKTOP_3D_MIN}px)`).matches) {
+      let lastY = window.scrollY
+      const onNativeScroll = () => {
+        const y = window.scrollY
+        const max = Math.max(1, document.documentElement.scrollHeight - window.innerHeight)
+        const dy = y - lastY
+        lastY = y
+        scrollSignal.progress = Math.min(1, Math.max(0, y / max))
+        scrollSignal.velocity = dy
+        scrollSignal.direction = dy > 0.4 ? 1 : dy < -0.4 ? -1 : 0
+      }
+      onNativeScroll()
+      window.addEventListener("scroll", onNativeScroll, { passive: true })
+      return () => {
+        window.removeEventListener("scroll", onNativeScroll)
+        scrollSignal.velocity = 0
+        scrollSignal.direction = 0
+        scrollSignal.progress = 0
+      }
+    }
 
     const lenis = new Lenis({
       autoRaf: false,

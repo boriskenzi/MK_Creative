@@ -1,5 +1,6 @@
 import { useMemo, useRef } from "react"
 import { Canvas, useFrame } from "@react-three/fiber"
+import { DESKTOP_3D_MIN } from "./capabilities"
 import { scrollSignal } from "../lib/scroll"
 
 const ACCENT = "#9008b1"
@@ -159,14 +160,15 @@ function StudioShapes({ opacity }) {
  * Fond 3D plein écran — formes studio + Saturne primitive au centre.
  */
 export default function StudioField({ playing, theme = "light" }) {
-  const opacity = theme === "dark" ? 0.34 : 0.2
+  const mobile = typeof window !== "undefined" && window.innerWidth < DESKTOP_3D_MIN
+  const opacity = theme === "dark" ? (mobile ? 0.5 : 0.34) : mobile ? 0.34 : 0.2
 
   return (
     <Canvas
       frameloop={playing ? "always" : "never"}
-      dpr={[1, 1.5]}
+      dpr={mobile ? [1, 1] : [1, 1.5]}
       gl={{
-        antialias: true,
+        antialias: !mobile,
         alpha: true,
         powerPreference: "high-performance",
         stencil: false,

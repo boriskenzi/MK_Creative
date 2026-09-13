@@ -1,6 +1,6 @@
 import { lazy, Suspense, useEffect, useRef, useState } from "react"
 import { useTheme } from "../hooks/useTheme"
-import { useAllow3D } from "../hooks/useAllow3D"
+import { useAllowHero3D } from "../hooks/useAllow3D"
 import GreetingOrb from "../components/GreetingOrb"
 
 const HeroPortrait = lazy(() => import("./HeroPortrait"))
@@ -10,7 +10,7 @@ function StaticPortrait({ src, alt }) {
 }
 
 export default function HeroMedia({ src, alt }) {
-  const allow = useAllow3D()
+  const allow = useAllowHero3D()
   const { theme } = useTheme()
   const wrapRef = useRef(null)
   const pointer = useRef({ x: 0, y: 0, active: false })

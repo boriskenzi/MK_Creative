@@ -1,6 +1,6 @@
 import { prefersReducedMotion } from "../lib/gsap"
 
-/** 3D WebGL et tilt : desktop seulement. */
+/** Seuil desktop : tilt, portrait 3D, Lenis. Le fond 3D joue aussi sur mobile. */
 export const DESKTOP_3D_MIN = 768
 
 let webglMemo = null
@@ -20,18 +20,27 @@ export function hasWebGL() {
   }
 }
 
-/** 3D WebGL : desktop, GPU dispo, et pas `?reduced`. */
+export function isDesktopWidth() {
+  if (typeof window === "undefined") return false
+  return window.innerWidth >= DESKTOP_3D_MIN
+}
+
+/** Fond 3D : GPU dispo, pas `?reduced`. Mobile inclus. */
 export function canUse3D() {
   if (typeof window === "undefined") return false
   if (prefersReducedMotion()) return false
-  if (window.innerWidth < DESKTOP_3D_MIN) return false
   return hasWebGL()
+}
+
+/** Second canvas (portrait héro) : desktop seulement. */
+export function canUseHero3D() {
+  return canUse3D() && isDesktopWidth()
 }
 
 /** Tilt CSS : souris fine, desktop, pas `?reduced`. */
 export function canUseTilt() {
   if (typeof window === "undefined") return false
   if (prefersReducedMotion()) return false
-  if (window.innerWidth < DESKTOP_3D_MIN) return false
+  if (!isDesktopWidth()) return false
   return window.matchMedia("(hover: hover) and (pointer: fine)").matches
 }
