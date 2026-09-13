@@ -45,6 +45,58 @@ function Dust({ opacity }) {
   )
 }
 
+function Saturn({ opacity }) {
+  const root = useRef(null)
+  const spin = useRef(null)
+
+  useFrame((state, delta) => {
+    const g = root.current
+    const s = spin.current
+    if (!g || !s) return
+    const t = state.clock.elapsedTime
+    const v = scrollSignal.velocity
+    const dir = scrollSignal.direction
+    const p = scrollSignal.progress
+
+    s.rotation.y += delta * 0.04 + v * 0.003
+    g.rotation.z = lerp(g.rotation.z, -0.38 + dir * 0.05, 0.05)
+    g.rotation.x = lerp(g.rotation.x, 0.42 + Math.sin(t * 0.12) * 0.03, 0.05)
+    g.position.y = lerp(g.position.y, -0.12 - p * 1.5, 0.06)
+    g.position.x = lerp(g.position.x, 0.08 + Math.sin(t * 0.08) * 0.05, 0.04)
+  })
+
+  return (
+    <group ref={root} position={[0.08, -0.12, -2.2]} rotation={[0.42, 0.2, -0.38]}>
+      <group ref={spin}>
+        <mesh scale={[1, 0.92, 1]}>
+          <sphereGeometry args={[1.12, 48, 32]} />
+          <meshBasicMaterial color={ACCENT} transparent opacity={opacity * 0.28} depthWrite={false} />
+        </mesh>
+        <mesh scale={[1, 0.92, 1]}>
+          <sphereGeometry args={[1.13, 24, 16]} />
+          <meshBasicMaterial color={ACCENT} wireframe transparent opacity={opacity * 0.55} depthWrite={false} />
+        </mesh>
+        <mesh rotation={[Math.PI / 2, 0, 0]}>
+          <torusGeometry args={[1.48, 0.016, 10, 96]} />
+          <meshBasicMaterial color={ACCENT} transparent opacity={opacity} depthWrite={false} />
+        </mesh>
+        <mesh rotation={[Math.PI / 2, 0, 0]}>
+          <torusGeometry args={[1.78, 0.014, 10, 96]} />
+          <meshBasicMaterial color={ACCENT} transparent opacity={opacity * 0.9} depthWrite={false} />
+        </mesh>
+        <mesh rotation={[Math.PI / 2, 0, 0]}>
+          <torusGeometry args={[2.08, 0.012, 10, 96]} />
+          <meshBasicMaterial color={ACCENT} transparent opacity={opacity * 0.75} depthWrite={false} />
+        </mesh>
+        <mesh rotation={[Math.PI / 2, 0, 0]}>
+          <torusGeometry args={[2.38, 0.01, 10, 80]} />
+          <meshBasicMaterial color={ACCENT} transparent opacity={opacity * 0.55} depthWrite={false} />
+        </mesh>
+      </group>
+    </group>
+  )
+}
+
 function StudioShapes({ opacity }) {
   const root = useRef(null)
   const ringA = useRef(null)
@@ -104,8 +156,7 @@ function StudioShapes({ opacity }) {
 }
 
 /**
- * Fond 3D plein écran — lazy-loadé.
- * Pause d’onglet via `playing`. R3F dispose la scène au démontage.
+ * Fond 3D plein écran — formes studio + Saturne primitive au centre.
  */
 export default function StudioField({ playing, theme = "light" }) {
   const opacity = theme === "dark" ? 0.34 : 0.2
@@ -127,6 +178,7 @@ export default function StudioField({ playing, theme = "light" }) {
       }}
       style={{ position: "absolute", inset: 0, pointerEvents: "none" }}
     >
+      <Saturn opacity={opacity} />
       <StudioShapes opacity={opacity} />
     </Canvas>
   )
