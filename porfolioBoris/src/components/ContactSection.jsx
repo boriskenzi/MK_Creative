@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Mail, Phone } from "lucide-react"
 import { content } from "../data/content"
 
 const empty = { name: "", email: "", service: "", message: "" }
@@ -31,27 +32,30 @@ export default function ContactSection() {
   }
 
   const field =
-    "w-full rounded-2xl border-0 px-4 py-3.5 text-[16px] outline-none"
+    "w-full rounded-2xl border-0 px-4 py-3.5 text-[16px] outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-accent)]"
   const label = "mb-1.5 block text-[15px] font-medium"
 
   return (
     <section id="contact" className="py-16 md:py-32" style={{ background: "var(--card)" }}>
-      <div className="site-wrap grid items-center gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-12">
-        <div className="relative mx-auto order-2 w-[min(64vw,220px)] lg:order-1 lg:w-full lg:max-w-[420px]">
+      <div className="site-wrap contact-board">
+        <figure className="contact-board-photo-wrap">
           <img
             src={content.images.about}
-            alt="Portrait"
-            className="aspect-[4/5] w-full rounded-[28px] object-cover object-[center_12%] md:rounded-[36px]"
+            alt={content.person}
+            className="contact-board-photo"
           />
-        </div>
-
-        <div className="order-1 lg:order-2">
-          <h2 className="font-display text-[32px] font-bold uppercase leading-[1.15] md:text-[60px]">
+        </figure>
+        <div className="contact-board-title">
+          <h2 className="font-display text-[32px] font-bold uppercase leading-[0.95] md:text-[48px] lg:text-[60px]">
             {content.contact.title}
           </h2>
-          <p className="mt-4 max-w-[520px] text-[17px] font-light leading-[1.6] md:text-[18px]">{content.contact.intro}</p>
+        </div>
+        <p className="contact-board-intro max-w-[520px] text-[16px] font-light leading-[1.55] md:text-[18px] md:leading-[1.6]">
+          {content.contact.intro}
+        </p>
 
-          <form onSubmit={onSubmit} className="mt-8 grid gap-4">
+        <div className="contact-board-form">
+          <form onSubmit={onSubmit} className="grid gap-4">
             <div className="grid gap-4 sm:grid-cols-2">
               <label>
                 <span className={label} style={{ color: "var(--color-accent)" }}>
@@ -122,7 +126,7 @@ export default function ContactSection() {
             <button
               type="submit"
               disabled={!valid}
-              className="mt-2 min-h-12 w-full rounded-full px-6 py-3.5 font-display text-[16px] uppercase tracking-wide disabled:opacity-40"
+              className="mt-1 min-h-12 w-full rounded-full px-6 py-3.5 font-display text-[16px] uppercase tracking-wide disabled:opacity-40 md:w-auto"
               style={{ background: "var(--inverse)", color: "var(--inverse-fg)" }}
             >
               {content.contact.submit}
@@ -133,22 +137,21 @@ export default function ContactSection() {
               </p>
             )}
           </form>
-          <div className="mt-8 space-y-2 text-[16px] font-light">
-            <p>
-              <span className="font-semibold">{content.about.phoneLabel}</span>{" "}
-              <a href={content.phoneHref} style={{ color: "var(--color-accent)" }}>
-                {content.phone}
-              </a>
-              <span className="block sm:inline">
-                {" / "}
-                <a href={content.phoneAltHref}>{content.phoneAlt}</a>
-              </span>
-            </p>
-            <p className="break-all">
-              <span className="font-semibold">{content.about.emailLabel}</span>{" "}
-              <a href={`mailto:${content.email}`}>{content.email}</a>
-            </p>
-          </div>
+        </div>
+
+        <div className="contact-board-direct contact-direct mt-1 flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:gap-x-5">
+          <a href={content.phoneHref} className="contact-direct-link">
+            <Phone className="h-4 w-4 shrink-0" strokeWidth={1.7} />
+            <span>{content.phone}</span>
+          </a>
+          <a href={content.phoneAltHref} className="contact-direct-link">
+            <Phone className="h-4 w-4 shrink-0" strokeWidth={1.7} />
+            <span>{content.phoneAlt}</span>
+          </a>
+          <a href={`mailto:${content.email}`} className="contact-direct-link">
+            <Mail className="h-4 w-4 shrink-0" strokeWidth={1.7} />
+            <span>{content.email}</span>
+          </a>
         </div>
       </div>
     </section>

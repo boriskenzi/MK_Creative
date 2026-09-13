@@ -48,7 +48,14 @@ export default function Header() {
   }, [location.pathname])
 
   useEffect(() => {
-    document.body.style.overflow = open ? "hidden" : ""
+    if (!scrolled && window.matchMedia("(min-width: 768px)").matches) {
+      setOpen(false)
+    }
+  }, [scrolled])
+
+  useEffect(() => {
+    const desktop = window.matchMedia("(min-width: 768px)").matches
+    document.body.style.overflow = open && !desktop ? "hidden" : ""
     document.body.toggleAttribute("data-menu-open", open)
     return () => {
       document.body.style.overflow = ""
@@ -74,13 +81,13 @@ export default function Header() {
     >
       {open && (
         <div
-          className="pointer-events-auto fixed inset-0 bg-[#1e1d1b]/40 md:hidden"
+          className="pointer-events-auto fixed inset-0 z-0 bg-[#1e1d1b]/40 md:bg-transparent"
           onClick={() => setOpen(false)}
           aria-hidden
         />
       )}
       <div
-        className="pointer-events-auto relative flex items-center gap-2 rounded-full border px-2 py-1.5 shadow-[0_8px_30px_rgba(0,0,0,0.06)] backdrop-blur-xl transition-all duration-500 md:gap-3"
+        className="pointer-events-auto relative z-[1] flex items-center gap-2 rounded-full border px-2 py-1.5 shadow-[0_8px_30px_rgba(0,0,0,0.06)] backdrop-blur-xl transition-all duration-500 md:gap-3"
         style={{
           background: "var(--nav)",
           borderColor: "var(--line)",
@@ -133,23 +140,26 @@ export default function Header() {
         {!scrolled && <ThemeToggle placement="header" />}
         <button
           type="button"
-          className={`menu-btn mr-0.5 grid h-11 w-11 place-items-center rounded-full md:hidden ${open ? "is-open" : ""}`}
+          className={`menu-btn mr-0.5 grid h-11 w-11 place-items-center rounded-full ${scrolled ? "" : "md:hidden"} ${open ? "is-open" : ""}`}
           style={{ color: "var(--fg)" }}
           aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
           aria-expanded={open}
+          aria-controls="site-menu"
           onClick={() => setOpen((v) => !v)}
         >
           <span className="sr-only">Menu</span>
           <span className="flex flex-col gap-[5px]">
-            <span className="menu-line block h-[1.5px] w-5" style={{ background: "var(--fg)" }} />
-            <span className="menu-line block h-[1.5px] w-5" style={{ background: "var(--fg)" }} />
+            <span className="menu-line block h-[2px] w-5" style={{ background: "var(--fg)" }} />
+            <span className="menu-line block h-[2px] w-5" style={{ background: "var(--fg)" }} />
+            <span className="menu-line block h-[2px] w-5" style={{ background: "var(--fg)" }} />
           </span>
         </button>
       </div>
 
       {open && (
         <div
-          className="pointer-events-auto absolute top-16 w-[min(320px,calc(100%-32px))] rounded-3xl border p-5 shadow-xl md:hidden"
+          id="site-menu"
+          className="pointer-events-auto absolute top-[4.75rem] left-1/2 z-[2] w-[min(340px,calc(100%-32px))] -translate-x-1/2 rounded-3xl border p-5 shadow-xl"
           style={{ background: "var(--bg)", borderColor: "var(--line)" }}
         >
           <nav className="flex flex-col gap-1 text-[18px]">

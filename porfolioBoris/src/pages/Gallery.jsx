@@ -81,7 +81,7 @@ export default function Gallery() {
       </section>
 
       <section className="pb-16 md:pb-24">
-        <div className={`gallery-wrap ${posters ? "gallery-posters" : images.length < 3 ? "gallery-sheet gallery-sheet-few" : "gallery-sheet"}`}>
+        <div className={`gallery-wrap ${posters ? "gallery-prints" : images.length < 3 ? "gallery-mosaic gallery-mosaic-few" : "gallery-mosaic"}`}>
           {images.map((image, index) => (
             <button
               key={image.src}
@@ -97,6 +97,9 @@ export default function Gallery() {
                   loading={index < 16 ? "eager" : "lazy"}
                   decoding="async"
                 />
+              </span>
+              <span className="gallery-index" aria-hidden>
+                {String(index + 1).padStart(2, "0")}
               </span>
             </button>
           ))}

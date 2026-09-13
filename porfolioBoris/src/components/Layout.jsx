@@ -15,15 +15,17 @@ export default function Layout() {
   useLenis()
 
   useEffect(() => {
-    if (location.hash) {
-      const id = location.hash.replace("#", "")
-      requestAnimationFrame(() => {
+    const reset = () => {
+      if (location.hash) {
+        const id = location.hash.replace("#", "")
         const el = document.getElementById(id)
         if (el) scrollToTarget(el)
-      })
-      return
+        return
+      }
+      scrollToTop()
     }
-    scrollToTop()
+    const raf = requestAnimationFrame(() => requestAnimationFrame(reset))
+    return () => cancelAnimationFrame(raf)
   }, [location.pathname, location.hash])
 
   useGsapRefresh([location.pathname])

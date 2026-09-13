@@ -14,7 +14,6 @@ function lerp(a, b, t) {
 function HeroCard({ src, pointer, theme }) {
   const group = useRef(null)
   const print = useRef(null)
-  const shade = useRef(null)
 
   const paper = theme === "dark" ? "#1e1d1b" : "#ffffff"
   const idle = useRef({ x: 0, y: 0 })
@@ -42,25 +41,10 @@ function HeroCard({ src, pointer, theme }) {
       print.current.position.x = lerp(print.current.position.x, px, 0.1)
       print.current.position.y = lerp(print.current.position.y, py, 0.1)
     }
-
-    if (shade.current) {
-      shade.current.position.x = lerp(shade.current.position.x, 0.06 - g.rotation.y * 0.18, 0.1)
-      shade.current.position.y = lerp(shade.current.position.y, -0.08 + g.rotation.x * 0.12, 0.1)
-      shade.current.material.opacity = lerp(
-        shade.current.material.opacity,
-        0.14 + Math.abs(g.rotation.y) * 0.12,
-        0.1,
-      )
-    }
   })
 
   return (
     <group>
-      <mesh ref={shade} position={[0.08, -0.1, -0.12]} scale={[1.02, 1.02, 1]}>
-        <planeGeometry args={[CARD.w, CARD.h]} />
-        <meshBasicMaterial color="#1e1d1b" transparent opacity={0.16} depthWrite={false} />
-      </mesh>
-
       <group ref={group}>
         <RoundedBox args={[CARD.w, CARD.h, CARD.d]} radius={CARD.radius} smoothness={4} castShadow={false}>
           <meshStandardMaterial color={paper} roughness={0.62} metalness={0.06} />

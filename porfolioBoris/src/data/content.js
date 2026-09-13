@@ -62,7 +62,7 @@ export const content = {
   realisations: {
     kicker: "Galeries",
     title: "Réalisations",
-    lead: "Visuels, shootings et événements — à feuilleter ici, sans quitter le site.",
+    lead: "Ici, c’est le travail réel : des visuels pour les marques, des portraits en studio, des reportages le jour J. Ouvrez une galerie et prenez le temps de regarder.",
     cta: "Voir la galerie",
     items: [
       {
