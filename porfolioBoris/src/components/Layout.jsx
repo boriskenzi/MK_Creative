@@ -4,6 +4,7 @@ import Header from "./Header"
 import Footer from "./Footer"
 import ThemeToggle from "./ThemeToggle"
 import WhatsAppFab from "./WhatsAppFab"
+import BackToTop from "./BackToTop"
 import { useGsapRefresh } from "../hooks/useGsapRefresh"
 import { useLenis } from "../hooks/useLenis"
 import { scrollToTarget, scrollToTop } from "../lib/scroll"
@@ -41,6 +42,7 @@ export default function Layout() {
         <Footer />
       </div>
       <ThemeToggle />
+      <BackToTop />
       <WhatsAppFab />
     </div>
   )

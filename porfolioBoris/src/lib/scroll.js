@@ -16,12 +16,12 @@ export function getLenis() {
   return lenis
 }
 
-export function scrollToTop() {
+export function scrollToTop({ immediate = true } = {}) {
   if (lenis) {
-    lenis.scrollTo(0, { immediate: true })
+    lenis.scrollTo(0, { immediate })
     return
   }
-  window.scrollTo({ top: 0, behavior: "auto" })
+  window.scrollTo({ top: 0, behavior: immediate ? "auto" : "smooth" })
 }
 
 export function scrollToTarget(target, options = {}) {

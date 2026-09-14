@@ -52,8 +52,21 @@ html.dark .whatsapp-fab {
   border-color: transparent;
 }
 
+.back-to-top:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .back-to-top:hover {
+    color: var(--color-accent);
+  }
+}
+
 body[data-menu-open] .whatsapp-fab,
+body[data-menu-open] .back-to-top,
 body[data-lightbox-open] .whatsapp-fab,
+body[data-lightbox-open] .back-to-top,
 body[data-lightbox-open] .theme-dock,
 body[data-lightbox-open] header {
   display: none;
