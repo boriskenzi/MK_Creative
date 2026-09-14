@@ -46,10 +46,11 @@ function Dust({ opacity }) {
   )
 }
 
-function Saturn({ opacity }) {
+function Saturn({ opacity, compact = false }) {
   const root = useRef(null)
   const body = useRef(null)
   const rings = useRef(null)
+  const size = compact ? 0.55 : 1
 
   useFrame((state, delta) => {
     const g = root.current
@@ -73,7 +74,7 @@ function Saturn({ opacity }) {
   })
 
   return (
-    <group ref={root} position={[0, 0, -2.2]} rotation={[0.42, 0.2, -0.38]}>
+    <group ref={root} position={[0, 0, -2.2]} rotation={[0.42, 0.2, -0.38]} scale={size}>
       <group ref={body}>
         <mesh scale={[1, 0.92, 1]}>
           <sphereGeometry args={[1.12, 48, 32]} />
@@ -188,7 +189,7 @@ export default function StudioField({ playing, theme = "light" }) {
       }}
       style={{ position: "absolute", inset: 0, pointerEvents: "none" }}
     >
-      <Saturn opacity={opacity} />
+      <Saturn opacity={opacity} compact={mobile} />
       <StudioShapes opacity={opacity} />
     </Canvas>
   )
