@@ -135,45 +135,36 @@ img {
 }
 
 .contact-board {
-  display: grid;
-  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
-  align-items: stretch;
-  column-gap: 0.85rem;
-  row-gap: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
 }
 
-.contact-board-title,
-.contact-board-intro {
-  grid-column: 1 / -1;
+.contact-board-stage {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
 }
 
 .contact-board-photo-wrap {
-  position: relative;
-  grid-column: 1;
-  grid-row: 3;
-  align-self: stretch;
-  min-height: 0;
+  margin: 0 auto;
 }
 
 .contact-board-photo {
-  position: absolute;
-  inset: 0;
   width: 100%;
-  height: 100%;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
   object-position: center 12%;
-  border-radius: 18px;
+  border-radius: 28px;
+}
+
+.contact-board-panel {
+  min-width: 0;
+  --contact-field: var(--bg);
 }
 
 .contact-board-form {
-  grid-column: 2;
-  grid-row: 3;
   min-width: 0;
-}
-
-.contact-board-direct {
-  grid-column: 1 / -1;
-  grid-row: 4;
 }
 
 .contact-direct-link {
@@ -197,19 +188,37 @@ img {
   }
 }
 
-@media (min-width: 640px) {
-  .contact-board {
-    column-gap: 1.25rem;
-  }
-
-  .contact-board-photo {
-    border-radius: 24px;
-  }
-}
-
 @media (min-width: 768px) {
   .portrait-print {
     width: min(100%, 420px);
+  }
+
+  .contact-board {
+    gap: 2rem;
+  }
+
+  .contact-board-stage {
+    display: grid;
+    grid-template-columns: minmax(240px, 0.78fr) minmax(0, 1.22fr);
+    align-items: start;
+    column-gap: 1.75rem;
+    row-gap: 0;
+  }
+
+  .contact-board-photo-wrap {
+    margin-inline: 0;
+  }
+
+  .contact-board-photo {
+    border-radius: 36px;
+  }
+
+  .contact-board-panel {
+    --contact-field: var(--card);
+    padding: 1.65rem 1.75rem 1.2rem;
+    border: 1px solid var(--line);
+    border-radius: 32px;
+    background: var(--bg);
   }
 }
 
@@ -219,19 +228,14 @@ img {
     max-width: 460px;
   }
 
-  .contact-board {
-    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  .contact-board-stage {
+    grid-template-columns: minmax(300px, 420px) minmax(0, 1fr);
     column-gap: 2.5rem;
-    row-gap: 1.15rem;
   }
 
-  .contact-board-photo {
+  .contact-board-panel {
+    padding: 1.9rem 2rem 1.35rem;
     border-radius: 36px;
-  }
-
-  .contact-board-direct {
-    grid-column: 2;
-    grid-row: 4;
   }
 }
 

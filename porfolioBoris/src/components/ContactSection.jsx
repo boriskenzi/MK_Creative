@@ -38,120 +38,126 @@ export default function ContactSection() {
   return (
     <section id="contact" className="py-16 md:py-32" style={{ background: "var(--card)" }}>
       <div className="site-wrap contact-board">
-        <figure className="contact-board-photo-wrap">
-          <img
-            src={content.images.about}
-            alt={content.person}
-            className="contact-board-photo"
-          />
-        </figure>
-        <div className="contact-board-title">
-          <h2 className="font-display text-[32px] font-bold uppercase leading-[0.95] md:text-[48px] lg:text-[60px]">
+        <header className="contact-board-head">
+          <h2 className="font-display text-[clamp(32px,8vw,60px)] font-bold uppercase leading-[0.95]">
             {content.contact.title}
           </h2>
-        </div>
-        <p className="contact-board-intro max-w-[520px] text-[16px] font-light leading-[1.55] md:text-[18px] md:leading-[1.6]">
-          {content.contact.intro}
-        </p>
+          <p className="mt-4 max-w-[520px] text-[16px] font-light leading-[1.55] md:mt-5 md:text-[18px] md:leading-[1.6]">
+            {content.contact.intro}
+          </p>
+        </header>
 
-        <div className="contact-board-form">
-          <form onSubmit={onSubmit} className="grid gap-4">
-            <div className="grid gap-4 sm:grid-cols-2">
+        <div className="contact-board-stage">
+          <figure className="contact-board-photo-wrap portrait-print mx-auto md:mx-0">
+            <img
+              src={content.images.about}
+              alt={content.person}
+              className="contact-board-photo"
+            />
+          </figure>
+
+          <div className="contact-board-panel">
+            <form onSubmit={onSubmit} className="contact-board-form grid gap-4">
+              <div className="grid gap-4 sm:grid-cols-2">
+                <label>
+                  <span className={label} style={{ color: "var(--color-accent)" }}>
+                    Nom
+                  </span>
+                  <input
+                    name="name"
+                    value={form.name}
+                    onChange={onChange}
+                    placeholder="Votre nom"
+                    autoComplete="name"
+                    required
+                    className={field}
+                    style={{ background: "var(--contact-field)", color: "var(--fg)" }}
+                  />
+                </label>
+                <label>
+                  <span className={label} style={{ color: "var(--color-accent)" }}>
+                    Email
+                  </span>
+                  <input
+                    name="email"
+                    type="email"
+                    value={form.email}
+                    onChange={onChange}
+                    placeholder="vous@email.com"
+                    autoComplete="email"
+                    required
+                    className={field}
+                    style={{ background: "var(--contact-field)", color: "var(--fg)" }}
+                  />
+                </label>
+              </div>
               <label>
                 <span className={label} style={{ color: "var(--color-accent)" }}>
-                  Nom
+                  Service souhaité
                 </span>
-                <input
-                  name="name"
-                  value={form.name}
+                <select
+                  name="service"
+                  value={form.service}
                   onChange={onChange}
-                  placeholder="Votre nom"
-                  autoComplete="name"
                   className={field}
-                  style={{ background: "var(--bg)", color: "var(--fg)" }}
-                />
+                  style={{
+                    background: "var(--contact-field)",
+                    color: form.service ? "var(--fg)" : "var(--fg-soft)",
+                  }}
+                >
+                  <option value="">Choisir...</option>
+                  {content.contact.services.map((s) => (
+                    <option key={s} value={s}>
+                      {s}
+                    </option>
+                  ))}
+                </select>
               </label>
               <label>
                 <span className={label} style={{ color: "var(--color-accent)" }}>
-                  Email
+                  Comment puis-je vous aider ?
                 </span>
-                <input
-                  name="email"
-                  type="email"
-                  value={form.email}
+                <textarea
+                  name="message"
+                  value={form.message}
                   onChange={onChange}
-                  placeholder="vous@email.com"
-                  autoComplete="email"
-                  className={field}
-                  style={{ background: "var(--bg)", color: "var(--fg)" }}
+                  placeholder="Bonjour, je voudrais échanger à propos de..."
+                  rows={4}
+                  required
+                  className={`${field} resize-none`}
+                  style={{ background: "var(--contact-field)", color: "var(--fg)" }}
                 />
               </label>
-            </div>
-            <label>
-              <span className={label} style={{ color: "var(--color-accent)" }}>
-                Service souhaité
-              </span>
-              <select
-                name="service"
-                value={form.service}
-                onChange={onChange}
-                className={field}
-                style={{
-                  background: "var(--bg)",
-                  color: form.service ? "var(--fg)" : "var(--fg-soft)",
-                }}
+              <button
+                type="submit"
+                disabled={!valid}
+                className="mt-1 min-h-12 w-full rounded-full px-6 py-3.5 font-display text-[16px] uppercase tracking-wide disabled:opacity-40"
+                style={{ background: "var(--inverse)", color: "var(--inverse-fg)" }}
               >
-                <option value="">Choisir...</option>
-                {content.contact.services.map((s) => (
-                  <option key={s} value={s}>
-                    {s}
-                  </option>
-                ))}
-              </select>
-            </label>
-            <label>
-              <span className={label} style={{ color: "var(--color-accent)" }}>
-                Comment puis-je vous aider ?
-              </span>
-              <textarea
-                name="message"
-                value={form.message}
-                onChange={onChange}
-                placeholder="Bonjour, je voudrais échanger à propos de..."
-                rows={4}
-                className={`${field} resize-none`}
-                style={{ background: "var(--bg)", color: "var(--fg)" }}
-              />
-            </label>
-            <button
-              type="submit"
-              disabled={!valid}
-              className="mt-1 min-h-12 w-full rounded-full px-6 py-3.5 font-display text-[16px] uppercase tracking-wide disabled:opacity-40 md:w-auto"
-              style={{ background: "var(--inverse)", color: "var(--inverse-fg)" }}
-            >
-              {content.contact.submit}
-            </button>
-            {status && (
-              <p className="text-[15px]" style={{ color: "var(--color-accent)" }}>
-                {status}
-              </p>
-            )}
-          </form>
-        </div>
+                {content.contact.submit}
+              </button>
+              {status && (
+                <p className="text-[15px]" style={{ color: "var(--color-accent)" }}>
+                  {status}
+                </p>
+              )}
+            </form>
 
-        <div className="contact-board-direct contact-direct mt-1 flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:gap-x-5">
-          <a href={content.phoneHref} className="contact-direct-link">
-            <Phone className="h-4 w-4 shrink-0" strokeWidth={1.7} />
-            <span>{content.phone}</span>
-          </a>
-          <a href={content.phoneAltHref} className="contact-direct-link">
-            <Phone className="h-4 w-4 shrink-0" strokeWidth={1.7} />
-            <span>{content.phoneAlt}</span>
-          </a>
-          <a href={`mailto:${content.email}`} className="contact-direct-link">
-            <Mail className="h-4 w-4 shrink-0" strokeWidth={1.7} />
-            <span>{content.email}</span>
-          </a>
+            <div className="contact-board-direct contact-direct mt-5 flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:gap-x-5">
+              <a href={content.phoneHref} className="contact-direct-link">
+                <Phone className="h-4 w-4 shrink-0" strokeWidth={1.7} />
+                <span>{content.phone}</span>
+              </a>
+              <a href={content.phoneAltHref} className="contact-direct-link">
+                <Phone className="h-4 w-4 shrink-0" strokeWidth={1.7} />
+                <span>{content.phoneAlt}</span>
+              </a>
+              <a href={`mailto:${content.email}`} className="contact-direct-link">
+                <Mail className="h-4 w-4 shrink-0" strokeWidth={1.7} />
+                <span>{content.email}</span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>

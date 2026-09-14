@@ -48,27 +48,33 @@ function Dust({ opacity }) {
 
 function Saturn({ opacity }) {
   const root = useRef(null)
-  const spin = useRef(null)
+  const body = useRef(null)
+  const rings = useRef(null)
 
   useFrame((state, delta) => {
     const g = root.current
-    const s = spin.current
-    if (!g || !s) return
+    const b = body.current
+    const r = rings.current
+    if (!g || !b || !r) return
     const t = state.clock.elapsedTime
     const v = scrollSignal.velocity
     const dir = scrollSignal.direction
-    const p = scrollSignal.progress
 
-    s.rotation.y += delta * 0.04 + v * 0.003
-    g.rotation.z = lerp(g.rotation.z, -0.38 + dir * 0.05, 0.05)
-    g.rotation.x = lerp(g.rotation.x, 0.42 + Math.sin(t * 0.12) * 0.03, 0.05)
-    g.position.y = lerp(g.position.y, -0.12 - p * 1.5, 0.06)
-    g.position.x = lerp(g.position.x, 0.08 + Math.sin(t * 0.08) * 0.05, 0.04)
+    g.position.x = 0
+    g.position.y = 0
+
+    g.rotation.x = lerp(g.rotation.x, 0.42 + dir * 0.22 + Math.sin(t * 0.15) * 0.035, 0.06)
+    g.rotation.y = lerp(g.rotation.y, 0.2 + dir * 0.1, 0.05)
+    g.rotation.z = lerp(g.rotation.z, -0.38 + dir * 0.16, 0.06)
+
+    b.rotation.y += delta * 0.05 + v * 0.008
+    r.rotation.y -= delta * 0.09 + v * 0.012
+    r.rotation.x = lerp(r.rotation.x, dir * 0.14, 0.05)
   })
 
   return (
-    <group ref={root} position={[0.08, -0.12, -2.2]} rotation={[0.42, 0.2, -0.38]}>
-      <group ref={spin}>
+    <group ref={root} position={[0, 0, -2.2]} rotation={[0.42, 0.2, -0.38]}>
+      <group ref={body}>
         <mesh scale={[1, 0.92, 1]}>
           <sphereGeometry args={[1.12, 48, 32]} />
           <meshBasicMaterial color={ACCENT} transparent opacity={opacity * 0.28} depthWrite={false} />
@@ -77,6 +83,8 @@ function Saturn({ opacity }) {
           <sphereGeometry args={[1.13, 24, 16]} />
           <meshBasicMaterial color={ACCENT} wireframe transparent opacity={opacity * 0.55} depthWrite={false} />
         </mesh>
+      </group>
+      <group ref={rings}>
         <mesh rotation={[Math.PI / 2, 0, 0]}>
           <torusGeometry args={[1.48, 0.016, 10, 96]} />
           <meshBasicMaterial color={ACCENT} transparent opacity={opacity} depthWrite={false} />
