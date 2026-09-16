@@ -38,7 +38,7 @@ export const content = {
     name: "MK CREATIVE",
     wordLeft: "STUDIO",
     wordRight: "Brand Design",
-    wordRightSub: "Photographie et Vidéographie",
+    wordRightSub: "Photo et Vidéo",
     tagline:
       "Je suis Mr Kenzi, brand designer senior avec +7 ans d’expérience, également photographe et vidéaste.",
     bio: "Je suis Mr Kenzi, brand designer senior avec plus de 7 ans d’expérience, également photographe et vidéaste.",
@@ -255,7 +255,7 @@ export const content = {
       { role: "Directeur artistique", company: "Fashion Label Group", dates: "2020 à 2022" },
       { role: "Fondateur", company: "MK Creative", dates: "2024 - Présent" },
       { role: "Graphiste / DA", company: "Spirit Design / Créa Studio", dates: "2025" },
-      { role: "Freelance", company: "Direction artistique & image", dates: "En continu" },
+      { role: "Freelance", dates: "En continu" },
     ],
   },
   stack: {

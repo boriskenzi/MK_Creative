@@ -458,12 +458,12 @@ export const tarifFamilies = [
           {
             name: "3D + animation short",
             price: "À partir de 85 000 FCFA",
-            summary: "Reel ou présentation produit",
+            summary: "Reel ou présentation produit (5 - 10 secondes)",
             items: ["Animation 3D courte", "Présentation produit ou réseaux"],
           },
           {
             name: "Spot publicitaire 3D",
-            price: "À partir de 100 000 FCFA",
+            price: "À partir de 180 000 FCFA",
             summary: "Modélisation, scénario, VFX et montage",
             items: ["Modélisation", "Scénarisation", "Animation avancée", "Effets visuels", "Montage audio / vidéo"],
           },

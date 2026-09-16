@@ -18,7 +18,7 @@ def main():
         contact = page.locator("header").get_by_text("Contact", exact=True).count()
         designer = page.get_by_text("DESIGNER", exact=True).count()
         brand = page.get_by_role("heading", name="Brand Design").count()
-        photo_sub = page.get_by_text("Photographie et Vidéographie").count()
+        photo_sub = page.get_by_text("Photo et Vidéo").count()
         tagline = page.get_by_text("Je suis Mr Kenzi, brand designer senior").count()
         accent = page.evaluate(
             "getComputedStyle(document.documentElement).getPropertyValue('--color-accent').trim()"

@@ -8,7 +8,7 @@ export default function TimelineMarquee({ items }) {
             <p className="journey-year">{item.dates}</p>
             <span className="journey-node" aria-hidden />
             <h3 className="journey-role">{item.role}</h3>
-            <p className="journey-place">{item.company}</p>
+            {item.company ? <p className="journey-place">{item.company}</p> : null}
           </li>
         )
       })}
