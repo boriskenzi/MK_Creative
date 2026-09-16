@@ -1,6 +1,7 @@
 import { lazy, Suspense, useEffect, useState } from "react"
 import { useTheme } from "../hooks/useTheme"
 import { useAllow3D } from "../hooks/useAllow3D"
+import { resetScrollVelocity } from "../lib/scroll"
 
 const StudioField = lazy(() => import("./StudioField"))
 
@@ -11,7 +12,11 @@ export default function StudioBackdrop() {
 
   useEffect(() => {
     if (!allow) return
-    const onVis = () => setPlaying(document.visibilityState === "visible")
+    const onVis = () => {
+      const visible = document.visibilityState === "visible"
+      if (!visible) resetScrollVelocity()
+      setPlaying(visible)
+    }
     onVis()
     document.addEventListener("visibilitychange", onVis)
     return () => document.removeEventListener("visibilitychange", onVis)

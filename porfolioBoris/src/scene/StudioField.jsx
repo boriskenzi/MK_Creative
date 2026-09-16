@@ -1,7 +1,7 @@
-import { useMemo, useRef } from "react"
+import { useEffect, useMemo, useRef } from "react"
 import { Canvas, useFrame } from "@react-three/fiber"
 import { DESKTOP_3D_MIN } from "./capabilities"
-import { scrollSignal } from "../lib/scroll"
+import { readScrollMotion, resetScrollVelocity } from "../lib/scroll"
 
 const ACCENT = "#9008b1"
 
@@ -25,8 +25,9 @@ function Dust({ opacity }) {
   useFrame((_, delta) => {
     const pts = ref.current
     if (!pts) return
-    pts.rotation.y += delta * 0.02 + scrollSignal.velocity * 0.004
-    pts.rotation.x = lerp(pts.rotation.x, scrollSignal.direction * 0.08, 0.04)
+    const { dt, boost, dir } = readScrollMotion(delta)
+    pts.rotation.y += dt * 0.02 + boost * 0.004
+    pts.rotation.x = lerp(pts.rotation.x, dir * 0.08, 0.04)
   })
 
   return (
@@ -52,15 +53,15 @@ function Saturn({ opacity }) {
   useFrame((_, delta) => {
     const g = root.current
     if (!g) return
-    const v = scrollSignal.velocity
+    const { dt, boost } = readScrollMotion(delta)
 
-    g.rotation.y += delta * 0.08 + v * 0.003
-    g.rotation.x += delta * 0.12 + v * 0.01
-    g.rotation.z += delta * 0.04
+    g.rotation.y += dt * 0.08 + boost * 0.003
+    g.rotation.x += dt * 0.12 + boost * 0.01
+    g.rotation.z += dt * 0.04
   })
 
   return (
-    <group ref={root} position={[2.2, 0.55, -2.4]} rotation={[0.42, 0.2, -0.38]} scale={0.55}>
+    <group ref={root} position={[2.2, 0.55, -2.4]} rotation={[0.42, 0.2, -0.38]} scale={0.42}>
       <mesh scale={[1, 0.92, 1]}>
         <sphereGeometry args={[1.12, 48, 32]} />
         <meshBasicMaterial color={ACCENT} transparent opacity={opacity * 0.28} depthWrite={false} />
@@ -100,26 +101,24 @@ function StudioShapes({ opacity }) {
     const g = root.current
     if (!g) return
     const t = state.clock.elapsedTime
-    const v = scrollSignal.velocity
-    const dir = scrollSignal.direction
-    const p = scrollSignal.progress
+    const { dt, boost, dir, progress: p } = readScrollMotion(delta)
 
-    g.rotation.y += delta * 0.05 + v * 0.003
+    g.rotation.y += dt * 0.05 + boost * 0.003
     g.rotation.x = lerp(g.rotation.x, dir * 0.1 + Math.sin(t * 0.15) * 0.04, 0.05)
     g.position.y = lerp(g.position.y, -p * 1.4, 0.06)
 
     if (ringA.current) {
-      ringA.current.rotation.x += delta * 0.12 + v * 0.01
-      ringA.current.rotation.z += delta * 0.04
+      ringA.current.rotation.x += dt * 0.12 + boost * 0.01
+      ringA.current.rotation.z += dt * 0.04
     }
     if (ringB.current) {
-      ringB.current.rotation.y -= delta * 0.09 + v * 0.008
+      ringB.current.rotation.y -= dt * 0.09 + boost * 0.008
     }
     if (drop.current) {
       drop.current.position.y = 0.2 + Math.sin(t * 0.7) * 0.15
     }
     if (cage.current) {
-      cage.current.rotation.y += delta * 0.08
+      cage.current.rotation.y += dt * 0.08
       cage.current.rotation.x = lerp(cage.current.rotation.x, dir * 0.25, 0.05)
     }
   })
@@ -154,6 +153,10 @@ function StudioShapes({ opacity }) {
 export default function StudioField({ playing, theme = "light" }) {
   const mobile = typeof window !== "undefined" && window.innerWidth < DESKTOP_3D_MIN
   const opacity = theme === "dark" ? (mobile ? 0.5 : 0.34) : mobile ? 0.34 : 0.2
+
+  useEffect(() => {
+    if (!playing) resetScrollVelocity()
+  }, [playing])
 
   return (
     <Canvas

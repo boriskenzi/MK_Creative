@@ -1,7 +1,7 @@
 import { useEffect } from "react"
 import Lenis from "lenis"
 import { gsap, ScrollTrigger, prefersReducedMotion } from "../lib/gsap"
-import { scrollSignal, setLenis } from "../lib/scroll"
+import { clampScrollVelocity, resetScrollVelocity, scrollSignal, setLenis } from "../lib/scroll"
 import { DESKTOP_3D_MIN } from "../scene/capabilities"
 
 /**
@@ -19,14 +19,14 @@ export function useLenis() {
         const dy = y - lastY
         lastY = y
         scrollSignal.progress = Math.min(1, Math.max(0, y / max))
-        scrollSignal.velocity = dy
+        scrollSignal.velocity = clampScrollVelocity(dy)
         scrollSignal.direction = dy > 0.4 ? 1 : dy < -0.4 ? -1 : 0
       }
       onNativeScroll()
       window.addEventListener("scroll", onNativeScroll, { passive: true })
       return () => {
         window.removeEventListener("scroll", onNativeScroll)
-        scrollSignal.velocity = 0
+        resetScrollVelocity()
         scrollSignal.direction = 0
         scrollSignal.progress = 0
       }
@@ -42,7 +42,7 @@ export function useLenis() {
     })
 
     const onScroll = (instance) => {
-      scrollSignal.velocity = instance.velocity
+      scrollSignal.velocity = clampScrollVelocity(instance.velocity)
       scrollSignal.direction = instance.direction
       scrollSignal.progress = instance.progress
       ScrollTrigger.update()
@@ -63,7 +63,7 @@ export function useLenis() {
       lenis.off("scroll", onScroll)
       lenis.destroy()
       setLenis(null)
-      scrollSignal.velocity = 0
+      resetScrollVelocity()
       scrollSignal.direction = 0
       scrollSignal.progress = 0
     }
