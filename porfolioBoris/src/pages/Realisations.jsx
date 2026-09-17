@@ -3,12 +3,14 @@ import { Link } from "react-router-dom"
 import { ArrowRight } from "lucide-react"
 import { gsap, prefersReducedMotion, MOTION, scheduleScrollRefresh } from "../lib/gsap"
 import { content } from "../data/content"
-import { galleryCountLabel, galleryImages } from "../data/galleries"
+import { galleryCountLabel, galleryCover, galleryImages } from "../data/galleries"
 import ContactSection from "../components/ContactSection"
 
 function ProofCard({ item }) {
   const contain = item.fit === "contain"
-  const count = galleryImages(item).length
+  const images = galleryImages(item)
+  const count = images.length
+  const cover = galleryCover(item)
   return (
     <Link
       to={`/realisations/${item.id}`}
@@ -22,7 +24,7 @@ function ProofCard({ item }) {
         style={{ background: "var(--card)" }}
       >
         <img
-          src={item.image}
+          src={cover}
           alt=""
           className={`proof-img ${contain ? "object-contain p-5 md:p-8" : "h-full w-full object-cover"}`}
         />

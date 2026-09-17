@@ -20,6 +20,10 @@ export function galleryImages(item) {
   }))
 }
 
+export function galleryCover(item) {
+  return galleryImages(item)[0]?.src || item.image
+}
+
 export function galleryCountLabel(item, count) {
   const photo = item.fit !== "contain"
   if (photo) return count <= 1 ? `${count} photo` : `${count} photos`
