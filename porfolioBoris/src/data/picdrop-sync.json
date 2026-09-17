@@ -1,0 +1,17 @@
+{
+  "event": {
+    "name": "Photographie Evenementielle",
+    "numFiles": 35,
+    "timeLastModified": 1789644985
+  },
+  "studio": {
+    "name": "Photographie Studio",
+    "numFiles": 7,
+    "timeLastModified": 1789645057
+  },
+  "visuels": {
+    "name": "Visuels",
+    "numFiles": 69,
+    "timeLastModified": 1788863376
+  }
+}
