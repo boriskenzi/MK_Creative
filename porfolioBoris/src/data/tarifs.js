@@ -181,7 +181,7 @@ export const tarifFamilies = [
           },
           {
             name: "Essentielle",
-            price: "135 000 FCFA",
+            price: "150 000 FCFA",
             badge: "Populaire",
             hours: "5h, extensible",
             summary: "Photo + vidéo essentielle",
