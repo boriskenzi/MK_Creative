@@ -1,45 +1,22 @@
-# Refresh Picdrop galleries, then publish GitHub Pages when they change.
+# Refresh Picdrop galleries automatically, then let the Pages deploy
+# workflow publish whenever this job pushes a change.
 name: Sync Picdrop galleries
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    # Hourly is reliable on GitHub Actions. */5 is heavily delayed/throttled.
+    - cron: "20 * * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 concurrency:
   group: gallery-sync
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
-  check:
-    runs-on: ubuntu-latest
-    outputs:
-      changed: ${{ steps.meta.outputs.changed }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v5
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
-      - name: Compare Picdrop
-        id: meta
-        working-directory: porfolioBoris
-        run: python scripts/import-picdrop.py --check
-
   sync:
-    needs: check
-    if: needs.check.outputs.changed == 'true'
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -47,6 +24,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -55,45 +34,24 @@ jobs:
 
       - name: Install Playwright
         run: |
+          python -m pip install --upgrade pip
           python -m pip install playwright
           python -m playwright install --with-deps chromium
 
-      - name: Import galleries
+      - name: Sync galleries from Picdrop
+        id: picdrop
         run: python scripts/import-picdrop.py --force
 
       - name: Commit gallery files
         working-directory: ${{ github.workspace }}
         run: |
           git add porfolioBoris/src/assets/galleries porfolioBoris/src/data/picdrop-sync.json
-          git diff --cached --quiet && echo "No gallery files to commit" && exit 0
+          if git diff --cached --quiet; then
+            echo "No gallery changes to publish"
+            exit 0
+          fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git commit -m "Met a jour les galeries Picdrop."
+          git pull --rebase origin main
           git push
-
-      - name: Set up Node
-        uses: actions/setup-node@v5
-        with:
-          node-version: lts/*
-          cache: npm
-          cache-dependency-path: porfolioBoris/package-lock.json
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build
-        run: |
-          npm run build
-          cp dist/index.html dist/404.html
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: porfolioBoris/dist
-
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
