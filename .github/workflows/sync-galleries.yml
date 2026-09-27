@@ -1,5 +1,5 @@
-# Refresh Picdrop galleries automatically, then let the Pages deploy
-# workflow publish whenever this job pushes a change.
+# Refresh Picdrop galleries, then publish GitHub Pages from this workflow.
+# A push made with the default GITHUB_TOKEN does not start the deploy workflow.
 name: Sync Picdrop galleries
 
 on:
@@ -18,6 +18,8 @@ concurrency:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    outputs:
+      pushed: ${{ steps.commit.outputs.pushed }}
     defaults:
       run:
         working-directory: porfolioBoris
@@ -43,11 +45,13 @@ jobs:
         run: python scripts/import-picdrop.py --force
 
       - name: Commit gallery files
+        id: commit
         working-directory: ${{ github.workspace }}
         run: |
           git add porfolioBoris/src/assets/galleries porfolioBoris/src/data/picdrop-sync.json
           if git diff --cached --quiet; then
             echo "No gallery changes to publish"
+            echo "pushed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
           git config user.name "github-actions[bot]"
@@ -55,3 +59,52 @@ jobs:
           git commit -m "Met a jour les galeries Picdrop."
           git pull --rebase origin main
           git push
+          echo "pushed=true" >> "$GITHUB_OUTPUT"
+
+  deploy:
+    needs: sync
+    if: needs.sync.outputs.pushed == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    concurrency:
+      group: pages
+      cancel-in-progress: true
+    defaults:
+      run:
+        working-directory: porfolioBoris
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Set up Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: lts/*
+          cache: npm
+          cache-dependency-path: porfolioBoris/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: |
+          npm run build
+          cp dist/index.html dist/404.html
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: porfolioBoris/dist
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
