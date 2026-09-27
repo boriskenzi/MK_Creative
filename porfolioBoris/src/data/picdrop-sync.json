@@ -1,17 +1,554 @@
 {
-  "event": {
-    "name": "Photographie Evenementielle",
-    "numFiles": 35,
-    "timeLastModified": 1789644985
+  "inventory": {
+    "event": [
+      {
+        "key": "uvy6humnkht4in9mrci4.jpg",
+        "name": "BD211C76-C7D7-4C7A-8F55-B630A66BD270_L0_001.jpg"
+      },
+      {
+        "key": "cvarbb73wtwqqlqezafd.jpg",
+        "name": "DAE9BC8C-5B81-4599-BCED-5FF3E37E280E_L0_001.jpg"
+      },
+      {
+        "key": "hh5y7xkjwdfldik2djfd.jpg",
+        "name": "8ADC75F1-7776-46D6-A482-48114A29A279_L0_001.jpg"
+      },
+      {
+        "key": "abnbva2muz4xnpb1ag0l.jpg",
+        "name": "2F9BA746-3F67-4707-8A00-5F6FF83FE78C_L0_001.jpg"
+      },
+      {
+        "key": "l55e3nb4wb7gcbzkvxmo.jpg",
+        "name": "C45CDD42-5A2E-4EE2-B3A7-24CD393346BB_L0_001.jpg"
+      },
+      {
+        "key": "cjnjz24fxfhhfaj2h04i.jpg",
+        "name": "8F262227-9B7A-4B31-B62C-A45769A70D3D_L0_001.jpg"
+      },
+      {
+        "key": "blgm97li4psbn7euoefr.jpg",
+        "name": "0C59F999-2F19-478E-B4DB-9FBAE6168947_L0_001.jpg"
+      },
+      {
+        "key": "lo5unrg5m8mntn0xg3a2.jpg",
+        "name": "9826CB87-1E71-48D6-9653-C5E045E23C4C_L0_001.jpg"
+      },
+      {
+        "key": "rtrqsa0khivko9yvrzul.jpg",
+        "name": "259A6326-F640-4E7A-BB9D-3F644BB2B34B_L0_001.jpg"
+      },
+      {
+        "key": "kcbiiwrhwttoiunwb7vm.jpg",
+        "name": "2E71C4F0-C911-4A90-B02D-8771AB76A728_L0_001.jpg"
+      },
+      {
+        "key": "vnui63bgslv2cjthvrcp.jpg",
+        "name": "2D75D4D8-BC11-4623-A77C-1D0E298122B2_L0_001.jpg"
+      },
+      {
+        "key": "xhhviacpahi8pbw1mttv.jpg",
+        "name": "E494C57C-475B-4122-A641-1F8FD5406615_L0_001.jpg"
+      },
+      {
+        "key": "zinxktx3y6ayb8njoxqm.jpg",
+        "name": "C8745E78-AF20-41F8-BAA0-0033BBD78BCC_L0_001.jpg"
+      },
+      {
+        "key": "e5efm1gv9br2wkeitldc.jpg",
+        "name": "99B71F4B-E2A1-487D-A876-E1E7BFBDBC2E_L0_001.jpg"
+      },
+      {
+        "key": "cgj1crqixwl7xdvym52d.jpg",
+        "name": "64EAFA7F-CF28-4A55-9DF9-D3695FB1ED9A_L0_001.jpg"
+      },
+      {
+        "key": "wcphhwhsqxhbeqhl2m9n.jpg",
+        "name": "5419C3E6-1CE0-419F-B4A2-D08B3F4DC000_L0_001.jpg"
+      },
+      {
+        "key": "ekk845sr3r99pynv95fo.jpg",
+        "name": "886666B4-1ADF-43D3-B1DD-80E450CAB765_L0_001.jpg"
+      },
+      {
+        "key": "7nfeiysokavp1bh8ptwf.jpg",
+        "name": "7B5EA2C7-9E51-4CD6-ABEC-E7F43FCA49FE_L0_001.jpg"
+      },
+      {
+        "key": "aw5vu3sgz4c1hmfvfiuj.jpg",
+        "name": "F7602B07-DDE0-48AE-B87E-3B54F7903E05_L0_001.jpg"
+      },
+      {
+        "key": "nqncsia0xpsvlrqumych.jpg",
+        "name": "35A0E2F0-D961-4FB1-B198-E65EA4E41F83_L0_001.jpg"
+      },
+      {
+        "key": "nkzxroqfzp2ftt00gqps.jpg",
+        "name": "123835F7-676F-4486-956E-4E2D66730A9B_L0_001.jpg"
+      },
+      {
+        "key": "gjms2cxv1uyr0bwdtshy.jpg",
+        "name": "BB4865B1-CAF6-41AC-983F-5685B69E49CD_L0_001.jpg"
+      },
+      {
+        "key": "re33v72kfchqxj3d5pnd.jpg",
+        "name": "473317603_122279525198001867_3760133074433928880_n.jpg"
+      },
+      {
+        "key": "itf36qoiiriedma7xetx.jpg",
+        "name": "478419860_122287420568001867_7352271154653383258_n.jpg"
+      },
+      {
+        "key": "qadtdev0o8ibwazirooq.jpg",
+        "name": "IMG-20250906-WA0904.jpg"
+      },
+      {
+        "key": "pmconvkatghddmnithvt.jpg",
+        "name": "473437608_122279525162001867_1548624498993960126_n.jpg"
+      },
+      {
+        "key": "jajiyrgivuta8i9sxgck.jpg",
+        "name": "473603823_122279525366001867_1576905224045663664_n.jpg"
+      },
+      {
+        "key": "yztgnndvuthnrgzdkgyv.jpg",
+        "name": "2020-09-27_19-04-48_[CFpqvnQlnok]_01.jpg"
+      },
+      {
+        "key": "lq5dx0wldutiepqgioi6.jpg",
+        "name": "2021-01-16_19-53-25_[CKHki2Cl_hS]_01.jpg"
+      },
+      {
+        "key": "rmqhactnoruhrwvvsv2o.jpg",
+        "name": "2024-01-10_15-29-21_[C17L_gJqiSl].jpg"
+      },
+      {
+        "key": "u65phddhjl0ngdzrd3be.jpg",
+        "name": "NIKIEMA(78).jpg"
+      },
+      {
+        "key": "2j8imvpbc5s4ff0w6hbm.jpg",
+        "name": "NIKIEMA(103).jpg"
+      },
+      {
+        "key": "02vlxu0ucwgxujec0mom.jpg",
+        "name": "NIKIEMA(108).jpg"
+      },
+      {
+        "key": "n7srvxbyjkcmqozhqtgl.jpg",
+        "name": "NIKIEMA(63).jpg"
+      },
+      {
+        "key": "gqzvzrhkwrj8iax6qmnz.jpg",
+        "name": "NIKIEMA(64).jpg"
+      },
+      {
+        "key": "rlvjcos2wgzoh5yw9pn1.jpg",
+        "name": "NIKIEMA(65).jpg"
+      },
+      {
+        "key": "07jcoqegtz9ag19ucupk.jpg",
+        "name": "NIKIEMA(67).jpg"
+      },
+      {
+        "key": "xgtos841ztfcovg4qdvm.jpg",
+        "name": "NIKIEMA(68).jpg"
+      },
+      {
+        "key": "oj3qytmti5ogbtrguxey.jpg",
+        "name": "NIKIEMA(70).jpg"
+      },
+      {
+        "key": "x1sitwoosgeqxn2otduf.jpg",
+        "name": "NIKIEMA(71).jpg"
+      },
+      {
+        "key": "0pyuulcehe3rfxbmtwf4.jpg",
+        "name": "NIKIEMA(73).jpg"
+      },
+      {
+        "key": "7gxfcqvrthowgfjf4lug.jpg",
+        "name": "NIKIEMA(74).jpg"
+      },
+      {
+        "key": "dsigeogr44tqr3pzmcjq.jpg",
+        "name": "NIKIEMA(75).jpg"
+      },
+      {
+        "key": "fxwcfdait69awoix8lh3.jpg",
+        "name": "COUPLE 2(324).jpg"
+      },
+      {
+        "key": "awbhjetemyabomduthbc.jpg",
+        "name": "COUPLE 2(358).jpg"
+      },
+      {
+        "key": "vpo8qxa9wtlgoji0dwko.jpg",
+        "name": "COUPLE 2(96).jpg"
+      },
+      {
+        "key": "lcxqd2hrzxaviwtiq7bi.jpg",
+        "name": "COUPLE 2(103).jpg"
+      },
+      {
+        "key": "k7bs7xhiftmafwexlgvi.jpg",
+        "name": "COUPLE 2(125).jpg"
+      },
+      {
+        "key": "jw3izsnmyghvyfsuozmd.jpg",
+        "name": "COUPLE 2(185).jpg"
+      },
+      {
+        "key": "yjuzisf8dmwwwetydigh.jpg",
+        "name": "NIKIEMA(17).jpg"
+      },
+      {
+        "key": "ehsuxvmlcjjgvu7lv451.jpg",
+        "name": "NIKIEMA(69).jpg"
+      },
+      {
+        "key": "6k8c2wyzl8xahf4w8afj.jpg",
+        "name": "NIKIEMA(72).jpg"
+      },
+      {
+        "key": "2qyucza0lqmmmhiufjud.jpg",
+        "name": "NIKIEMA(12).jpg"
+      },
+      {
+        "key": "zr1wuj3fmzezgjo7d9us.jpg",
+        "name": "NIKIEMA(14).jpg"
+      }
+    ],
+    "studio": [
+      {
+        "key": "lb5ilc6feisld7cv407x.jpg",
+        "name": "IMG-20250906-WA0832.jpg"
+      },
+      {
+        "key": "cfpv15z1mpyienagxyk9.jpg",
+        "name": "photo 4.png"
+      },
+      {
+        "key": "lejwwb7zuxqmavpxbkoh.jpg",
+        "name": "photo 3.png"
+      },
+      {
+        "key": "vew99zbowam6z75prdgl.jpg",
+        "name": "photo 2.png"
+      },
+      {
+        "key": "k0tw6yl23jy0kx1ql3bi.jpg",
+        "name": "photo 1.png"
+      },
+      {
+        "key": "b5fpbzn26duecywjv6jd.jpg",
+        "name": "photo 1 nb.png"
+      },
+      {
+        "key": "4ql5obr3nko5kavm6egz.jpg",
+        "name": "photo 7.png"
+      },
+      {
+        "key": "ghl4bpznrbzvkf5govbp.jpg",
+        "name": "photo 8.png"
+      }
+    ],
+    "visuels": [
+      {
+        "key": "zrvn3lflsrjrmtyt7zzr.jpg",
+        "name": "Bachirou mariage vf bleu  ok.png"
+      },
+      {
+        "key": "j0h0xevrbbhnxy56fgab.jpg",
+        "name": "Bachirou mariage 2 modif.png"
+      },
+      {
+        "key": "hv7mj32zu21n6fxofqkg.jpg",
+        "name": "bach visuel 3.png"
+      },
+      {
+        "key": "qy36fbjf4g9doowqodma.jpg",
+        "name": "BARBECUE PROPH\u00c9TIQUE Ed1.png"
+      },
+      {
+        "key": "vzbfn4cy6xab91bzf9si.jpg",
+        "name": "Visuel du 8 Mars  faimane pic.png"
+      },
+      {
+        "key": "dkaluxlwvp0fbflacn7c.jpg",
+        "name": "AE AFF.png"
+      },
+      {
+        "key": "j0ps39b82sbkmxx9rgvl.jpg",
+        "name": "BN TEMPS FAIMANE.png"
+      },
+      {
+        "key": "ycpc3mjsmrajvd0fiq8s.jpg",
+        "name": "Garba de l'amitier banderole VF 2.png"
+      },
+      {
+        "key": "zxi9fyzbhxrhqgeynnn4.jpg",
+        "name": "30 VF 2.png"
+      },
+      {
+        "key": "jrud50bvsgw2hsneejqh.jpg",
+        "name": "Buisson Ardent GCE (1).png"
+      },
+      {
+        "key": "ahxgn2ridjxisgwlrqud.jpg",
+        "name": "Buisson-Ardent-GCE.png"
+      },
+      {
+        "key": "qobjcoxgpvmjtyeixhap.jpg",
+        "name": "WhatsApp Image 2025-01-14 \u00e0 03.27.14_1dc22709.jpg"
+      },
+      {
+        "key": "nlsxghcnyxmv58s2gmit.jpg",
+        "name": "MK  7 1.png"
+      },
+      {
+        "key": "houpggejslbh1eov5ttg.jpg",
+        "name": "MK 6 1.png"
+      },
+      {
+        "key": "6r764xgx04xtydzvlu9w.jpg",
+        "name": "SBA 2026.png"
+      },
+      {
+        "key": "t8taf3obfbrwlyyzmvpc.jpg",
+        "name": "JCR Lat\u00e9ral.png"
+      },
+      {
+        "key": "tvsqfxdzxp5b26b1jybd.jpg",
+        "name": "JCR Principal.png"
+      },
+      {
+        "key": "rvdy30mefyir0csme25q.jpg",
+        "name": "AFF R.png"
+      },
+      {
+        "key": "6aqhi5xv1ojypjhwq7wf.jpg",
+        "name": "faimane paque 6.png"
+      },
+      {
+        "key": "0clqcdvucfmbzhlyncke.jpg",
+        "name": "e2c59373-ef3d-4bf0-a6af-fb4b5ed19b2d.png"
+      },
+      {
+        "key": "vaqjnitwyr7bj6zuqgh0.jpg",
+        "name": "Afffiche RAMADAN faimane.png"
+      },
+      {
+        "key": "exwdaboneo4xfurzcuwr.jpg",
+        "name": "ramadan mk creative.png"
+      },
+      {
+        "key": "qibyb6k6f32krgnawgzl.jpg",
+        "name": "WhatsApp Image 2026-03-24 at 19.32.24.jpeg"
+      },
+      {
+        "key": "yhtdzfbmas8effzrlv2z.jpg",
+        "name": "WhatsApp Image 2026-03-24 at 19.31.18.jpeg"
+      },
+      {
+        "key": "ebdgmei1ydxymif4w8ik.jpg",
+        "name": "WhatsApp Image 2026-03-24 at 19.31.17 (1).jpeg"
+      },
+      {
+        "key": "3ywpg5kwbhmh7aewwmxy.jpg",
+        "name": "WhatsApp Image 2026-03-24 at 19.32.04 (1).jpeg"
+      },
+      {
+        "key": "2swiqkn6dwsnlixz23hh.jpg",
+        "name": "WhatsApp Image 2026-03-24 at 19.32.04.jpeg"
+      },
+      {
+        "key": "h18sm2ak9eto9fh9tkuz.jpg",
+        "name": "ETUSDE EN CHINE.png"
+      },
+      {
+        "key": "f0hjtvfpdun3qajy9h5u.jpg",
+        "name": "Trecia  BOX 1.png"
+      },
+      {
+        "key": "0fitmorpckbv1q8l2fws.jpg",
+        "name": "les partenaires du proph\u00e9tique.png"
+      },
+      {
+        "key": "1ybejbytyha0y3kbzrdn.jpg",
+        "name": "Opportunit\u00e9-Pingwende Nathanaiel Congo.png"
+      },
+      {
+        "key": "dnawixaifvvjxajbhwof.jpg",
+        "name": "472793523_122151984896341165_1620013523958796239_n.jpg"
+      },
+      {
+        "key": "0euscfjity8nice4hveh.jpg",
+        "name": "Arthur Elie z.png"
+      },
+      {
+        "key": "vwaxgmdielrawq8xmujn.jpg",
+        "name": "482621005_18181275889311016_1937453686147833486_n.jpg"
+      },
+      {
+        "key": "g4u8wegc4vmbwd8amuwg.jpg",
+        "name": "affiche j'y serai.png"
+      },
+      {
+        "key": "jb5flsmy17vn1aksrhd0.jpg",
+        "name": "Campagne \u00c9vang\u00e9lisation CCB vr.png"
+      },
+      {
+        "key": "gvcasany9lqxujpwfqei.jpg",
+        "name": "WhatsApp Image 2026-07-02 at 21.30.00.jpeg"
+      },
+      {
+        "key": "3msp2kgjei7tngvw2cd5.jpg",
+        "name": "Carte d'invitation Couple NIKIEMA.png"
+      },
+      {
+        "key": "peth03aliacaej9anogl.jpg",
+        "name": "559007227_122115220286998522_1650319942902151891_n.jpg"
+      },
+      {
+        "key": "auawh5aihxkc5n5chide.jpg",
+        "name": "564648626_122114273354998522_2867489206760091465_n.jpg"
+      },
+      {
+        "key": "3gmaob8nvmq5r6yps04b.jpg",
+        "name": "654414776_122137707488998522_3614622006682345832_n.jpg"
+      },
+      {
+        "key": "4t9mt1rjtozzkh5wc4w7.jpg",
+        "name": "Backdrop  EME 2026.png"
+      },
+      {
+        "key": "a5v0e4edk6uvddsmejsg.jpg",
+        "name": "aff Mathis Vf  2.png"
+      },
+      {
+        "key": "dlmikphpovchvgkm37vf.jpg",
+        "name": "VISUEL BENI CAFE RESTO ed3 01.png"
+      },
+      {
+        "key": "dufkaruec7wlys3ukyho.jpg",
+        "name": "ID JS.png"
+      },
+      {
+        "key": "3wzrzemkyaq7defeg1ei.jpg",
+        "name": "OPERATION PERMIS DE CONDUIRE 2.png"
+      },
+      {
+        "key": "t0z9mrkxizgqid6ge9c8.jpg",
+        "name": "Couple KABRE mariage Affiche 1.png"
+      },
+      {
+        "key": "tl0t3mpecympnwtomgf7.jpg",
+        "name": "couple KABRE mariage 2 mk.png"
+      },
+      {
+        "key": "kvdwmufcgytsvortndxj.jpg",
+        "name": "faimane 1 Mai 4.png"
+      },
+      {
+        "key": "ycdv10rm27grf6f2a0df.jpg",
+        "name": "ADR.png"
+      },
+      {
+        "key": "ytwuikkvyuv3pcsuo2gd.jpg",
+        "name": "OBSIDIAN logo 2 Justification.png"
+      },
+      {
+        "key": "47ubr589nzirziznkbpi.jpg",
+        "name": "OBSIDIAN Fond noir sans typo.png"
+      },
+      {
+        "key": "q7yqgztcbgnmvx3ymxy4.jpg",
+        "name": "OBSIDIAN Fond blanc typo.png"
+      },
+      {
+        "key": "olkboyjvijzbmkakhbri.jpg",
+        "name": "WhatsApp Image 2026-09-08 at 09.37.24.jpeg"
+      },
+      {
+        "key": "rru1pxzl2lgvnpfr25jv.jpg",
+        "name": "WhatsApp Image 2026-09-08 at 09.37.27.jpeg"
+      },
+      {
+        "key": "hfgitio0mg3ehl50icfl.jpg",
+        "name": "OBSIDIAN LOGO.pdf"
+      },
+      {
+        "key": "agpezcez72kyadcjdzdc.jpg",
+        "name": "ADR Services mk.png"
+      },
+      {
+        "key": "aqp3stcplbxc4f2ivyfm.jpg",
+        "name": "Kariflore \u00c9tiquette.png"
+      },
+      {
+        "key": "cwhc6bic1m2oplnbbqix.jpg",
+        "name": "WhatsApp Image 2026-09-02 at 14.07.37.jpeg"
+      },
+      {
+        "key": "tetmcoickwqifaldwek5.jpg",
+        "name": "WhatsApp Image 2026-09-08 at 09.44.54.jpeg"
+      },
+      {
+        "key": "zl5zm73bkws6ykorsggr.jpg",
+        "name": "ARTHUR \u00c9LIE AFF ed.png"
+      },
+      {
+        "key": "xwznmpc7ub4v8njgp3pn.jpg",
+        "name": "Jesus pougin n\u00f4oma ed 3 1.png"
+      },
+      {
+        "key": "turd8na0ud4kcctj9rxp.jpg",
+        "name": "faimane tabaski 4.png"
+      },
+      {
+        "key": "qyj6lsxqomwp60wjida1.jpg",
+        "name": "faimane 15 Mai 1.png"
+      },
+      {
+        "key": "xsrhomoj7m4hhhktqsuk.jpg",
+        "name": "naila cosmetique ed2.png"
+      },
+      {
+        "key": "pia7wmerhqmsdmi5aicf.jpg",
+        "name": "Garba de l'amitier banderole VF 5.png"
+      },
+      {
+        "key": "1tql5hto4sxldd9ful7r.jpg",
+        "name": "China student Union logo.png"
+      },
+      {
+        "key": "t8jlkhxglar2piv3gydc.jpg",
+        "name": "Rehoboth cuniculture n.png"
+      },
+      {
+        "key": "8ch9mjcdogkswyiaxkud.jpg",
+        "name": "S ARTHUR \u00c9lie.png"
+      }
+    ]
   },
-  "studio": {
-    "name": "Photographie Studio",
-    "numFiles": 12,
-    "timeLastModified": 1789649403
-  },
-  "visuels": {
-    "name": "Visuels",
-    "numFiles": 69,
-    "timeLastModified": 1788863376
+  "meta": {
+    "event": {
+      "name": "Photographie Evenementielle",
+      "numFiles": 54,
+      "teaser": "ets5otcd0b2vzhebabpp.jpg",
+      "timeLastModified": 1790471278
+    },
+    "studio": {
+      "name": "Photographie Studio",
+      "numFiles": 8,
+      "teaser": "jxfz0uhqscduukvbqvrl.jpg",
+      "timeLastModified": 1790095586
+    },
+    "visuels": {
+      "name": "Visuels",
+      "numFiles": 69,
+      "teaser": "xs8c61c2hbcwjiaktguq.jpg",
+      "timeLastModified": 1788863376
+    }
   }
 }
